@@ -477,6 +477,102 @@
     }
   }
 
+  /* Navigators hero: light cool wash shell (reuses .hero-shell radius) */
+  .bg-navigators-hero-atmosphere {
+    background:
+      radial-gradient(900px 520px at 12% 0%, rgba(217, 235, 255, 0.78), transparent 58%),
+      radial-gradient(700px 420px at 88% 18%, rgba(255, 255, 255, 0.92), transparent 52%),
+      linear-gradient(105deg, #ffffff 0%, #f7f9fc 38%, #eef5ff 72%, #e6f0fc 100%);
+  }
+
+  /*
+   * Navigators portrait: soft left/bottom feather into the light shell.
+   * Keep position:absolute (do NOT set relative — same pitfall as homepage).
+   */
+  .navigators-hero-photo-blend {
+    background-color: #eef5ff;
+    background-image: url("/images/navigators-hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 62% 22%;
+    opacity: 1;
+    filter: grayscale(100%);
+    -webkit-mask-image:
+      linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(0, 0, 0, 0.12) 10%,
+        rgba(0, 0, 0, 0.4) 26%,
+        rgba(0, 0, 0, 0.78) 48%,
+        #000 66%
+      ),
+      linear-gradient(
+        to top,
+        transparent 0%,
+        rgba(0, 0, 0, 0.25) 12%,
+        rgba(0, 0, 0, 0.6) 30%,
+        rgba(0, 0, 0, 0.9) 52%,
+        #000 72%
+      );
+    -webkit-mask-composite: source-in;
+    mask-image:
+      linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(0, 0, 0, 0.12) 10%,
+        rgba(0, 0, 0, 0.4) 26%,
+        rgba(0, 0, 0, 0.78) 48%,
+        #000 66%
+      ),
+      linear-gradient(
+        to top,
+        transparent 0%,
+        rgba(0, 0, 0, 0.25) 12%,
+        rgba(0, 0, 0, 0.6) 30%,
+        rgba(0, 0, 0, 0.9) 52%,
+        #000 72%
+      );
+    mask-composite: intersect;
+  }
+
+  .navigators-hero-photo-blend::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(
+        105deg,
+        #ffffff 0%,
+        rgba(247, 249, 252, 0.9) 14%,
+        rgba(238, 245, 255, 0.55) 32%,
+        rgba(238, 245, 255, 0.18) 50%,
+        transparent 68%
+      ),
+      linear-gradient(
+        to top,
+        #f7f9fc 0%,
+        rgba(247, 249, 252, 0.55) 14%,
+        rgba(247, 249, 252, 0.16) 36%,
+        transparent 58%
+      );
+    pointer-events: none;
+  }
+
+  @media (min-width: 768px) {
+    .navigators-hero-photo-blend {
+      background-size: cover;
+      background-position: 58% 18%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .navigators-hero-photo-blend {
+      background-position: 65% 28%;
+      background-size: cover;
+      opacity: 0.9;
+    }
+  }
+
   /* About hero: light warm wash shell (reuses .hero-shell radius) */
   .bg-about-hero-atmosphere {
     background:

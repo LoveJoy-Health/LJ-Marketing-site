@@ -32,6 +32,11 @@ export const siteConfig = {
   },
   /** Organization portal — population health, programs, reporting */
   organizationPortalUrl: "https://organizations.lovejoy.health/",
+  /** Navigator portal — caseload, follow-ups, care coordination */
+  navigatorPortalUrl: "https://navigators.lovejoy.health/",
+  navigatorSignInUrl: "https://navigators.lovejoy.health/login",
+  /** Navigators are typically invited — join routes to contact for access */
+  navigatorJoinUrl: "/about/contact",
 } as const;
 
 export type NavLink = {
@@ -56,6 +61,7 @@ export const primaryNav: readonly NavItem[] = [
       { href: "/for-individuals", label: "For Individuals" },
       { href: "/osiris", label: "Osiris" },
       { href: "/the-porch", label: "The Porch" },
+      { href: "/for-navigators", label: "I coordinate care" },
       { href: "/download/patient", label: "Download patient app" },
       { href: siteConfig.findProviderUrl, label: "Find a Provider" },
     ],
@@ -72,6 +78,7 @@ export const primaryNav: readonly NavItem[] = [
       { href: "/download/provider", label: "Download provider app" },
     ],
   },
+  { href: "/for-navigators", label: "Care Navigators" },
   {
     label: "Organizations",
     href: "/for-organizations",
@@ -107,6 +114,7 @@ export const primaryNav: readonly NavItem[] = [
 export const footerNav: readonly NavLink[] = [
   { href: "/for-individuals", label: "Individuals" },
   { href: "/for-providers", label: "Providers" },
+  { href: "/for-navigators", label: "Care Navigators" },
   { href: "/for-organizations", label: "Organizations" },
   { href: "/about", label: "About" },
   { href: "/about/team", label: "Team" },
@@ -176,6 +184,7 @@ export const breadcrumbLabels: Record<string, string> = {
   "/for-providers/platform": "Platform",
   "/for-providers/participation": "Participation",
   "/for-providers/onboarding": "Onboarding",
+  "/for-navigators": "Care Navigators",
   "/for-organizations": "Organizations",
   "/for-organizations/platform": "Platform",
   "/for-organizations/navigation": "Care Navigation",

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   Building2,
+  HeartHandshake,
   Stethoscope,
   UserRound,
   Users,
@@ -35,6 +36,13 @@ const audiences: {
     Icon: Stethoscope,
     iconBg: "bg-emerald-100",
     iconColor: "text-emerald-600",
+  },
+  {
+    title: "Care Navigators",
+    href: "/for-navigators",
+    Icon: HeartHandshake,
+    iconBg: "bg-violet-100",
+    iconColor: "text-violet-600",
   },
   {
     title: "Organizations",

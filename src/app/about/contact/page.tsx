@@ -61,6 +61,15 @@ const contactCards: ContactCard[] = [
     ],
   },
   {
+    title: "Care Navigators",
+    body: "Coordinate caseloads, follow-ups, and care gaps — or sign in to the Navigator Portal.",
+    Icon: HeartHandshake,
+    links: [
+      { href: "/for-navigators", label: "For care navigators" },
+      { href: siteConfig.navigatorSignInUrl, label: "Navigator sign-in" },
+    ],
+  },
+  {
     title: "Organizations",
     body: "Health plans, employers, and community partners — learn how LoveJoy expands access, or request a demo.",
     Icon: Building2,

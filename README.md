@@ -29,6 +29,7 @@ Assets copied locally from the live WP site: logo + home hero image under `publi
 | `/` | Brand-first home |
 | `/for-individuals` | Patient / individual audience |
 | `/for-providers` | Provider audience |
+| `/for-navigators` | Care navigator / care coordinator audience |
 | `/for-organizations` | Org / health system audience |
 | `/about` | Mission, vision, leadership |
 | `/about/contact` | Contact details + inquiry form (mailto stub) |
