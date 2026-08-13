@@ -18,7 +18,6 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { ConnectedDiagram } from "@/components/ConnectedDiagram";
-import { siteConfig } from "@/lib/site";
 
 const gapStats = [
   {
@@ -498,14 +497,12 @@ export default function HomePage() {
                   >
                     Find Support →
                   </Link>
-                  <a
-                    href={siteConfig.providerJoinUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    href="/for-providers"
                     className="rounded-full border border-white/35 bg-transparent px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
                   >
                     Join Provider Network
-                  </a>
+                  </Link>
                 </div>
               </div>
 

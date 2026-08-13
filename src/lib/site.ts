@@ -1,3 +1,5 @@
+import { getPostBySlug } from "@/lib/blog";
+
 export const siteConfig = {
   name: "LoveJoy Health",
   shortName: "LoveJoy",
@@ -242,6 +244,19 @@ export function getBreadcrumbs(pathname: string): BreadcrumbCrumb[] | null {
   if (path === "/") return null;
 
   const segments = path.split("/").filter(Boolean);
+
+  // Blog posts: Home / Blog / Post title
+  if (segments[0] === "blog" && segments.length === 2) {
+    const post = getPostBySlug(segments[1]);
+    return [
+      { href: "/", label: breadcrumbLabels["/"] },
+      { href: "/blog", label: breadcrumbLabels["/blog"] },
+      {
+        label: post?.title ?? humanizeSegment(segments[1]),
+        current: true,
+      },
+    ];
+  }
 
   // Flat marketing pages: Home / Label
   if (segments.length === 1) {

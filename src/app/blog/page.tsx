@@ -35,7 +35,7 @@ export default function BlogPage() {
         </h1>
         <p className="mt-4 max-w-2xl text-left text-base leading-relaxed text-muted md:text-lg">
           Updates and ideas on connected behavioral healthcare — for people,
-          providers, navigators, and organizations. Full articles coming soon.
+          providers, navigators, and organizations.
         </p>
 
         <Suspense fallback={<BlogIndexFallback />}>

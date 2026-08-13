@@ -13,8 +13,7 @@ const connectedRoles = [
     position: "left-1/2 top-0 -translate-x-1/2",
     labelPlacement: "above" as const,
     /** Popover grows toward diagram center */
-    popoverClass:
-      "left-1/2 top-full mt-2 -translate-x-1/2 sm:mt-2.5",
+    popoverClass: "left-1/2 top-full mt-2 -translate-x-1/2 sm:mt-2.5",
     photo: "/images/lady-daughter.png",
     photoAlt: "Mother and child representing a patient family",
     photoClass: "object-cover object-[center_18%]",
@@ -26,8 +25,7 @@ const connectedRoles = [
     blurb: "Deliver care and see the whole journey",
     position: "right-0 top-1/2 -translate-y-1/2",
     labelPlacement: "below" as const,
-    popoverClass:
-      "right-full top-1/2 mr-2.5 -translate-y-1/2 sm:mr-3",
+    popoverClass: "right-full top-1/2 mr-2.5 -translate-y-1/2 sm:mr-3",
     photo: "/images/providers-hero.png",
     photoAlt: "Clinicians collaborating over care",
     photoClass: "object-cover object-[32%_28%]",
@@ -39,8 +37,7 @@ const connectedRoles = [
     blurb: "Coordinate resources and close gaps",
     position: "bottom-0 left-1/2 -translate-x-1/2",
     labelPlacement: "below" as const,
-    popoverClass:
-      "bottom-full left-1/2 mb-2 -translate-x-1/2 sm:mb-2.5",
+    popoverClass: "bottom-full left-1/2 mb-2 -translate-x-1/2 sm:mb-2.5",
     photo: "/images/navigators-hero.png",
     photoAlt: "Care navigator in a supportive conversation",
     photoClass: "object-cover object-[58%_20%]",
@@ -52,8 +49,7 @@ const connectedRoles = [
     blurb: "Improve access, engagement, and outcomes",
     position: "left-0 top-1/2 -translate-y-1/2",
     labelPlacement: "below" as const,
-    popoverClass:
-      "left-full top-1/2 ml-2.5 -translate-y-1/2 sm:ml-3",
+    popoverClass: "left-full top-1/2 ml-2.5 -translate-y-1/2 sm:ml-3",
     photo: "/images/organizations-hero.png",
     photoAlt: "Organization leaders reviewing outcomes together",
     photoClass: "object-cover object-[55%_28%]",
@@ -97,12 +93,10 @@ function RoleNode({
     };
   }, [open, onOpenChange]);
 
-  const showInfo = open;
-
   return (
     <div
       className={`absolute flex flex-col items-center gap-1.5 ${role.position} ${
-        open ? "z-20" : "z-10"
+        open ? "z-30" : "z-10"
       }`}
     >
       {role.labelPlacement === "above" ? (
@@ -114,8 +108,8 @@ function RoleNode({
       <Link
         ref={rootRef}
         href={role.href}
-        aria-describedby={showInfo ? tipId : undefined}
-        aria-expanded={showInfo}
+        aria-describedby={open ? tipId : undefined}
+        aria-expanded={open}
         className="group relative block rounded-full outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
         onMouseEnter={() => {
           if (!prefersCoarsePointer()) onOpenChange(role.id);
@@ -137,20 +131,19 @@ function RoleNode({
           }
         }}
       >
-        {/* Pulse ring */}
         <span
           aria-hidden
-          className={`pointer-events-none absolute inset-[-6px] rounded-full border border-dashed border-[#5B9FE8]/70 transition duration-300 ${
-            showInfo
+          className={`pointer-events-none absolute inset-[-7px] rounded-full border border-dashed border-[#C4A000]/80 transition duration-300 motion-reduce:animate-none motion-reduce:scale-100 ${
+            open
               ? "scale-110 animate-platform-ring-pulse opacity-100"
-              : "scale-100 opacity-0 group-hover:opacity-70 group-focus-visible:opacity-70"
+              : "scale-100 opacity-0 group-hover:scale-110 group-hover:animate-platform-ring-pulse group-hover:opacity-100 group-focus-visible:scale-110 group-focus-visible:animate-platform-ring-pulse group-focus-visible:opacity-100"
           }`}
         />
         <span
-          className={`relative block h-[3.25rem] w-[3.25rem] overflow-hidden rounded-full ring-[3px] ring-white transition duration-300 ease-out md:h-16 md:w-16 ${
-            showInfo
-              ? "scale-110 shadow-[0_14px_32px_rgba(2,24,72,0.28)] ring-[#C4A000]/55"
-              : "shadow-[0_8px_20px_rgba(2,24,72,0.18)] group-hover:scale-110 group-hover:shadow-[0_14px_32px_rgba(2,24,72,0.28)] group-hover:ring-[#C4A000]/45 group-focus-visible:scale-110 group-focus-visible:shadow-[0_14px_32px_rgba(2,24,72,0.28)] group-focus-visible:ring-[#C4A000]/45"
+          className={`relative block h-[3.25rem] w-[3.25rem] overflow-hidden rounded-full ring-[3px] ring-white transition duration-300 ease-out motion-reduce:scale-100 motion-reduce:transition-none md:h-16 md:w-16 ${
+            open
+              ? "scale-110 shadow-[0_14px_32px_rgba(2,24,72,0.28)] ring-[#C4A000]/70"
+              : "shadow-[0_8px_20px_rgba(2,24,72,0.18)] group-hover:scale-110 group-hover:shadow-[0_14px_32px_rgba(2,24,72,0.28)] group-hover:ring-[#C4A000]/55 group-focus-visible:scale-110 group-focus-visible:shadow-[0_14px_32px_rgba(2,24,72,0.28)] group-focus-visible:ring-[#C4A000]/55"
           }`}
         >
           <Image
@@ -165,12 +158,12 @@ function RoleNode({
         <span
           id={tipId}
           role="tooltip"
-          className={`absolute z-30 w-[11.5rem] rounded-xl bg-navy-deep px-3 py-2.5 text-left shadow-[0_16px_40px_rgba(2,24,72,0.28)] ring-1 ring-white/10 transition duration-200 sm:w-[12.5rem] ${
+          className={`pointer-events-none absolute z-30 w-[11.5rem] rounded-xl bg-navy-deep px-3 py-2.5 text-left shadow-[0_16px_40px_rgba(2,24,72,0.28)] ring-1 ring-white/10 transition duration-200 motion-reduce:transition-none sm:w-[12.5rem] ${
             role.popoverClass
           } ${
-            showInfo
-              ? "pointer-events-none translate-y-0 scale-100 opacity-100"
-              : "pointer-events-none scale-95 opacity-0"
+            open
+              ? "translate-y-0 scale-100 opacity-100"
+              : "scale-95 opacity-0"
           }`}
         >
           <span className="block text-xs font-semibold text-gold">
@@ -196,7 +189,6 @@ export function ConnectedDiagram() {
 
   return (
     <div className="relative mx-auto aspect-square w-full max-w-[20rem] overflow-visible sm:max-w-[22rem] lg:max-w-[24rem]">
-      {/* Multi-colored dashed ecosystem ring */}
       <svg
         aria-hidden
         viewBox="0 0 100 100"

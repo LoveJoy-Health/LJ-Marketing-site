@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useCallback, useMemo } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import {
@@ -74,20 +75,20 @@ export default function BlogIndex() {
           {filteredPosts.map((post) => (
             <article
               key={post.slug}
-              className="flex flex-col rounded-[1.75rem] bg-[#F7F9FC] p-6 shadow-[0_10px_32px_rgba(2,24,72,0.06)] ring-1 ring-black/[0.04]"
+              className="flex flex-col rounded-[1.75rem] bg-[#F7F9FC] p-6 shadow-[0_10px_32px_rgba(2,24,72,0.06)] ring-1 ring-black/[0.04] transition hover:shadow-[0_14px_36px_rgba(2,24,72,0.1)]"
             >
               <div className="flex flex-wrap items-center gap-2">
                 <span className="rounded-full bg-navy-soft px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-navy">
                   {getCategoryLabel(post.category)}
                 </span>
-                {post.placeholder ? (
-                  <span className="rounded-full bg-gold-soft px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-navy-deep">
-                    Preview
-                  </span>
-                ) : null}
               </div>
               <h2 className="mt-4 text-left font-display text-xl leading-snug tracking-tight text-navy-deep md:text-2xl">
-                {post.title}
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="transition hover:text-navy"
+                >
+                  {post.title}
+                </Link>
               </h2>
               <p className="mt-3 flex-1 text-left text-sm leading-relaxed text-muted">
                 {post.excerpt}
@@ -99,9 +100,12 @@ export default function BlogIndex() {
                 >
                   {post.dateLabel}
                 </time>
-                <span className="text-xs font-semibold text-navy/50">
-                  Coming soon
-                </span>
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="text-xs font-semibold text-[#2563EB] transition hover:text-navy"
+                >
+                  Read article →
+                </Link>
               </div>
             </article>
           ))}
