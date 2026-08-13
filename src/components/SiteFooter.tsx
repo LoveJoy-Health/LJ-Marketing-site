@@ -138,7 +138,11 @@ export function SiteFooter() {
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="text-sm text-white/80 transition hover:text-white"
+                  className={
+                    item.href === "/resources/crisis"
+                      ? "text-sm font-semibold text-gold transition hover:brightness-110"
+                      : "text-sm text-white/80 transition hover:text-white"
+                  }
                 >
                   {item.label}
                 </Link>

@@ -106,10 +106,10 @@ export const primaryNav: readonly NavItem[] = [
     label: "Resources",
     // No dedicated landing page — chevron-only parent; children remain the entry points.
     children: [
+      { href: "/resources/crisis", label: "Crisis Resources" },
       { href: "/blog", label: "Blog" },
-      { href: "/#how-it-works", label: "How it works" },
-      { href: "/#platform", label: "Platform" },
       { href: "/download", label: "Download the apps" },
+      { href: "/about/contact", label: "Contact" },
     ],
   },
 ] as const;
@@ -125,6 +125,7 @@ export const footerNav: readonly NavLink[] = [
 ] as const;
 
 export const resourcesNav: readonly NavLink[] = [
+  { href: "/resources/crisis", label: "Crisis Resources" },
   { href: "/blog", label: "Blog" },
   { href: "/download", label: "Download the apps" },
   { href: "/the-porch", label: "The Porch" },
@@ -199,6 +200,8 @@ export const breadcrumbLabels: Record<string, string> = {
   "/about/team": "Team",
   "/about/contact": "Contact",
   "/blog": "Blog",
+  "/resources": "Resources",
+  "/resources/crisis": "Crisis Resources",
   "/download": "Download",
   "/download/patient": "Patient App",
   "/download/provider": "Provider App",
@@ -253,6 +256,20 @@ export function getBreadcrumbs(pathname: string): BreadcrumbCrumb[] | null {
       { href: "/blog", label: breadcrumbLabels["/blog"] },
       {
         label: post?.title ?? humanizeSegment(segments[1]),
+        current: true,
+      },
+    ];
+  }
+
+  // Resources nested pages: Home / Resources / Page
+  // (no /resources index yet — omit href on the Resources crumb)
+  if (segments[0] === "resources" && segments.length >= 2) {
+    const leafHref = `/${segments.join("/")}`;
+    return [
+      { href: "/", label: breadcrumbLabels["/"] },
+      { label: breadcrumbLabels["/resources"] },
+      {
+        label: breadcrumbLabels[leafHref] ?? humanizeSegment(segments[segments.length - 1]),
         current: true,
       },
     ];

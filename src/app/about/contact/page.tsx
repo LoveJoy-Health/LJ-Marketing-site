@@ -229,6 +229,13 @@ export default function ContactPage() {
             >
               988
             </a>
+            .{" "}
+            <Link
+              href="/resources/crisis"
+              className="font-semibold text-navy underline-offset-2 hover:underline"
+            >
+              View crisis resources
+            </Link>
             .
           </p>
         </div>
