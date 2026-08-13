@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LoveJoy Marketing Web (`lovejoy.health`)
 
-## Getting Started
+Public marketing website for **LoveJoy Health** — the main brand site currently served by WordPress. This is a new React/Next.js project and is **not** the patient app, provider portal, navigators web, or org portal.
 
-First, run the development server:
+## Stack
+
+- **Next.js 16** (App Router) + **React 19** + **TypeScript**
+- **Tailwind CSS v4** (matches sibling LJ web portals)
+- Static/SSR-friendly marketing pages for SEO
+
+Chose Next.js over CRA for SEO, routing, and deployability (Vercel or Node hosting). Chose Tailwind to stay aligned with `LJ-Provider-Web-Portal`, `LJ-Navigators-Web`, and `LJ-Orgs-Portal`.
+
+## Brand
+
+Colors follow product surfaces (patient app + portals), not the WordPress theme’s cream/purple palette:
+
+| Token | Value | Source |
+|-------|-------|--------|
+| Navy | `#0A2C8C` / `#021A52` | Portals + patient app |
+| Gold | `#FFE612` | Patient auth theme |
+| Soft sky | `#EAF2FF` / `#F4F8FF` | Portal backgrounds |
+
+Assets copied locally from the live WP site: logo + home hero image under `public/images/`.
+
+## Pages
+
+| Route | Purpose |
+|-------|---------|
+| `/` | Brand-first home |
+| `/for-individuals` | Patient / individual audience |
+| `/for-providers` | Provider audience |
+| `/for-organizations` | Org / health system audience |
+| `/about` | Mission, vision, leadership |
+| `/about/contact` | Contact details + inquiry form (mailto stub) |
+
+## Run locally
 
 ```bash
+cd LJ-Marketing-Web
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3010](http://localhost:3010) (port **3010** to avoid colliding with portal apps on 3000/3002/3003).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deploy notes
 
-## Learn More
+- **Hosting TBD** — Vercel is the natural fit for Next.js App Router; Laravel Forge / Node also fine if you prefer company infra.
+- **Do not** point `lovejoy.health` DNS here until content, forms, analytics, and legal pages are signed off.
+- WordPress remains live until cutover; this repo does not touch WP or DNS.
 
-To learn more about Next.js, take a look at the following resources:
+## Still needed from the team
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Hosting choice + domain cutover plan
+- CMS vs static copy ownership
+- Production contact form backend (Formspree, HubSpot, Filament, etc.)
+- Analytics (GA4 / Segment / Plausible)
+- App Store / Play download deep links if you want badges restored
+- Privacy / Terms pages
+- Higher-res logo variants (light + dark) and additional photography
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Related repos (do not confuse)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `LJ-Health-Patient-App` — Flutter patient mobile
+- `LJ-Provider-Web-Portal` / `LJ-Navigators-Web` / `LJ-Orgs-Portal` — authenticated product UIs
+- `LJ-New-FilamentAdmin` — API / admin system of record
