@@ -200,26 +200,6 @@ const notifications: {
   },
 ];
 
-function LoveJoyHeartMark({ className }: { className?: string }) {
-  return (
-    <svg aria-hidden viewBox="0 0 48 44" className={className} fill="none">
-      <defs>
-        <clipPath id="lj-heart-clip">
-          <path d="M24 40.5S4.5 28.2 4.5 15.8C4.5 9.4 9.2 4.5 15.2 4.5c3.6 0 6.8 1.8 8.8 4.6 2-2.8 5.2-4.6 8.8-4.6 6 0 10.7 4.9 10.7 11.3C43.5 28.2 24 40.5 24 40.5Z" />
-        </clipPath>
-      </defs>
-      <g clipPath="url(#lj-heart-clip)">
-        <rect x="0" y="0" width="24" height="44" fill="#042268" />
-        <rect x="24" y="0" width="24" height="44" fill="#E6C200" />
-      </g>
-      <path
-        d="M19 30c3.4-5.2 7.4-7.8 12.6-8.8-3 2-4.9 4.8-5.7 8.8-.7 1.5-2.5 2.2-4.2 1.5-1.4-.6-2.2-1.8-2.7-1.5Z"
-        fill="white"
-      />
-    </svg>
-  );
-}
-
 function polar(cx: number, cy: number, r: number, angleDeg: number) {
   const rad = (angleDeg * Math.PI) / 180;
   return {
@@ -280,7 +260,14 @@ function CareGapCycle() {
       </svg>
 
       <div className="absolute left-1/2 top-1/2 z-10 flex h-[42%] w-[42%] -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full bg-white px-4 text-center shadow-[0_14px_40px_rgba(2,24,72,0.14)] ring-1 ring-black/[0.04] sm:px-5 md:h-[44%] md:w-[44%]">
-        <LoveJoyHeartMark className="h-8 w-9 shrink-0 sm:h-9 sm:w-10" />
+        <Image
+          src="/images/logo-icon-circle.png"
+          alt=""
+          width={40}
+          height={40}
+          className="h-8 w-8 shrink-0 object-contain sm:h-9 sm:w-9"
+          aria-hidden
+        />
         <p className="mt-2 text-[10px] leading-snug text-[#042268] sm:text-[11px] md:text-xs md:leading-relaxed">
           <span className="font-bold">LoveJoy Health</span> closes the gap with
           continuous support, navigation, and care that stays with people.

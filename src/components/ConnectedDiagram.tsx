@@ -217,13 +217,13 @@ export function ConnectedDiagram() {
         />
       </svg>
 
-      <div className="absolute left-1/2 top-1/2 z-10 flex h-[4.75rem] w-[4.75rem] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-[0_14px_36px_rgba(2,24,72,0.16)] ring-1 ring-black/[0.04] md:h-[5.5rem] md:w-[5.5rem]">
+      <div className="absolute left-1/2 top-1/2 z-10 flex h-[4.75rem] w-[4.75rem] -translate-x-1/2 -translate-y-1/2 items-center justify-center overflow-hidden rounded-full bg-white shadow-[0_14px_36px_rgba(2,24,72,0.16)] ring-1 ring-black/[0.04] md:h-[5.5rem] md:w-[5.5rem]">
         <Image
-          src="/images/logo.png"
+          src="/images/logo-icon-circle.png"
           alt="LoveJoy"
-          width={64}
-          height={64}
-          className="h-11 w-11 object-contain md:h-14 md:w-14"
+          width={88}
+          height={88}
+          className="h-[90%] w-[90%] object-contain"
         />
       </div>
 
