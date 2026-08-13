@@ -140,8 +140,8 @@ export default function ContactPage() {
         description="Whether you’re seeking care, joining as a provider, partnering as an organization, or reaching out for press — here’s how we can help."
       />
 
-      <section className="bg-white px-3 py-16 lg:px-4 md:py-20">
-        <div className="mx-auto max-w-screen-2xl">
+      <section className="bg-white px-3 py-16 md:px-4 md:py-20">
+        <div className="mx-auto max-w-7xl">
           <div className="max-w-2xl">
             <h2 className="font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
               How can we help?
@@ -209,9 +209,9 @@ export default function ContactPage() {
 
       <section
         aria-label="Crisis resources"
-        className="border-t border-border bg-[#F7F9FC] px-3 py-10 lg:px-4 md:py-12"
+        className="border-t border-border bg-[#F7F9FC] px-3 py-10 md:px-4 md:py-12"
       >
-        <div className="mx-auto max-w-screen-2xl">
+        <div className="mx-auto max-w-7xl">
           <p className="max-w-3xl text-sm leading-relaxed text-muted md:text-base">
             If you or someone you know is in crisis or needs immediate help,
             please call{" "}

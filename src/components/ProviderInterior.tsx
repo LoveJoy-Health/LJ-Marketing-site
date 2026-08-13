@@ -17,8 +17,8 @@ export function ProviderInteriorHero({
   description: string;
 }) {
   return (
-    <section className="bg-white px-3 pb-10 pt-6 lg:px-4 md:pb-14 md:pt-10">
-      <div className="mx-auto max-w-screen-2xl">
+    <section className="bg-white px-3 pb-10 pt-6 md:px-4 md:pb-14 md:pt-10">
+      <div className="mx-auto max-w-7xl">
         <p className="animate-fade-up text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
           {eyebrow}
         </p>
@@ -80,8 +80,8 @@ export function ProviderRelatedNav({
 }) {
   if (!links.length) return null;
   return (
-    <section className="border-t border-border bg-white px-3 py-10 lg:px-4">
-      <div className="mx-auto flex max-w-screen-2xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+    <section className="border-t border-border bg-white px-3 py-10 md:px-4">
+      <div className="mx-auto flex max-w-7xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <Link
           href="/for-providers"
           className="text-sm font-semibold text-navy transition hover:text-navy-deep"
@@ -113,8 +113,8 @@ export function ProviderInteriorCtaBand({
   description: string;
 }) {
   return (
-    <section className="px-0.5 pb-2 md:px-1">
-      <div className="bg-navy-atmosphere relative overflow-hidden rounded-[2rem] px-3 py-14 text-white md:rounded-[2.75rem] lg:px-4 md:py-16">
+    <section className="px-1 pb-2 md:px-1.5">
+      <div className="bg-navy-atmosphere relative overflow-hidden rounded-[2rem] px-3 py-14 text-white md:rounded-[2.75rem] md:px-4 md:py-16">
         <div
           aria-hidden
           className="bg-starfield pointer-events-none absolute inset-0 opacity-35"

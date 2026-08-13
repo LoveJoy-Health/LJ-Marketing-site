@@ -417,7 +417,7 @@ export default function ForIndividualsPage() {
       <link rel="preload" as="image" href="/images/individuals-hero.png" />
 
       {/* Hero — inset rounded light card; portrait blended into soft warm wash */}
-      <section className="relative bg-white px-0.5 pb-10 pt-2 text-navy-deep md:px-1 md:pb-14 md:pt-3">
+      <section className="relative bg-white px-1 pb-10 pt-2 text-navy-deep md:px-1.5 md:pb-14 md:pt-3">
         <div className="hero-shell bg-individuals-hero-atmosphere relative overflow-hidden">
           <div
             aria-hidden
@@ -436,7 +436,7 @@ export default function ForIndividualsPage() {
           />
 
           <div className="relative z-10">
-            <div className="relative mx-auto grid max-w-screen-2xl items-center gap-8 px-3 pb-12 pt-8 md:grid-cols-[1.05fr_0.95fr] md:gap-6 lg:px-4 md:pb-14 md:pt-10 lg:pb-16">
+            <div className="relative mx-auto grid max-w-7xl items-center gap-8 px-3 pb-12 pt-8 md:grid-cols-[1.05fr_0.95fr] md:gap-6 md:px-4 md:pb-14 md:pt-10 lg:pb-16">
               <div className="max-w-xl">
                 <p className="animate-fade-up text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
                   For individuals
@@ -492,8 +492,8 @@ export default function ForIndividualsPage() {
       </section>
 
       {/* 2. Goals */}
-      <section className="bg-atmosphere px-3 py-16 lg:px-4 md:py-20">
-        <div className="mx-auto max-w-screen-2xl">
+      <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
+        <div className="mx-auto max-w-7xl">
           <h2 className="max-w-2xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
             Not sure where to start? That&apos;s okay.
           </h2>
@@ -536,8 +536,8 @@ export default function ForIndividualsPage() {
       </section>
 
       {/* 3. Care made easier */}
-      <section className="bg-white px-3 py-16 lg:px-4 md:py-20">
-        <div className="mx-auto max-w-screen-2xl">
+      <section className="bg-white px-3 py-16 md:px-4 md:py-20">
+        <div className="mx-auto max-w-7xl">
           <h2 className="max-w-2xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
             Care made easier from the first step forward.
           </h2>
@@ -596,8 +596,8 @@ export default function ForIndividualsPage() {
       </section>
 
       {/* 4. Your care, in one place */}
-      <section className="bg-atmosphere px-3 py-16 lg:px-4 md:py-20">
-        <div className="mx-auto max-w-screen-2xl">
+      <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
+        <div className="mx-auto max-w-7xl">
           <h2 className="max-w-2xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
             Your care, in one place.
           </h2>
@@ -632,8 +632,8 @@ export default function ForIndividualsPage() {
       </section>
 
       {/* 5. Osiris & The Porch */}
-      <section className="bg-white px-3 py-16 lg:px-4 md:py-20">
-        <div className="mx-auto grid max-w-screen-2xl items-stretch gap-5 md:grid-cols-2">
+      <section className="bg-white px-3 py-16 md:px-4 md:py-20">
+        <div className="mx-auto grid max-w-7xl items-stretch gap-5 md:grid-cols-2">
           <div className="overflow-hidden rounded-[1.75rem] bg-[#EDE6F8] p-6 md:p-8">
             <div className="grid h-full items-center gap-6 sm:grid-cols-[1fr_auto]">
               <div>
@@ -685,8 +685,8 @@ export default function ForIndividualsPage() {
       </section>
 
       {/* 6. Page CTA band */}
-      <section className="px-0.5 pb-2 md:px-1">
-        <div className="bg-navy-atmosphere relative overflow-hidden rounded-[2rem] px-3 py-14 text-white md:rounded-[2.75rem] lg:px-4 md:py-16">
+      <section className="px-1 pb-2 md:px-1.5">
+        <div className="bg-navy-atmosphere relative overflow-hidden rounded-[2rem] px-3 py-14 text-white md:rounded-[2.75rem] md:px-4 md:py-16">
           <div
             aria-hidden
             className="bg-starfield pointer-events-none absolute inset-0 opacity-35"

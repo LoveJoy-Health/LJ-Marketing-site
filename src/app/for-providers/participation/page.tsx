@@ -90,8 +90,8 @@ export default function ProviderParticipationPage() {
         description="Join a network built to support how you practice — whether you work with insurance, self-pay patients, organization programs, or a combination."
       />
 
-      <section className="bg-atmosphere px-3 py-16 lg:px-4 md:py-20">
-        <div className="mx-auto max-w-screen-2xl">
+      <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
+        <div className="mx-auto max-w-7xl">
           <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
             Care models that fit your practice
           </h2>
@@ -123,8 +123,8 @@ export default function ProviderParticipationPage() {
         </div>
       </section>
 
-      <section className="bg-white px-3 py-16 lg:px-4 md:py-20">
-        <div className="mx-auto max-w-screen-2xl">
+      <section className="bg-white px-3 py-16 md:px-4 md:py-20">
+        <div className="mx-auto max-w-7xl">
           <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
             How participation works day to day
           </h2>
@@ -146,8 +146,8 @@ export default function ProviderParticipationPage() {
         </div>
       </section>
 
-      <section className="bg-atmosphere px-3 py-16 lg:px-4 md:py-20">
-        <div className="mx-auto max-w-screen-2xl">
+      <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
+        <div className="mx-auto max-w-7xl">
           <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
             What we expect from network providers
           </h2>

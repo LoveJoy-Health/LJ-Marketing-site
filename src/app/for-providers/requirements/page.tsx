@@ -91,8 +91,8 @@ export default function ProviderRequirementsPage() {
         description="LoveJoy is built for behavioral health professionals who want to deliver care, stay connected between visits, and work within a network designed for real clinical workflows."
       />
 
-      <section className="bg-atmosphere px-3 py-16 lg:px-4 md:py-20">
-        <div className="mx-auto max-w-screen-2xl">
+      <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
+        <div className="mx-auto max-w-7xl">
           <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
             Who can join
           </h2>
@@ -123,8 +123,8 @@ export default function ProviderRequirementsPage() {
         </div>
       </section>
 
-      <section className="bg-white px-3 py-16 lg:px-4 md:py-20">
-        <div className="mx-auto max-w-screen-2xl">
+      <section className="bg-white px-3 py-16 md:px-4 md:py-20">
+        <div className="mx-auto max-w-7xl">
           <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
             What we typically need
           </h2>
@@ -153,8 +153,8 @@ export default function ProviderRequirementsPage() {
         </div>
       </section>
 
-      <section className="bg-atmosphere px-3 py-16 lg:px-4 md:py-20">
-        <div className="mx-auto grid max-w-screen-2xl gap-10 lg:grid-cols-2 lg:gap-14">
+      <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
+        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:gap-14">
           <div>
             <h2 className="font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
               How review works

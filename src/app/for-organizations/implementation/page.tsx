@@ -90,8 +90,8 @@ export default function OrganizationImplementationPage() {
         description="A proven approach to getting started and creating impact — four clear steps from program design to continuous improvement."
       />
 
-      <section className="bg-atmosphere px-3 py-16 lg:px-4 md:py-20">
-        <div className="mx-auto max-w-screen-2xl">
+      <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
+        <div className="mx-auto max-w-7xl">
           <ol className="grid gap-6 lg:grid-cols-2">
             {steps.map((step) => (
               <li
@@ -137,8 +137,8 @@ export default function OrganizationImplementationPage() {
         </div>
       </section>
 
-      <section className="bg-white px-3 py-16 lg:px-4 md:py-20">
-        <div className="mx-auto max-w-screen-2xl">
+      <section className="bg-white px-3 py-16 md:px-4 md:py-20">
+        <div className="mx-auto max-w-7xl">
           <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
             After you launch
           </h2>

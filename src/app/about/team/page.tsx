@@ -256,7 +256,7 @@ export default function TeamPage() {
       <link rel="preload" as="image" href="/images/team/team-hero.png" />
 
       {/* 1. Hero */}
-      <section className="relative bg-white px-0.5 pb-10 pt-2 text-navy-deep md:px-1 md:pb-14 md:pt-3">
+      <section className="relative bg-white px-1 pb-10 pt-2 text-navy-deep md:px-1.5 md:pb-14 md:pt-3">
         <div className="hero-shell bg-team-hero-atmosphere relative overflow-hidden">
           <div
             aria-hidden
@@ -272,7 +272,7 @@ export default function TeamPage() {
           />
 
           <div className="relative z-10">
-            <div className="relative mx-auto grid max-w-screen-2xl items-center gap-8 px-3 pb-12 pt-8 md:grid-cols-[1.05fr_0.95fr] md:gap-6 lg:px-4 md:pb-14 md:pt-10 lg:pb-16">
+            <div className="relative mx-auto grid max-w-7xl items-center gap-8 px-3 pb-12 pt-8 md:grid-cols-[1.05fr_0.95fr] md:gap-6 md:px-4 md:pb-14 md:pt-10 lg:pb-16">
               <div className="max-w-xl">
                 <h1 className="animate-fade-up font-display text-4xl leading-[1.08] tracking-tight text-navy-deep md:text-5xl lg:text-[3.5rem]">
                   The people behind{" "}
@@ -296,8 +296,8 @@ export default function TeamPage() {
       </section>
 
       {/* 2. Leadership Team */}
-      <section className="bg-white px-3 py-16 lg:px-4 md:py-20">
-        <div className="mx-auto max-w-screen-2xl">
+      <section className="bg-white px-3 py-16 md:px-4 md:py-20">
+        <div className="mx-auto max-w-7xl">
           <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
             Leadership Team
           </p>
@@ -343,8 +343,8 @@ export default function TeamPage() {
       </section>
 
       {/* 3. Interstitial */}
-      <section className="bg-[#E8F0F8] px-3 py-14 lg:px-4 md:py-16">
-        <div className="mx-auto flex max-w-screen-2xl flex-col items-center gap-8 md:flex-row md:items-center md:gap-12 lg:gap-16">
+      <section className="bg-[#E8F0F8] px-3 py-14 md:px-4 md:py-16">
+        <div className="mx-auto flex max-w-7xl flex-col items-center gap-8 md:flex-row md:items-center md:gap-12 lg:gap-16">
           <PerspectivesIcon />
           <div className="max-w-3xl text-center md:text-left">
             <h2 className="font-display text-2xl tracking-tight text-navy-deep md:text-3xl lg:text-[2.25rem]">
@@ -361,8 +361,8 @@ export default function TeamPage() {
       </section>
 
       {/* 4. Clinical & Strategic Advisors */}
-      <section className="bg-white px-3 py-16 lg:px-4 md:py-20">
-        <div className="mx-auto max-w-screen-2xl">
+      <section className="bg-white px-3 py-16 md:px-4 md:py-20">
+        <div className="mx-auto max-w-7xl">
           <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
             Clinical &amp; Strategic Advisors
           </p>
@@ -408,8 +408,8 @@ export default function TeamPage() {
       </section>
 
       {/* 5. Bottom CTA */}
-      <section className="bg-white px-3 pb-16 lg:px-4 md:pb-20">
-        <div className="mx-auto max-w-screen-2xl">
+      <section className="bg-white px-3 pb-16 md:px-4 md:pb-20">
+        <div className="mx-auto max-w-7xl">
           <div className="flex flex-col gap-8 rounded-[1.75rem] bg-navy-deep px-6 py-10 md:flex-row md:items-center md:justify-between md:gap-10 md:rounded-[2rem] md:px-10 md:py-12">
             <div className="flex max-w-2xl flex-col gap-5 sm:flex-row sm:items-start sm:gap-6">
               <HeartMark />
