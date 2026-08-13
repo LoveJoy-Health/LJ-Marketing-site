@@ -575,7 +575,7 @@ export default function ForNavigatorsPage() {
       <link rel="preload" as="image" href="/images/navigators-hero.png" />
 
       {/* Hero */}
-      <section className="relative bg-white px-1 pb-10 pt-2 text-navy-deep md:px-1.5 md:pb-14 md:pt-3">
+      <section className="relative bg-white px-0.5 pb-10 pt-2 text-navy-deep md:px-1 md:pb-14 md:pt-3">
         <div className="hero-shell bg-navigators-hero-atmosphere relative overflow-hidden">
           <div
             aria-hidden
@@ -591,7 +591,7 @@ export default function ForNavigatorsPage() {
           />
 
           <div className="relative z-10">
-            <div className="relative mx-auto grid max-w-7xl items-center gap-8 px-3 pb-12 pt-8 md:grid-cols-[1.05fr_0.95fr] md:gap-6 md:px-4 md:pb-14 md:pt-10 lg:pb-16">
+            <div className="relative mx-auto grid max-w-screen-2xl items-center gap-8 px-3 pb-12 pt-8 md:grid-cols-[1.05fr_0.95fr] md:gap-6 lg:px-4 md:pb-14 md:pt-10 lg:pb-16">
               <div className="max-w-xl">
                 <p className="animate-fade-up text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
                   Care Navigators
@@ -625,8 +625,8 @@ export default function ForNavigatorsPage() {
       </section>
 
       {/* Challenge + dashboard */}
-      <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
-        <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-14">
+      <section className="bg-atmosphere px-3 py-16 lg:px-4 md:py-20">
+        <div className="mx-auto grid max-w-screen-2xl items-center gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-14">
           <div>
             <h2 className="max-w-xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
               Care coordination shouldn&apos;t require piecing everything
@@ -644,8 +644,8 @@ export default function ForNavigatorsPage() {
       </section>
 
       {/* Built for navigators */}
-      <section className="bg-white px-3 py-16 md:px-4 md:py-20">
-        <div className="mx-auto max-w-7xl">
+      <section className="bg-white px-3 py-16 lg:px-4 md:py-20">
+        <div className="mx-auto max-w-screen-2xl">
           <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
             Built for the way navigators actually work.
           </h2>
@@ -677,8 +677,8 @@ export default function ForNavigatorsPage() {
       </section>
 
       {/* Impact steps */}
-      <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
-        <div className="mx-auto max-w-7xl">
+      <section className="bg-atmosphere px-3 py-16 lg:px-4 md:py-20">
+        <div className="mx-auto max-w-screen-2xl">
           <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
             Every step you take moves care{" "}
             <em className="font-display italic text-[#B8960A]">forward.</em>
@@ -712,8 +712,8 @@ export default function ForNavigatorsPage() {
       </section>
 
       {/* Whole picture */}
-      <section className="bg-white px-3 py-16 md:px-4 md:py-20">
-        <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
+      <section className="bg-white px-3 py-16 lg:px-4 md:py-20">
+        <div className="mx-auto grid max-w-screen-2xl items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
           <div>
             <PatientProfileMock />
           </div>
@@ -745,8 +745,8 @@ export default function ForNavigatorsPage() {
       </section>
 
       {/* Working together */}
-      <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+      <section className="bg-atmosphere px-3 py-16 lg:px-4 md:py-20">
+        <div className="mx-auto grid max-w-screen-2xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
           <div>
             <h2 className="max-w-xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
               You shouldn&apos;t have to coordinate care alone.
@@ -774,8 +774,8 @@ export default function ForNavigatorsPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="px-1 pb-2 md:px-1.5">
-        <div className="bg-navy-atmosphere relative overflow-hidden rounded-[2rem] px-3 py-14 text-white md:rounded-[2.75rem] md:px-4 md:py-16">
+      <section className="px-0.5 pb-2 md:px-1">
+        <div className="bg-navy-atmosphere relative overflow-hidden rounded-[2rem] px-3 py-14 text-white md:rounded-[2.75rem] lg:px-4 md:py-16">
           <div
             aria-hidden
             className="bg-starfield pointer-events-none absolute inset-0 opacity-35"

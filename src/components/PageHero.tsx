@@ -6,13 +6,13 @@ type PageHeroProps = {
 
 export function PageHero({ title, description, eyebrow }: PageHeroProps) {
   return (
-    <section className="px-1 pb-2 pt-2 md:px-1.5">
+    <section className="px-0.5 pb-2 pt-2 md:px-1">
       <div className="bg-navy-atmosphere relative overflow-hidden rounded-[2rem] py-14 md:rounded-[2.5rem] md:py-16">
         <div
           aria-hidden
           className="bg-starfield pointer-events-none absolute inset-0 opacity-40"
         />
-        <div className="relative mx-auto max-w-7xl px-3 md:px-4">
+        <div className="relative mx-auto max-w-screen-2xl px-3 lg:px-4">
           {eyebrow ? (
             <p className="animate-fade-up text-xs font-semibold uppercase tracking-[0.18em] text-gold">
               {eyebrow}

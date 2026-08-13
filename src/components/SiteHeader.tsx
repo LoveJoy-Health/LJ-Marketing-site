@@ -302,7 +302,7 @@ export function SiteHeader({ variant = "standalone" }: SiteHeaderProps) {
   }, [isStandalone]);
 
   const shellClass = isStandalone
-    ? `sticky top-0 z-50 px-1 pt-2 transition-[background-color,backdrop-filter] md:px-1.5 md:pt-3 ${
+    ? `sticky top-0 z-50 px-0.5 pt-2 transition-[background-color,backdrop-filter] md:px-1 md:pt-3 ${
         scrolled
           ? "bg-white/90 backdrop-blur-md"
           : "bg-transparent"
@@ -314,8 +314,8 @@ export function SiteHeader({ variant = "standalone" }: SiteHeaderProps) {
     : "";
 
   const innerClass = isStandalone
-    ? "mx-auto flex max-w-7xl items-center justify-between gap-4 px-3 py-4 md:px-4"
-    : "mx-auto flex max-w-7xl items-center justify-between gap-4 px-3 py-5 md:px-4 md:py-6";
+    ? "mx-auto flex max-w-screen-2xl items-center justify-between gap-4 px-3 py-4 lg:px-4"
+    : "mx-auto flex max-w-screen-2xl items-center justify-between gap-4 px-3 py-5 lg:px-4 md:py-6";
 
   return (
     <header className={shellClass}>

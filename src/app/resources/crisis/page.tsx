@@ -120,8 +120,8 @@ export default function CrisisResourcesPage() {
   return (
     <>
       {/* Intro */}
-      <section className="bg-white px-3 pb-10 pt-6 md:px-4 md:pb-12 md:pt-8">
-        <div className="mx-auto max-w-7xl">
+      <section className="bg-white px-3 pb-10 pt-6 lg:px-4 md:pb-12 md:pt-8">
+        <div className="mx-auto max-w-screen-2xl">
           <h1 className="font-display text-4xl tracking-tight text-navy-deep md:text-5xl">
             Crisis Resources
           </h1>
@@ -162,9 +162,9 @@ export default function CrisisResourcesPage() {
       {/* 988 banner */}
       <section
         aria-labelledby="lifeline-heading"
-        className="bg-navy px-3 py-10 md:px-4 md:py-12"
+        className="bg-navy px-3 py-10 lg:px-4 md:py-12"
       >
-        <div className="mx-auto grid max-w-7xl items-center gap-8 lg:grid-cols-[auto_1fr_auto] lg:gap-12">
+        <div className="mx-auto grid max-w-screen-2xl items-center gap-8 lg:grid-cols-[auto_1fr_auto] lg:gap-12">
           <div
             className="mx-auto flex h-28 w-28 shrink-0 flex-col items-center justify-center rounded-xl bg-white p-3 text-center shadow-sm md:h-32 md:w-32"
             aria-hidden
@@ -263,8 +263,8 @@ export default function CrisisResourcesPage() {
       </section>
 
       {/* Other ways to get support */}
-      <section className="bg-white px-3 py-14 md:px-4 md:py-16">
-        <div className="mx-auto max-w-7xl">
+      <section className="bg-white px-3 py-14 lg:px-4 md:py-16">
+        <div className="mx-auto max-w-screen-2xl">
           <h2 className="font-display text-2xl tracking-tight text-navy-deep md:text-3xl">
             Other ways to get support
           </h2>
@@ -311,9 +311,9 @@ export default function CrisisResourcesPage() {
       {/* Non-emergency band */}
       <section
         aria-labelledby="non-emergency-heading"
-        className="border-y border-border bg-[#EAF2FF] px-3 py-10 md:px-4 md:py-12"
+        className="border-y border-border bg-[#EAF2FF] px-3 py-10 lg:px-4 md:py-12"
       >
-        <div className="mx-auto flex max-w-7xl flex-col gap-6 lg:flex-row lg:items-center lg:justify-between lg:gap-10">
+        <div className="mx-auto flex max-w-screen-2xl flex-col gap-6 lg:flex-row lg:items-center lg:justify-between lg:gap-10">
           <div className="flex gap-4">
             <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white text-navy shadow-sm">
               <HeartHandshake
@@ -359,9 +359,9 @@ export default function CrisisResourcesPage() {
       {/* Disclaimer */}
       <section
         aria-label="Emergency disclaimer"
-        className="bg-[#FDECEC] px-3 py-6 md:px-4 md:py-7"
+        className="bg-[#FDECEC] px-3 py-6 lg:px-4 md:py-7"
       >
-        <div className="mx-auto flex max-w-7xl gap-3 md:gap-4">
+        <div className="mx-auto flex max-w-screen-2xl gap-3 md:gap-4">
           <AlertTriangle
             className="mt-0.5 h-5 w-5 shrink-0 text-[#C62828]"
             strokeWidth={2}

@@ -29,8 +29,8 @@ const apps = [
 
 export default function DownloadIndexPage() {
   return (
-    <section className="bg-white px-3 pb-16 pt-6 md:px-4 md:pb-24 md:pt-10">
-      <div className="mx-auto max-w-7xl">
+    <section className="bg-white px-3 pb-16 pt-6 lg:px-4 md:pb-24 md:pt-10">
+      <div className="mx-auto max-w-screen-2xl">
         <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
           Get the apps
         </p>

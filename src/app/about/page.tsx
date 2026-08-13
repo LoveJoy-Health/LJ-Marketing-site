@@ -67,7 +67,7 @@ export default function AboutPage() {
       <link rel="preload" as="image" href="/images/about-hero.png" />
 
       {/* 1. Hero — inset rounded light card; portrait blended into soft wash */}
-      <section className="relative bg-white px-1 pb-10 pt-2 text-navy-deep md:px-1.5 md:pb-14 md:pt-3">
+      <section className="relative bg-white px-0.5 pb-10 pt-2 text-navy-deep md:px-1 md:pb-14 md:pt-3">
         <div className="hero-shell bg-about-hero-atmosphere relative overflow-hidden">
           <div
             aria-hidden
@@ -86,7 +86,7 @@ export default function AboutPage() {
           />
 
           <div className="relative z-10">
-            <div className="relative mx-auto grid max-w-7xl items-center gap-8 px-3 pb-12 pt-8 md:grid-cols-[1.05fr_0.95fr] md:gap-6 md:px-4 md:pb-14 md:pt-10 lg:pb-16">
+            <div className="relative mx-auto grid max-w-screen-2xl items-center gap-8 px-3 pb-12 pt-8 md:grid-cols-[1.05fr_0.95fr] md:gap-6 lg:px-4 md:pb-14 md:pt-10 lg:pb-16">
               <div className="max-w-xl">
                 <h1 className="animate-fade-up font-display text-4xl leading-[1.08] tracking-tight text-navy-deep md:text-5xl lg:text-[3.5rem]">
                   About LoveJoy Health.
@@ -108,8 +108,8 @@ export default function AboutPage() {
       </section>
 
       {/* 2. Our Story */}
-      <section className="bg-white px-3 py-16 md:px-4 md:py-20">
-        <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
+      <section className="bg-white px-3 py-16 lg:px-4 md:py-20">
+        <div className="mx-auto grid max-w-screen-2xl items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
           <div>
             <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
               Our story
@@ -155,8 +155,8 @@ export default function AboutPage() {
       </section>
 
       {/* 3. What We Believe */}
-      <section className="bg-[#F7F3EC] px-3 py-16 md:px-4 md:py-20">
-        <div className="mx-auto max-w-7xl">
+      <section className="bg-[#F7F3EC] px-3 py-16 lg:px-4 md:py-20">
+        <div className="mx-auto max-w-screen-2xl">
           <div className="max-w-3xl">
             <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
               What we believe
@@ -174,8 +174,8 @@ export default function AboutPage() {
       </section>
 
       {/* 4. Mission & Vision */}
-      <section className="bg-white px-3 py-16 md:px-4 md:py-20">
-        <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-2 md:gap-0">
+      <section className="bg-white px-3 py-16 lg:px-4 md:py-20">
+        <div className="mx-auto grid max-w-screen-2xl gap-10 md:grid-cols-2 md:gap-0">
           <div className="md:pr-12 lg:pr-16">
             <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
               Mission
@@ -206,8 +206,8 @@ export default function AboutPage() {
       </section>
 
       {/* 5. Who We Serve */}
-      <section className="bg-white px-3 pb-16 md:px-4 md:pb-20">
-        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-14 lg:items-start">
+      <section className="bg-white px-3 pb-16 lg:px-4 md:pb-20">
+        <div className="mx-auto grid max-w-screen-2xl gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-14 lg:items-start">
           <div>
             <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
               Who we serve
@@ -244,8 +244,8 @@ export default function AboutPage() {
       </section>
 
       {/* 6. CTA band */}
-      <section className="bg-[#EAF2FF] px-3 py-14 md:px-4 md:py-16">
-        <div className="mx-auto flex max-w-7xl flex-col gap-8 lg:flex-row lg:items-center lg:justify-between lg:gap-12">
+      <section className="bg-[#EAF2FF] px-3 py-14 lg:px-4 md:py-16">
+        <div className="mx-auto flex max-w-screen-2xl flex-col gap-8 lg:flex-row lg:items-center lg:justify-between lg:gap-12">
           <div className="max-w-xl">
             <h2 className="font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
               Care that stays with you.

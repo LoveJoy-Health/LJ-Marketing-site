@@ -68,8 +68,8 @@ function OsirisChatPreview() {
 export default function OsirisPage() {
   return (
     <>
-      <section className="bg-white px-3 pb-14 pt-6 md:px-4 md:pb-20 md:pt-10">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
+      <section className="bg-white px-3 pb-14 pt-6 lg:px-4 md:pb-20 md:pt-10">
+        <div className="mx-auto grid max-w-screen-2xl items-center gap-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
           <div>
             <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
               Osiris
@@ -110,8 +110,8 @@ export default function OsirisPage() {
         </div>
       </section>
 
-      <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
-        <div className="mx-auto max-w-7xl">
+      <section className="bg-atmosphere px-3 py-16 lg:px-4 md:py-20">
+        <div className="mx-auto max-w-screen-2xl">
           <h2 className="max-w-2xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
             What Osiris is
           </h2>
@@ -135,8 +135,8 @@ export default function OsirisPage() {
         </div>
       </section>
 
-      <section className="bg-white px-3 py-16 md:px-4 md:py-20">
-        <div className="mx-auto max-w-7xl">
+      <section className="bg-white px-3 py-16 lg:px-4 md:py-20">
+        <div className="mx-auto max-w-screen-2xl">
           <h2 className="max-w-2xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
             When it helps
           </h2>
@@ -156,8 +156,8 @@ export default function OsirisPage() {
         </div>
       </section>
 
-      <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
-        <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-2 md:items-start">
+      <section className="bg-atmosphere px-3 py-16 lg:px-4 md:py-20">
+        <div className="mx-auto grid max-w-screen-2xl gap-10 md:grid-cols-2 md:items-start">
           <div>
             <h2 className="font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
               Privacy & human care
@@ -205,8 +205,8 @@ export default function OsirisPage() {
         </div>
       </section>
 
-      <section className="px-1 pb-2 md:px-1.5">
-        <div className="overflow-hidden rounded-[2rem] bg-[#EDE6F8] px-3 py-14 md:rounded-[2.75rem] md:px-4 md:py-16">
+      <section className="px-0.5 pb-2 md:px-1">
+        <div className="overflow-hidden rounded-[2rem] bg-[#EDE6F8] px-3 py-14 md:rounded-[2.75rem] lg:px-4 md:py-16">
           <div className="mx-auto max-w-3xl text-left">
             <h2 className="font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
               Ready when you need a starting point.

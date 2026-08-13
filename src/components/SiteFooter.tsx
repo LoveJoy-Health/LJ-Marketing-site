@@ -77,7 +77,7 @@ const socialLinks = [
 export function SiteFooter() {
   return (
     <footer className="border-t border-border bg-navy-deep text-white">
-      <div className="mx-auto grid max-w-7xl gap-10 px-3 py-14 md:grid-cols-2 lg:grid-cols-[1.35fr_1fr_1fr_1fr_1fr_1fr_1fr] md:px-4">
+      <div className="mx-auto grid max-w-screen-2xl gap-10 px-3 py-14 md:grid-cols-2 lg:grid-cols-[1.35fr_1fr_1fr_1fr_1fr_1fr_1fr] lg:px-4">
         <div>
           <LoveJoyLogo className="h-12 w-auto" />
           <p className="mt-4 max-w-md text-sm leading-relaxed text-white/70">
@@ -229,7 +229,7 @@ export function SiteFooter() {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="mx-auto max-w-7xl px-3 py-5 text-xs text-white/45 md:px-4">
+        <div className="mx-auto max-w-screen-2xl px-3 py-5 text-xs text-white/45 lg:px-4">
           <p>
             © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
           </p>

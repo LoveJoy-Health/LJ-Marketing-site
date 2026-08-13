@@ -72,8 +72,8 @@ export default function OrganizationAccessPage() {
         description="LoveJoy supports organizations preparing for — and participating in — the CMS ACCESS Model, connecting technology-supported behavioral health delivery with the visibility needed to improve outcomes."
       />
 
-      <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
-        <div className="mx-auto max-w-7xl">
+      <section className="bg-atmosphere px-3 py-16 lg:px-4 md:py-20">
+        <div className="mx-auto max-w-screen-2xl">
           <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
             How LoveJoy supports ACCESS
           </h2>
@@ -98,8 +98,8 @@ export default function OrganizationAccessPage() {
         </div>
       </section>
 
-      <section className="bg-white px-3 py-16 md:px-4 md:py-20">
-        <div className="mx-auto max-w-7xl">
+      <section className="bg-white px-3 py-16 lg:px-4 md:py-20">
+        <div className="mx-auto max-w-screen-2xl">
           <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
             Who this is for
           </h2>

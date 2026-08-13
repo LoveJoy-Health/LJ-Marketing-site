@@ -50,7 +50,7 @@ export default async function BlogPostPage({ params }: PageProps) {
   ).slice(0, 2);
 
   return (
-    <article className="bg-white px-3 pb-16 pt-6 md:px-4 md:pb-24 md:pt-8">
+    <article className="bg-white px-3 pb-16 pt-6 lg:px-4 md:pb-24 md:pt-8">
       <div className="mx-auto max-w-3xl">
         <div className="flex flex-wrap items-center gap-2">
           <Link
