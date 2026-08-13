@@ -527,7 +527,7 @@ export default function ForOrganizationsPage() {
           />
 
           <div className="relative z-10">
-            <div className="site-container relative grid items-center gap-8 px-4 pb-12 pt-8 md:grid-cols-[1.05fr_0.95fr] md:gap-6 md:px-6 md:pb-14 md:pt-10 lg:pb-16 xl:px-8">
+            <div className="relative mx-auto grid max-w-7xl items-center gap-8 px-3 pb-12 pt-8 md:grid-cols-[1.05fr_0.95fr] md:gap-6 md:px-4 md:pb-14 md:pt-10 lg:pb-16">
               <div className="max-w-xl">
                 <p className="animate-fade-up text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
                   For organizations
@@ -575,8 +575,8 @@ export default function ForOrganizationsPage() {
       </section>
 
       {/* 2. Journey steps */}
-      <section className="bg-atmosphere px-4 py-16 md:px-6 xl:px-8 md:py-20">
-        <div className="site-container">
+      <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
+        <div className="mx-auto max-w-7xl">
           <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
             Getting people into care is only the beginning.
           </h2>
@@ -609,8 +609,8 @@ export default function ForOrganizationsPage() {
       </section>
 
       {/* 3. Audiences */}
-      <section className="bg-white px-4 py-16 md:px-6 xl:px-8 md:py-20">
-        <div className="site-container">
+      <section className="bg-white px-3 py-16 md:px-4 md:py-20">
+        <div className="mx-auto max-w-7xl">
           <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
             Built for organizations responsible for behavioral health.
           </h2>
@@ -640,9 +640,9 @@ export default function ForOrganizationsPage() {
       {/* 4. One platform */}
       <section
         id="platform"
-        className="scroll-mt-28 bg-atmosphere px-4 py-16 md:px-6 xl:px-8 md:py-20"
+        className="scroll-mt-28 bg-atmosphere px-3 py-16 md:px-4 md:py-20"
       >
-        <div className="site-container">
+        <div className="mx-auto max-w-7xl">
           <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
             One platform across the care journey.
           </h2>
@@ -701,8 +701,8 @@ export default function ForOrganizationsPage() {
       </section>
 
       {/* 5. Data & delivery */}
-      <section className="bg-white px-4 py-16 md:px-6 xl:px-8 md:py-20">
-        <div className="site-container grid gap-12 lg:grid-cols-2 lg:gap-16">
+      <section className="bg-white px-3 py-16 md:px-4 md:py-20">
+        <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
             <h2 className="font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
               Understand how people connect to care — and where they need help.
@@ -781,7 +781,7 @@ export default function ForOrganizationsPage() {
             aria-hidden
             className="bg-starfield pointer-events-none absolute inset-0 opacity-30"
           />
-          <div className="site-container relative grid gap-8 lg:grid-cols-[auto_1.2fr_1fr] lg:items-center lg:gap-10">
+          <div className="relative mx-auto grid max-w-7xl gap-8 lg:grid-cols-[auto_1.2fr_1fr] lg:items-center lg:gap-10">
             <div>
               <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-gold">
                 CMS ACCESS
@@ -824,8 +824,8 @@ export default function ForOrganizationsPage() {
       </section>
 
       {/* 7. Implementation */}
-      <section className="bg-atmosphere px-4 py-16 md:px-6 xl:px-8 md:py-20">
-        <div className="site-container">
+      <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
+        <div className="mx-auto max-w-7xl">
           <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
             From conversation to connected care.
           </h2>
@@ -858,7 +858,7 @@ export default function ForOrganizationsPage() {
 
       {/* 8. Final CTA */}
       <section className="px-1 pb-2 md:px-1.5">
-        <div className="bg-navy-atmosphere relative overflow-hidden rounded-[2rem] px-4 py-14 text-white md:rounded-[2.75rem] md:px-6 xl:px-8 md:py-16">
+        <div className="bg-navy-atmosphere relative overflow-hidden rounded-[2rem] px-3 py-14 text-white md:rounded-[2.75rem] md:px-4 md:py-16">
           <div
             aria-hidden
             className="bg-starfield pointer-events-none absolute inset-0 opacity-35"

@@ -17,7 +17,7 @@ export function LegalDocument({
   return (
     <>
       <PageHero eyebrow={eyebrow} title={title} description={description} />
-      <section className="bg-atmosphere px-4 py-16 md:px-6 xl:px-8 md:py-20">
+      <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
         <article className="legal-document mx-auto max-w-3xl">{children}</article>
       </section>
     </>

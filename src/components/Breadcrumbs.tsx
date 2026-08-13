@@ -11,8 +11,8 @@ export function Breadcrumbs() {
   if (!crumbs?.length) return null;
 
   return (
-    <nav aria-label="Breadcrumb" className="px-4 pt-4 md:px-6 xl:px-8 md:pt-5">
-      <ol className="site-container flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-navy/70">
+    <nav aria-label="Breadcrumb" className="px-3 pt-4 md:px-4 md:pt-5">
+      <ol className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-2 gap-y-1 text-sm text-navy/70">
         {crumbs.map((crumb, index) => {
           const isLast = index === crumbs.length - 1;
           return (

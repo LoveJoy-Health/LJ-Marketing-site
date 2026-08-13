@@ -91,8 +91,8 @@ export default function ProviderOnboardingPage() {
         description="Four clear steps from account creation to providing care — with review built in so patients and providers can trust the network."
       />
 
-      <section className="bg-atmosphere px-4 py-16 md:px-6 xl:px-8 md:py-20">
-        <div className="site-container">
+      <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
+        <div className="mx-auto max-w-7xl">
           <ol className="grid gap-6 lg:grid-cols-2">
             {steps.map((step) => (
               <li
@@ -150,8 +150,8 @@ export default function ProviderOnboardingPage() {
         </div>
       </section>
 
-      <section className="bg-white px-4 py-16 md:px-6 xl:px-8 md:py-20">
-        <div className="site-container">
+      <section className="bg-white px-3 py-16 md:px-4 md:py-20">
+        <div className="mx-auto max-w-7xl">
           <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
             After you&apos;re approved
           </h2>
