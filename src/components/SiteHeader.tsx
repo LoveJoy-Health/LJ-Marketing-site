@@ -288,10 +288,8 @@ export function SiteHeader({ variant = "standalone" }: SiteHeaderProps) {
   const isIndividuals =
     pathname === "/for-individuals" ||
     pathname.startsWith("/for-individuals/");
-  const ctaLabel = isIndividuals ? "Find a Provider" : "Request a Demo";
-  const ctaHref = isIndividuals
-    ? siteConfig.findProviderUrl
-    : "/about/contact";
+  const ctaLabel = isIndividuals ? "Find a Provider" : "Download Our Apps";
+  const ctaHref = isIndividuals ? siteConfig.findProviderUrl : "/download";
 
   useEffect(() => {
     if (!isStandalone) return;

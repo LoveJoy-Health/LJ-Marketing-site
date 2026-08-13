@@ -17,6 +17,9 @@ import {
   Users,
   type LucideIcon,
 } from "lucide-react";
+import { ConnectedDiagram } from "@/components/ConnectedDiagram";
+import { siteConfig } from "@/lib/site";
+
 const gapStats = [
   {
     value: "50%",
@@ -120,41 +123,6 @@ const connectedFeatures = [
     label: "Improve outcomes",
     accent: "bg-teal-100 text-teal-700",
     Icon: Heart,
-  },
-] as const;
-
-const connectedRoles = [
-  {
-    label: "Patient",
-    position: "left-1/2 top-0 -translate-x-1/2",
-    labelPlacement: "above" as const,
-    photo: "/images/lady-daughter.png",
-    photoAlt: "Mother and child representing a patient family",
-    photoClass: "object-cover object-[center_18%]",
-  },
-  {
-    label: "Provider",
-    position: "right-0 top-1/2 -translate-y-1/2",
-    labelPlacement: "below" as const,
-    photo: "/images/providers-hero.png",
-    photoAlt: "Clinicians collaborating over care",
-    photoClass: "object-cover object-[32%_28%]",
-  },
-  {
-    label: "Navigator",
-    position: "bottom-0 left-1/2 -translate-x-1/2",
-    labelPlacement: "below" as const,
-    photo: "/images/navigators-hero.png",
-    photoAlt: "Care navigator in a supportive conversation",
-    photoClass: "object-cover object-[58%_20%]",
-  },
-  {
-    label: "Organization",
-    position: "left-0 top-1/2 -translate-y-1/2",
-    labelPlacement: "below" as const,
-    photo: "/images/organizations-hero.png",
-    photoAlt: "Organization leaders reviewing outcomes together",
-    photoClass: "object-cover object-[55%_28%]",
   },
 ] as const;
 
@@ -479,90 +447,6 @@ function StepMock({ type }: { type: (typeof steps)[number]["mock"] }) {
   );
 }
 
-function ConnectedDiagram() {
-  return (
-    <div className="relative mx-auto aspect-square w-full max-w-[20rem] sm:max-w-[22rem] lg:max-w-[24rem]">
-      {/* Multi-colored dashed ecosystem ring */}
-      <svg
-        aria-hidden
-        viewBox="0 0 100 100"
-        className="pointer-events-none absolute inset-[14%] h-[72%] w-[72%]"
-      >
-        <circle
-          cx="50"
-          cy="50"
-          r="46"
-          fill="none"
-          stroke="#5B9FE8"
-          strokeWidth="0.7"
-          strokeDasharray="2.2 2.8"
-          opacity="0.55"
-        />
-        <circle
-          cx="50"
-          cy="50"
-          r="46"
-          fill="none"
-          stroke="#C4A000"
-          strokeWidth="0.7"
-          strokeDasharray="2.2 2.8"
-          strokeDashoffset="2.5"
-          opacity="0.5"
-        />
-      </svg>
-
-      <div className="absolute left-1/2 top-1/2 z-10 flex h-[4.75rem] w-[4.75rem] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-[0_14px_36px_rgba(2,24,72,0.16)] ring-1 ring-black/[0.04] md:h-[5.5rem] md:w-[5.5rem]">
-        <Image
-          src="/images/logo.png"
-          alt="LoveJoy"
-          width={64}
-          height={64}
-          className="h-11 w-11 object-contain md:h-14 md:w-14"
-        />
-      </div>
-
-      {connectedRoles.map((role) => {
-        const node = (
-          <span className="relative block h-[3.25rem] w-[3.25rem] overflow-hidden rounded-full shadow-[0_8px_20px_rgba(2,24,72,0.18)] ring-[3px] ring-white md:h-16 md:w-16">
-            <Image
-              src={role.photo}
-              alt={role.photoAlt}
-              fill
-              sizes="64px"
-              className={`photo-bw ${role.photoClass}`}
-            />
-          </span>
-        );
-
-        const label = (
-          <span className="text-[11px] font-semibold text-navy md:text-xs">
-            {role.label}
-          </span>
-        );
-
-        return (
-          <div
-            key={role.label}
-            className={`absolute z-10 flex flex-col items-center gap-1.5 ${role.position}`}
-          >
-            {role.labelPlacement === "above" ? (
-              <>
-                {label}
-                {node}
-              </>
-            ) : (
-              <>
-                {node}
-                {label}
-              </>
-            )}
-          </div>
-        );
-      })}
-    </div>
-  );
-}
-
 export default function HomePage() {
   return (
     <>
@@ -614,12 +498,14 @@ export default function HomePage() {
                   >
                     Find Support →
                   </Link>
-                  <Link
-                    href="/for-organizations"
+                  <a
+                    href={siteConfig.providerJoinUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="rounded-full border border-white/35 bg-transparent px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
                   >
-                    Partner With LoveJoy
-                  </Link>
+                    Join Provider Network
+                  </a>
                 </div>
               </div>
 
@@ -815,7 +701,7 @@ export default function HomePage() {
                 aria-hidden
                 className="inline-block h-1 w-6 rounded-full bg-[#C4A000]"
               />
-              Who platform
+              Our platform
             </p>
             <h2 className="mt-4 font-display text-3xl leading-[1.12] tracking-tight text-navy-deep md:text-4xl xl:text-[2.75rem]">
               One connected experience. Many people working{" "}
@@ -967,10 +853,10 @@ export default function HomePage() {
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <Link
-                  href="/about/contact"
+                  href="/download"
                   className="rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition hover:brightness-105"
                 >
-                  Request a Demo →
+                  Download Our Apps →
                 </Link>
                 <Link
                   href="/about/contact"

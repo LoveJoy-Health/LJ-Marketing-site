@@ -845,12 +845,29 @@
   }
 }
 
+@keyframes platform-ring-pulse {
+  0%,
+  100% {
+    transform: scale(1.08);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1.18);
+    opacity: 0.35;
+  }
+}
+
+.animate-platform-ring-pulse {
+  animation: platform-ring-pulse 1.6s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-fade-up,
   .animate-fade-in,
   .animate-soft-rise,
   .animate-float,
-  .animate-float-delayed {
+  .animate-float-delayed,
+  .animate-platform-ring-pulse {
     animation: none !important;
   }
 }
