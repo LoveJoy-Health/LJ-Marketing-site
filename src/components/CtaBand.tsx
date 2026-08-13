@@ -18,7 +18,7 @@ export function CtaBand({
   secondaryLabel,
 }: CtaBandProps) {
   return (
-    <section className="bg-atmosphere px-3 py-20 md:px-4">
+    <section className="bg-atmosphere px-4 py-20 md:px-6 xl:px-8">
       <div className="mx-auto max-w-4xl text-center">
         <h2 className="font-display text-3xl tracking-tight text-navy-deep md:text-5xl">
           {title}

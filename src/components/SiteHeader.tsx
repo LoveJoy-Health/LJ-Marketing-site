@@ -13,7 +13,7 @@ import { LoveJoyLogo } from "@/components/LoveJoyLogo";
 import { isExternalHref, isNavLink, primaryNav, siteConfig } from "@/lib/site";
 
 type SiteHeaderProps = {
-  /** `standalone` (default) is the sticky floating bar sitewide; `embedded` is for in-hero use if needed. */
+  /** `standalone` (default) is the sticky full-width bar sitewide; `embedded` is for in-hero use if needed. */
   variant?: "embedded" | "standalone";
 };
 
@@ -285,7 +285,7 @@ export function SiteHeader({ variant = "standalone" }: SiteHeaderProps) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const isStandalone = variant === "standalone";
-  /** Homepage: overlay nav on hero (no floating white gap). */
+  /** Homepage: overlay nav on hero (full-width navy flush with hero). */
   const isHome = pathname === "/";
   const isIndividuals =
     pathname === "/for-individuals" ||
@@ -305,23 +305,17 @@ export function SiteHeader({ variant = "standalone" }: SiteHeaderProps) {
 
   const shellClass = isStandalone
     ? isHome
-      ? `sticky top-0 z-50 px-1 transition-[background-color,backdrop-filter] md:px-1.5 ${
+      ? `sticky top-0 z-50 w-full transition-[background-color,backdrop-filter] ${
           scrolled
             ? "bg-navy/95 backdrop-blur-md"
             : "bg-transparent"
         }`
-      : `sticky top-0 z-50 px-1 pt-2 transition-[background-color,backdrop-filter] md:px-1.5 md:pt-3 ${
+      : `sticky top-0 z-50 w-full bg-navy-atmosphere transition-[background-color,box-shadow,backdrop-filter] ${
           scrolled
-            ? "bg-white/90 backdrop-blur-md"
-            : "bg-transparent"
+            ? "bg-navy/95 backdrop-blur-md shadow-[0_8px_30px_rgba(2,24,72,0.25)]"
+            : ""
         }`
     : "relative z-30";
-
-  const barClass = isStandalone
-    ? isHome
-      ? ""
-      : "rounded-[1.75rem] border border-white/10 bg-navy-atmosphere shadow-[0_18px_50px_rgba(2,24,72,0.28)]"
-    : "";
 
   const innerClass = isStandalone
     ? "site-container flex items-center justify-between gap-4 px-4 py-4 md:px-6 xl:px-8"
@@ -329,81 +323,79 @@ export function SiteHeader({ variant = "standalone" }: SiteHeaderProps) {
 
   return (
     <header className={shellClass}>
-      <div className={barClass}>
-        <div className={innerClass}>
-          <Link
-            href="/"
-            className="relative z-50 flex shrink-0 items-center transition-opacity hover:opacity-90"
-            onClick={() => setOpen(false)}
-          >
-            <LoveJoyLogo className="h-10 w-auto md:h-11" />
-          </Link>
+      <div className={innerClass}>
+        <Link
+          href="/"
+          className="relative z-50 flex shrink-0 items-center transition-opacity hover:opacity-90"
+          onClick={() => setOpen(false)}
+        >
+          <LoveJoyLogo className="h-10 w-auto md:h-11" />
+        </Link>
 
-          <nav className="hidden items-center gap-7 xl:flex">
-            {primaryNav.map((item) => {
-              if (!isNavLink(item)) {
-                const active =
-                  (item.href ? isHrefActive(pathname, item.href) : false) ||
-                  item.children.some((child) =>
-                    isHrefActive(pathname, child.href),
-                  );
-                return (
-                  <NavDropdown
-                    key={item.label}
-                    label={item.label}
-                    href={item.href}
-                    items={item.children}
-                    active={active}
-                  />
+        <nav className="hidden items-center gap-7 xl:flex">
+          {primaryNav.map((item) => {
+            if (!isNavLink(item)) {
+              const active =
+                (item.href ? isHrefActive(pathname, item.href) : false) ||
+                item.children.some((child) =>
+                  isHrefActive(pathname, child.href),
                 );
-              }
-
-              const active = isHrefActive(pathname, item.href);
               return (
-                <NavAnchor
-                  key={item.href + item.label}
+                <NavDropdown
+                  key={item.label}
+                  label={item.label}
                   href={item.href}
-                  className={`text-sm font-medium tracking-wide transition-colors ${
-                    active ? "text-gold" : "text-white/85 hover:text-white"
-                  }`}
-                >
-                  {item.label}
-                </NavAnchor>
+                  items={item.children}
+                  active={active}
+                />
               );
-            })}
-          </nav>
+            }
 
-          <div className="hidden items-center gap-3 xl:flex">
-            <HeaderCta label={ctaLabel} href={ctaHref} />
-          </div>
+            const active = isHrefActive(pathname, item.href);
+            return (
+              <NavAnchor
+                key={item.href + item.label}
+                href={item.href}
+                className={`text-sm font-medium tracking-wide transition-colors ${
+                  active ? "text-gold" : "text-white/85 hover:text-white"
+                }`}
+              >
+                {item.label}
+              </NavAnchor>
+            );
+          })}
+        </nav>
 
-          <button
-            type="button"
-            aria-expanded={open}
-            aria-label={open ? "Close menu" : "Open menu"}
-            className="relative z-50 inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/25 bg-white/10 text-white backdrop-blur xl:hidden"
-            onClick={() => setOpen((value) => !value)}
-          >
-            <span className="sr-only">Menu</span>
-            <span className="flex w-5 flex-col gap-1.5">
-              <span
-                className={`h-0.5 w-full bg-current transition ${
-                  open ? "translate-y-2 rotate-45" : ""
-                }`}
-              />
-              <span
-                className={`h-0.5 w-full bg-current transition ${
-                  open ? "opacity-0" : ""
-                }`}
-              />
-              <span
-                className={`h-0.5 w-full bg-current transition ${
-                  open ? "-translate-y-2 -rotate-45" : ""
-                }`}
-              />
-            </span>
-          </button>
+        <div className="hidden items-center gap-3 xl:flex">
+          <HeaderCta label={ctaLabel} href={ctaHref} />
         </div>
+
+        <button
+          type="button"
+          aria-expanded={open}
+          aria-label={open ? "Close menu" : "Open menu"}
+          className="relative z-50 inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/25 bg-white/10 text-white backdrop-blur xl:hidden"
+          onClick={() => setOpen((value) => !value)}
+        >
+          <span className="sr-only">Menu</span>
+          <span className="flex w-5 flex-col gap-1.5">
+            <span
+              className={`h-0.5 w-full bg-current transition ${
+                open ? "translate-y-2 rotate-45" : ""
+              }`}
+            />
+            <span
+              className={`h-0.5 w-full bg-current transition ${
+                open ? "opacity-0" : ""
+              }`}
+            />
+            <span
+              className={`h-0.5 w-full bg-current transition ${
+                open ? "-translate-y-2 -rotate-45" : ""
+              }`}
+            />
+          </span>
+        </button>
       </div>
 
       <div
