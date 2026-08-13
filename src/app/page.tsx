@@ -440,7 +440,7 @@ export default function HomePage() {
       <link rel="preload" as="image" href="/images/guy-hero.png" />
 
       {/* Hero — navy extends under sticky header (combined composition); bottom stays rounded */}
-      <section className="relative -mt-[4.5rem] bg-white text-white md:-mt-[4.75rem]">
+      <section className="relative -mt-[4.5rem] bg-white px-1 text-white md:-mt-[4.75rem] md:px-1.5">
         <div className="hero-shell hero-shell-flush-top bg-navy-atmosphere relative overflow-hidden">
           <div
             aria-hidden

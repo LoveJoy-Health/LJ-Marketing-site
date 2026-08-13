@@ -25,8 +25,8 @@ function BlogIndexFallback() {
 
 export default function BlogPage() {
   return (
-    <section className="bg-white px-4 pb-16 pt-6 md:px-6 xl:px-8 md:pb-24 md:pt-8">
-      <div className="site-container">
+    <section className="bg-white px-3 pb-16 pt-6 md:px-4 md:pb-24 md:pt-8">
+      <div className="mx-auto max-w-7xl">
         <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
           Resources
         </p>
