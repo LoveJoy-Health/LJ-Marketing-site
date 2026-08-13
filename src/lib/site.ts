@@ -104,6 +104,7 @@ export const primaryNav: readonly NavItem[] = [
     label: "Resources",
     // No dedicated landing page — chevron-only parent; children remain the entry points.
     children: [
+      { href: "/blog", label: "Blog" },
       { href: "/#how-it-works", label: "How it works" },
       { href: "/#platform", label: "Platform" },
       { href: "/download", label: "Download the apps" },
@@ -122,6 +123,7 @@ export const footerNav: readonly NavLink[] = [
 ] as const;
 
 export const resourcesNav: readonly NavLink[] = [
+  { href: "/blog", label: "Blog" },
   { href: "/download", label: "Download the apps" },
   { href: "/the-porch", label: "The Porch" },
   { href: "/osiris", label: "Osiris" },
@@ -194,6 +196,7 @@ export const breadcrumbLabels: Record<string, string> = {
   "/about": "About",
   "/about/team": "Team",
   "/about/contact": "Contact",
+  "/blog": "Blog",
   "/download": "Download",
   "/download/patient": "Patient App",
   "/download/provider": "Provider App",

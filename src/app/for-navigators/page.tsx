@@ -24,12 +24,52 @@ export const metadata: Metadata = {
     "A connected workspace for care navigators — track assigned people, follow-ups, care gaps, and keep care moving forward.",
 };
 
-const heroStats = [
-  { value: "12", label: "People Assigned", tone: "bg-sky-500 text-white" },
-  { value: "4", label: "Follow-ups Due", tone: "bg-amber-400 text-navy-deep" },
-  { value: "3", label: "Needs Attention", tone: "bg-rose-500 text-white" },
-  { value: "5", label: "Tasks Today", tone: "bg-emerald-500 text-white" },
-] as const;
+const heroStats: {
+  value: string;
+  label: string;
+  detail: string;
+  accent: string;
+  iconClass: string;
+  delayClass: string;
+  Icon: LucideIcon;
+}[] = [
+  {
+    value: "12",
+    label: "People Assigned",
+    detail: "Active on your caseload",
+    accent: "bg-gold",
+    iconClass: "text-navy-deep",
+    delayClass: "animate-float",
+    Icon: Users,
+  },
+  {
+    value: "4",
+    label: "Follow-ups Due",
+    detail: "Need outreach this week",
+    accent: "bg-amber-400",
+    iconClass: "text-navy-deep",
+    delayClass: "animate-float-delayed",
+    Icon: CalendarCheck,
+  },
+  {
+    value: "3",
+    label: "Needs Attention",
+    detail: "Care gaps or rising risk",
+    accent: "bg-rose-400",
+    iconClass: "text-white",
+    delayClass: "animate-float",
+    Icon: AlertTriangle,
+  },
+  {
+    value: "5",
+    label: "Tasks Today",
+    detail: "Ready for your queue",
+    accent: "bg-emerald-400",
+    iconClass: "text-navy-deep",
+    delayClass: "animate-float-delayed",
+    Icon: CheckCircle2,
+  },
+];
 
 const features: {
   title: string;
@@ -229,21 +269,44 @@ function NavigatorCtas({
 
 function StatusStack() {
   return (
-    <ul className="flex w-[11.5rem] flex-col gap-2.5 sm:w-[12.5rem]">
-      {heroStats.map((stat) => (
-        <li
-          key={stat.label}
-          className={`rounded-2xl px-4 py-3 shadow-[0_12px_28px_rgba(2,24,72,0.16)] ${stat.tone}`}
-        >
-          <p className="text-2xl font-semibold leading-none tracking-tight">
-            {stat.value}
-          </p>
-          <p className="mt-1 text-[11px] font-medium leading-snug opacity-95">
-            {stat.label}
-          </p>
-        </li>
-      ))}
-    </ul>
+    <div className="pointer-events-none flex w-[11.5rem] flex-col gap-2 sm:w-56">
+      {heroStats.map((stat, index) => {
+        const Icon = stat.Icon;
+        return (
+          <div
+            key={stat.label}
+            className={`${stat.delayClass} rounded-2xl border border-white/15 bg-navy-deep/75 p-2.5 shadow-lg backdrop-blur-md sm:p-3 ${
+              index > 2 ? "hidden sm:block" : ""
+            }`}
+          >
+            <div className="flex items-start gap-2.5">
+              <span
+                className={`mt-0.5 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full ${stat.accent} ${stat.iconClass}`}
+              >
+                <Icon
+                  aria-hidden
+                  className="h-3.5 w-3.5"
+                  strokeWidth={2.25}
+                />
+              </span>
+              <div className="min-w-0 flex-1">
+                <div className="flex items-baseline justify-between gap-2">
+                  <p className="truncate text-xs font-semibold text-white">
+                    {stat.label}
+                  </p>
+                  <span className="shrink-0 font-display text-sm font-semibold text-gold">
+                    {stat.value}
+                  </span>
+                </div>
+                <p className="mt-0.5 truncate text-[11px] text-white/65">
+                  {stat.detail}
+                </p>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
   );
 }
 
@@ -552,10 +615,8 @@ export default function ForNavigatorsPage() {
                 role="img"
                 aria-label="Care navigator meeting with a client, with caseload status summary"
               >
-                <div className="pointer-events-none absolute right-0 top-4 z-20 hidden sm:block md:right-2 md:top-8 lg:right-6">
-                  <div className="animate-float">
-                    <StatusStack />
-                  </div>
+                <div className="pointer-events-none absolute inset-y-2 right-0 z-20 flex w-[11.5rem] flex-col justify-center gap-2 sm:w-56 md:inset-y-4 md:right-2 lg:right-6">
+                  <StatusStack />
                 </div>
               </div>
             </div>

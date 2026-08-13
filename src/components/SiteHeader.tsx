@@ -13,7 +13,7 @@ import { LoveJoyLogo } from "@/components/LoveJoyLogo";
 import { isExternalHref, isNavLink, primaryNav, siteConfig } from "@/lib/site";
 
 type SiteHeaderProps = {
-  /** `embedded` sits inside the homepage hero; `standalone` is the floating bar on other pages. */
+  /** `standalone` (default) is the sticky floating bar sitewide; `embedded` is for in-hero use if needed. */
   variant?: "embedded" | "standalone";
 };
 
@@ -280,11 +280,11 @@ function HeaderCta({
   );
 }
 
-export function SiteHeader({ variant }: SiteHeaderProps) {
+export function SiteHeader({ variant = "standalone" }: SiteHeaderProps) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
-  const resolvedVariant =
-    variant ?? (pathname === "/" ? "embedded" : "standalone");
+  const [scrolled, setScrolled] = useState(false);
+  const isStandalone = variant === "standalone";
   const isIndividuals =
     pathname === "/for-individuals" ||
     pathname.startsWith("/for-individuals/");
@@ -293,23 +293,31 @@ export function SiteHeader({ variant }: SiteHeaderProps) {
     ? siteConfig.findProviderUrl
     : "/about/contact";
 
-  // Homepage embeds its own nav inside the hero card.
-  if (!variant && pathname === "/") return null;
+  useEffect(() => {
+    if (!isStandalone) return;
+    function onScroll() {
+      setScrolled(window.scrollY > 8);
+    }
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [isStandalone]);
 
-  const shellClass =
-    resolvedVariant === "standalone"
-      ? "sticky top-0 z-40 px-1 pt-2 md:px-1.5 md:pt-3"
-      : "relative z-30";
+  const shellClass = isStandalone
+    ? `sticky top-0 z-50 px-1 pt-2 transition-[background-color,backdrop-filter] md:px-1.5 md:pt-3 ${
+        scrolled
+          ? "bg-white/90 backdrop-blur-md"
+          : "bg-transparent"
+      }`
+    : "relative z-30";
 
-  const barClass =
-    resolvedVariant === "standalone"
-      ? "rounded-[1.75rem] border border-white/10 bg-navy-atmosphere shadow-[0_18px_50px_rgba(2,24,72,0.28)]"
-      : "";
+  const barClass = isStandalone
+    ? "rounded-[1.75rem] border border-white/10 bg-navy-atmosphere shadow-[0_18px_50px_rgba(2,24,72,0.28)]"
+    : "";
 
-  const innerClass =
-    resolvedVariant === "embedded"
-      ? "mx-auto flex max-w-7xl items-center justify-between gap-4 px-3 py-5 md:px-4 md:py-6"
-      : "mx-auto flex max-w-7xl items-center justify-between gap-4 px-3 py-4 md:px-4";
+  const innerClass = isStandalone
+    ? "mx-auto flex max-w-7xl items-center justify-between gap-4 px-3 py-4 md:px-4"
+    : "mx-auto flex max-w-7xl items-center justify-between gap-4 px-3 py-5 md:px-4 md:py-6";
 
   return (
     <header className={shellClass}>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fraunces, Figtree } from "next/font/google";
+import { BackToTop } from "@/components/BackToTop";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -51,6 +52,7 @@ export default function RootLayout({
           {children}
         </main>
         <SiteFooter />
+        <BackToTop />
       </body>
     </html>
   );
