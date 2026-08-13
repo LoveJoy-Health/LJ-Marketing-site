@@ -440,7 +440,7 @@ export default function HomePage() {
       <link rel="preload" as="image" href="/images/guy-hero.png" />
 
       {/* Hero — navy extends under sticky header (combined composition); bottom stays rounded */}
-      <section className="relative -mt-[4.5rem] bg-white px-1 text-white md:-mt-[4.75rem] md:px-1.5">
+      <section className="relative -mt-[4.5rem] bg-white text-white md:-mt-[4.75rem]">
         <div className="hero-shell hero-shell-flush-top bg-navy-atmosphere relative overflow-hidden">
           <div
             aria-hidden
@@ -463,7 +463,7 @@ export default function HomePage() {
           />
 
           <div className="relative z-10">
-            <div className="site-container relative grid items-center gap-8 px-4 pb-12 pt-[5.75rem] md:grid-cols-[1.05fr_0.95fr] md:gap-6 md:px-6 xl:px-8 md:pb-14 md:pt-28 lg:pb-16">
+            <div className="site-container relative grid items-center gap-8 px-3 pb-12 pt-[5.75rem] md:grid-cols-[1.05fr_0.95fr] md:gap-6 md:px-4 md:pb-14 md:pt-28 lg:pb-16">
               <div className="max-w-xl">
                 <p className="animate-fade-up text-[11px] font-semibold uppercase tracking-[0.2em] text-gold md:text-xs">
                   Connected Behavioral Healthcare
@@ -567,7 +567,7 @@ export default function HomePage() {
       {/* Care doesn't stop — copy + stats left, care-gap cycle right */}
       <section
         id="care-continues"
-        className="scroll-mt-28 bg-white px-4 py-16 md:px-6 xl:px-8 md:py-24"
+        className="scroll-mt-28 bg-white px-3 py-16 md:px-4 md:py-24"
       >
         <div className="site-container grid items-center gap-12 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:gap-14 xl:gap-16">
           <div className="max-w-xl lg:max-w-none">
@@ -623,7 +623,7 @@ export default function HomePage() {
       {/* Choose your path */}
       <section
         id="choose-path"
-        className="scroll-mt-28 bg-white px-4 py-16 md:px-6 xl:px-8 md:py-24"
+        className="scroll-mt-28 bg-white px-3 py-16 md:px-4 md:py-24"
       >
         <div className="site-container">
           <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
@@ -676,7 +676,7 @@ export default function HomePage() {
       {/* One connected experience — 3-column: copy | diagram | features */}
       <section
         id="platform"
-        className="scroll-mt-28 bg-white px-4 py-16 md:px-6 xl:px-8 md:py-24"
+        className="scroll-mt-28 bg-white px-3 py-16 md:px-4 md:py-24"
       >
         <div className="site-container grid items-center gap-12 lg:grid-cols-[1.05fr_1.1fr_0.85fr] lg:gap-10 xl:gap-14">
           <div className="max-w-md lg:max-w-none">
@@ -728,7 +728,7 @@ export default function HomePage() {
       {/* Every step feels connected */}
       <section
         id="how-it-works"
-        className="scroll-mt-28 bg-[linear-gradient(180deg,#ffffff_0%,#eaf2ff_12%,#eaf2ff_88%,#ffffff_100%)] px-4 py-16 md:px-6 xl:px-8 md:py-24"
+        className="scroll-mt-28 bg-[linear-gradient(180deg,#ffffff_0%,#eaf2ff_12%,#eaf2ff_88%,#ffffff_100%)] px-3 py-16 md:px-4 md:py-24"
       >
         <div className="site-container">
           <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
@@ -772,7 +772,7 @@ export default function HomePage() {
       {/* Healthcare is personal / mission */}
       <section
         id="mission"
-        className="scroll-mt-28 bg-white px-4 py-16 md:px-6 xl:px-8 md:py-24"
+        className="scroll-mt-28 bg-white px-3 py-16 md:px-4 md:py-24"
       >
         <div className="site-container grid items-center gap-10 lg:grid-cols-[1fr_1.15fr] lg:gap-14">
           <div>
@@ -820,7 +820,7 @@ export default function HomePage() {
 
       {/* Final CTA */}
       <section className="px-1 pb-6 pt-2 md:px-1.5 md:pb-8">
-        <div className="bg-navy-atmosphere relative overflow-hidden rounded-[2rem] px-4 py-14 text-white md:rounded-[2.75rem] md:px-6 xl:px-8 md:py-16">
+        <div className="bg-navy-atmosphere relative overflow-hidden rounded-[2rem] px-3 py-14 text-white md:rounded-[2.75rem] md:px-4 md:py-16">
           <div
             aria-hidden
             className="bg-starfield pointer-events-none absolute inset-0 opacity-35"
