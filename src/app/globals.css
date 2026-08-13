@@ -47,6 +47,11 @@
 }
 
 @layer utilities {
+  /* Near-full viewport layout width — pair with site-gutter / section px-4 md:px-6 xl:px-8 */
+  .site-container {
+    @apply mx-auto w-full max-w-none;
+  }
+
   .font-display {
     font-family: var(--font-display), ui-serif, Georgia, serif;
   }
@@ -81,7 +86,7 @@
     background-size: 28px 28px, 42px 42px;
   }
 
-  /* Homepage hero: inset navy card — all four corners heavily rounded */
+  /* Inset navy card — all four corners heavily rounded */
   .hero-shell {
     border-radius: 2rem;
   }
@@ -96,6 +101,12 @@
     .hero-shell {
       border-radius: 3.25rem;
     }
+  }
+
+  /* Homepage: square top so hero meets overlay header flush; keep bottom radius */
+  .hero-shell-flush-top {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   /*
