@@ -74,8 +74,8 @@ export default function OrganizationNavigationPage() {
         description="Give navigators the tools to follow needs, coordinate next steps, and keep people moving forward between visits — so access turns into lasting engagement."
       />
 
-      <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
-        <div className="mx-auto max-w-7xl">
+      <section className="bg-atmosphere px-4 py-16 md:px-6 xl:px-8 md:py-20">
+        <div className="site-container">
           <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
             What navigators can do
           </h2>
@@ -105,8 +105,8 @@ export default function OrganizationNavigationPage() {
         </div>
       </section>
 
-      <section className="bg-white px-3 py-16 md:px-4 md:py-20">
-        <div className="mx-auto max-w-7xl">
+      <section className="bg-white px-4 py-16 md:px-6 xl:px-8 md:py-20">
+        <div className="site-container">
           <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
             How navigation fits the day
           </h2>

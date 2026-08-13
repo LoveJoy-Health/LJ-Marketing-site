@@ -443,7 +443,7 @@ export default function ForProvidersPage() {
           />
 
           <div className="relative z-10">
-            <div className="relative mx-auto grid max-w-7xl items-center gap-8 px-3 pb-12 pt-8 md:grid-cols-[1.05fr_0.95fr] md:gap-6 md:px-4 md:pb-14 md:pt-10 lg:pb-16">
+            <div className="site-container relative grid items-center gap-8 px-4 pb-12 pt-8 md:grid-cols-[1.05fr_0.95fr] md:gap-6 md:px-6 md:pb-14 md:pt-10 lg:pb-16 xl:px-8">
               <div className="max-w-xl">
                 <p className="animate-fade-up text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
                   For providers
@@ -486,8 +486,8 @@ export default function ForProvidersPage() {
       </section>
 
       {/* 2. Audiences */}
-      <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
-        <div className="mx-auto max-w-7xl">
+      <section className="bg-atmosphere px-4 py-16 md:px-6 xl:px-8 md:py-20">
+        <div className="site-container">
           <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
             Built for the people delivering behavioral healthcare
           </h2>
@@ -521,8 +521,8 @@ export default function ForProvidersPage() {
       </section>
 
       {/* 3. Connected care workflow */}
-      <section className="bg-white px-3 py-16 md:px-4 md:py-20">
-        <div className="mx-auto max-w-7xl">
+      <section className="bg-white px-4 py-16 md:px-6 xl:px-8 md:py-20">
+        <div className="site-container">
           <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
             Everything you need to deliver connected care.
           </h2>
@@ -554,9 +554,9 @@ export default function ForProvidersPage() {
       {/* 4. Portal + App */}
       <section
         id="practice"
-        className="scroll-mt-28 bg-atmosphere px-3 py-16 md:px-4 md:py-20"
+        className="scroll-mt-28 bg-atmosphere px-4 py-16 md:px-6 xl:px-8 md:py-20"
       >
-        <div className="mx-auto max-w-7xl">
+        <div className="site-container">
           <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
             Your practice. Wherever you need it.
           </h2>
@@ -609,8 +609,8 @@ export default function ForProvidersPage() {
       </section>
 
       {/* 5. Insights + workflow relief */}
-      <section className="bg-white px-3 py-16 md:px-4 md:py-20">
-        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:gap-14">
+      <section className="bg-white px-4 py-16 md:px-6 xl:px-8 md:py-20">
+        <div className="site-container grid gap-10 lg:grid-cols-2 lg:gap-14">
           <div>
             <h2 className="font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
               Know more than what happens in the appointment.
@@ -673,8 +673,8 @@ export default function ForProvidersPage() {
       </section>
 
       {/* 6. Onboarding + payment */}
-      <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
-        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:gap-14">
+      <section className="bg-atmosphere px-4 py-16 md:px-6 xl:px-8 md:py-20">
+        <div className="site-container grid gap-10 lg:grid-cols-2 lg:gap-14">
           <div className="rounded-[1.75rem] bg-white p-6 shadow-[0_10px_32px_rgba(2,24,72,0.08)] ring-1 ring-black/[0.04] md:p-8">
             <h2 className="font-display text-2xl tracking-tight text-navy-deep md:text-3xl">
               Joining LoveJoy is straightforward.
@@ -732,7 +732,7 @@ export default function ForProvidersPage() {
 
       {/* 7. Final CTA */}
       <section className="px-1 pb-2 md:px-1.5">
-        <div className="bg-navy-atmosphere relative overflow-hidden rounded-[2rem] px-3 py-14 text-white md:rounded-[2.75rem] md:px-4 md:py-16">
+        <div className="bg-navy-atmosphere relative overflow-hidden rounded-[2rem] px-4 py-14 text-white md:rounded-[2.75rem] md:px-6 xl:px-8 md:py-16">
           <div
             aria-hidden
             className="bg-starfield pointer-events-none absolute inset-0 opacity-35"

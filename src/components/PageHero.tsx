@@ -12,7 +12,7 @@ export function PageHero({ title, description, eyebrow }: PageHeroProps) {
           aria-hidden
           className="bg-starfield pointer-events-none absolute inset-0 opacity-40"
         />
-        <div className="relative mx-auto max-w-7xl px-3 md:px-4">
+        <div className="relative site-container px-4 md:px-6 xl:px-8">
           {eyebrow ? (
             <p className="animate-fade-up text-xs font-semibold uppercase tracking-[0.18em] text-gold">
               {eyebrow}

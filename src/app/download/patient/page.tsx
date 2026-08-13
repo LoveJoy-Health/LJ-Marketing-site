@@ -87,8 +87,8 @@ function HomePreview() {
 export default function DownloadPatientPage() {
   return (
     <>
-      <section className="bg-white px-3 pb-14 pt-6 md:px-4 md:pb-20 md:pt-10">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
+      <section className="bg-white px-4 pb-14 pt-6 md:px-6 xl:px-8 md:pb-20 md:pt-10">
+        <div className="site-container grid items-center gap-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
           <div>
             <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
               LoveJoy patient app
@@ -130,8 +130,8 @@ export default function DownloadPatientPage() {
         </div>
       </section>
 
-      <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
-        <div className="mx-auto max-w-7xl">
+      <section className="bg-atmosphere px-4 py-16 md:px-6 xl:px-8 md:py-20">
+        <div className="site-container">
           <h2 className="max-w-2xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
             Everything you need between visits.
           </h2>
@@ -160,7 +160,7 @@ export default function DownloadPatientPage() {
       </section>
 
       <section className="px-1 pb-2 md:px-1.5">
-        <div className="bg-navy-atmosphere relative overflow-hidden rounded-[2rem] px-3 py-14 text-white md:rounded-[2.75rem] md:px-4 md:py-16">
+        <div className="bg-navy-atmosphere relative overflow-hidden rounded-[2rem] px-4 py-14 text-white md:rounded-[2.75rem] md:px-6 xl:px-8 md:py-16">
           <div
             aria-hidden
             className="bg-starfield pointer-events-none absolute inset-0 opacity-35"

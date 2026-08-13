@@ -16,8 +16,8 @@ export function OrganizationInteriorHero({
   description: string;
 }) {
   return (
-    <section className="bg-white px-3 pb-10 pt-6 md:px-4 md:pb-14 md:pt-10">
-      <div className="mx-auto max-w-7xl">
+    <section className="bg-white px-4 pb-10 pt-6 md:px-6 xl:px-8 md:pb-14 md:pt-10">
+      <div className="site-container">
         <p className="animate-fade-up text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
           {eyebrow}
         </p>
@@ -73,8 +73,8 @@ export function OrganizationRelatedNav({
 }) {
   if (!links.length) return null;
   return (
-    <section className="border-t border-border bg-white px-3 py-10 md:px-4">
-      <div className="mx-auto flex max-w-7xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+    <section className="border-t border-border bg-white px-4 py-10 md:px-6 xl:px-8">
+      <div className="site-container flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <Link
           href="/for-organizations"
           className="text-sm font-semibold text-navy transition hover:text-navy-deep"
@@ -107,7 +107,7 @@ export function OrganizationInteriorCtaBand({
 }) {
   return (
     <section className="px-1 pb-2 md:px-1.5">
-      <div className="bg-navy-atmosphere relative overflow-hidden rounded-[2rem] px-3 py-14 text-white md:rounded-[2.75rem] md:px-4 md:py-16">
+      <div className="bg-navy-atmosphere relative overflow-hidden rounded-[2rem] px-4 py-14 text-white md:rounded-[2.75rem] md:px-6 xl:px-8 md:py-16">
         <div
           aria-hidden
           className="bg-starfield pointer-events-none absolute inset-0 opacity-35"
