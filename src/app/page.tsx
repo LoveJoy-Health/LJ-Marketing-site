@@ -12,7 +12,6 @@ import {
   RotateCcw,
   Search,
   Smile,
-  Stethoscope,
   TriangleAlert,
   TrendingUp,
   Users,
@@ -69,11 +68,10 @@ const paths = [
     body: "Deliver connected care and see the whole picture.",
     cta: "Learn More →",
     accent: "bg-[#7EB6E8] text-navy-deep",
-    photo: null,
-    photoClass: "",
-    photoAlt: "",
+    photo: "/images/providers-hero.png",
+    photoClass: "object-[center_28%]",
+    photoAlt: "Clinicians collaborating at a desk over a laptop",
     icon: "stethoscope" as const,
-    gradient: "bg-gradient-to-br from-sky-200 via-navy-soft to-sky",
   },
   {
     href: "/about/contact",
@@ -81,11 +79,10 @@ const paths = [
     body: "Coordinate resources and remove barriers to care.",
     cta: "Learn More →",
     accent: "bg-[#9B8CF0] text-navy-deep",
-    photo: null,
-    photoClass: "",
-    photoAlt: "",
+    photo: "/images/about-hero.png",
+    photoClass: "object-[center_35%]",
+    photoAlt: "Care professional and client in a supportive conversation",
     icon: "people" as const,
-    gradient: "bg-gradient-to-br from-violet-200 via-navy-soft to-sky",
   },
   {
     href: "/for-organizations",
@@ -93,11 +90,10 @@ const paths = [
     body: "Improve outcomes and create stronger communities.",
     cta: "Learn More →",
     accent: "bg-[#4DB6A0] text-navy-deep",
-    photo: null,
-    photoClass: "",
-    photoAlt: "",
+    photo: "/images/organizations-hero.png",
+    photoClass: "object-[center_30%]",
+    photoAlt: "Organization leaders reviewing population health data together",
     icon: "building" as const,
-    gradient: "bg-gradient-to-br from-emerald-100 via-navy-soft to-sky",
   },
 ] as const;
 
@@ -137,46 +133,30 @@ const connectedRoles = [
     photo: "/images/lady-daughter.png",
     photoAlt: "Mother and child representing a patient family",
     photoClass: "object-cover object-[center_18%]",
-    placeholder: null,
   },
   {
     label: "Provider",
     position: "right-0 top-1/2 -translate-y-1/2",
     labelPlacement: "below" as const,
-    photo: null,
-    photoAlt: "",
-    photoClass: "",
-    placeholder: {
-      gradient: "bg-gradient-to-br from-sky-200 via-sky-300 to-[#5B9FE8]",
-      Icon: Stethoscope,
-      iconClass: "text-navy",
-    },
+    photo: "/images/providers-hero.png",
+    photoAlt: "Clinicians collaborating over care",
+    photoClass: "object-cover object-[32%_28%]",
   },
   {
     label: "Navigator",
     position: "bottom-0 left-1/2 -translate-x-1/2",
     labelPlacement: "below" as const,
-    photo: null,
-    photoAlt: "",
-    photoClass: "",
-    placeholder: {
-      gradient: "bg-gradient-to-br from-violet-200 via-violet-300 to-[#8B7CF0]",
-      Icon: Headset,
-      iconClass: "text-navy",
-    },
+    photo: "/images/about-hero.png",
+    photoAlt: "Care navigator in a supportive conversation",
+    photoClass: "object-cover object-[68%_28%]",
   },
   {
     label: "Organization",
     position: "left-0 top-1/2 -translate-y-1/2",
     labelPlacement: "below" as const,
-    photo: null,
-    photoAlt: "",
-    photoClass: "",
-    placeholder: {
-      gradient: "bg-gradient-to-br from-emerald-100 via-teal-200 to-[#4DB6A0]",
-      Icon: Building2,
-      iconClass: "text-navy",
-    },
+    photo: "/images/organizations-hero.png",
+    photoAlt: "Organization leaders reviewing outcomes together",
+    photoClass: "object-cover object-[55%_28%]",
   },
 ] as const;
 
@@ -544,28 +524,15 @@ function ConnectedDiagram() {
       </div>
 
       {connectedRoles.map((role) => {
-        const PlaceholderIcon = role.placeholder?.Icon;
         const node = (
           <span className="relative block h-[3.25rem] w-[3.25rem] overflow-hidden rounded-full shadow-[0_8px_20px_rgba(2,24,72,0.18)] ring-[3px] ring-white md:h-16 md:w-16">
-            {role.photo ? (
-              <Image
-                src={role.photo}
-                alt={role.photoAlt}
-                fill
-                sizes="64px"
-                className={`photo-bw ${role.photoClass}`}
-              />
-            ) : role.placeholder && PlaceholderIcon ? (
-              <span
-                className={`flex h-full w-full items-center justify-center ${role.placeholder.gradient}`}
-              >
-                <PlaceholderIcon
-                  aria-hidden
-                  className={`h-6 w-6 md:h-7 md:w-7 ${role.placeholder.iconClass}`}
-                  strokeWidth={1.75}
-                />
-              </span>
-            ) : null}
+            <Image
+              src={role.photo}
+              alt={role.photoAlt}
+              fill
+              sizes="64px"
+              className={`photo-bw ${role.photoClass}`}
+            />
           </span>
         );
 
@@ -809,21 +776,13 @@ export default function HomePage() {
               >
                 <div className="relative">
                   <div className="relative aspect-[4/3] overflow-hidden rounded-t-[1.75rem]">
-                    {path.photo ? (
-                      <Image
-                        src={path.photo}
-                        alt={path.photoAlt}
-                        fill
-                        sizes="(max-width: 1024px) 50vw, 25vw"
-                        className={`photo-bw object-cover transition duration-500 group-hover:scale-[1.03] ${path.photoClass}`}
-                      />
-                    ) : (
-                      <div
-                        className={`absolute inset-0 ${
-                          "gradient" in path ? path.gradient : "bg-navy-soft"
-                        }`}
-                      />
-                    )}
+                    <Image
+                      src={path.photo}
+                      alt={path.photoAlt}
+                      fill
+                      sizes="(max-width: 1024px) 50vw, 25vw"
+                      className={`photo-bw object-cover transition duration-500 group-hover:scale-[1.03] ${path.photoClass}`}
+                    />
                   </div>
                   <span
                     className={`absolute bottom-0 left-4 z-10 inline-flex h-11 w-11 translate-y-1/2 items-center justify-center rounded-full ${path.accent} shadow-[0_6px_16px_rgba(2,24,72,0.16)] ring-[3px] ring-white`}
