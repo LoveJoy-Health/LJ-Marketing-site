@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
 import { Fraunces, Figtree } from "next/font/google";
+import { Analytics } from "@/components/Analytics";
 import { BackToTop } from "@/components/BackToTop";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { JsonLd } from "@/components/JsonLd";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
+import {
+  defaultOgImage,
+  organizationJsonLd,
+  websiteJsonLd,
+} from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
 
@@ -17,21 +24,38 @@ const body = Figtree({
   variable: "--font-body",
 });
 
+const defaultTitle = `${siteConfig.name} — Care that stays with you`;
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} — Care that stays with you`,
+    default: defaultTitle,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
   applicationName: siteConfig.name,
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: siteConfig.name,
+    title: defaultTitle,
     description: siteConfig.description,
     url: siteConfig.url,
     siteName: siteConfig.name,
     type: "website",
-    images: [{ url: "/images/guy-hero.png" }],
+    locale: "en_US",
+    images: [
+      {
+        url: defaultOgImage.url,
+        alt: defaultOgImage.alt,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: defaultTitle,
+    description: siteConfig.description,
+    images: [defaultOgImage.url],
   },
   icons: {
     icon: "/favicon.webp",
@@ -46,6 +70,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${display.variable} ${body.variable}`}>
       <body className="min-h-screen antialiased">
+        <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
         <SiteHeader />
         <main>
           <Breadcrumbs />
@@ -53,6 +78,7 @@ export default function RootLayout({
         </main>
         <SiteFooter />
         <BackToTop />
+        <Analytics />
       </body>
     </html>
   );

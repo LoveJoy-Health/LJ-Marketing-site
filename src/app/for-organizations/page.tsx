@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -18,11 +19,12 @@ import {
   type LucideIcon,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "For Organizations",
   description:
     "Connect people to care, coordinate support across teams, and understand the behavioral health journey — built for organizations responsible for outcomes.",
-};
+  path: "/for-organizations",
+});
 
 const valueProps: { label: string; Icon: LucideIcon }[] = [
   { label: "HIPAA compliant and secure", Icon: Shield },

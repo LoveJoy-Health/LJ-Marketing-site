@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -18,6 +19,15 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { ConnectedDiagram } from "@/components/ConnectedDiagram";
+import { buildPageMetadata } from "@/lib/seo";
+import { siteConfig } from "@/lib/site";
+
+export const metadata: Metadata = buildPageMetadata({
+  title: `${siteConfig.name} — Care that stays with you`,
+  description: siteConfig.description,
+  path: "/",
+  absoluteTitle: true,
+});
 
 const gapStats = [
   {

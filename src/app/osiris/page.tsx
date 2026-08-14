@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import {
   Clock,
@@ -10,11 +11,12 @@ import {
 } from "lucide-react";
 import { siteConfig } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Osiris",
   description:
     "Osiris is LoveJoy’s guided AI support — a thoughtful companion for reflection, next steps, and between-visit care.",
-};
+  path: "/osiris",
+});
 
 const whenItHelps: { title: string; body: string; Icon: LucideIcon }[] = [
   {

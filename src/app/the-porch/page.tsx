@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { Heart, MessageCircle, Shield, Users, type LucideIcon } from "lucide-react";
 import { siteConfig } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "The Porch",
   description:
     "The Porch is LoveJoy’s peer community — a warm space to connect with others who understand, beyond the appointment.",
-};
+  path: "/the-porch",
+});
 
 const whoItsFor: { title: string; body: string }[] = [
   {

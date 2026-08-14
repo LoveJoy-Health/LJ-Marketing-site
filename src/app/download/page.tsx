@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { Smartphone, Stethoscope } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Download LoveJoy Apps",
   description:
     "Get the LoveJoy patient app or the LoveJoy Provider app — choose the download page that fits how you use LoveJoy.",
-};
+  path: "/download",
+});
 
 const apps = [
   {

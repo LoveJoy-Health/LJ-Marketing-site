@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import {
   Activity,
@@ -21,11 +22,12 @@ import {
 } from "@/components/ProviderInterior";
 import { siteConfig } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Provider Platform",
   description:
     "Explore LoveJoy for providers — portal and app tools for scheduling, telehealth, documentation, messaging, and between-visit insights.",
-};
+  path: "/for-providers/platform",
+});
 
 const workflowSteps: {
   number: string;

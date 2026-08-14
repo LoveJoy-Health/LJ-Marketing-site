@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo";
 import {
   CheckCircle2,
   ClipboardList,
@@ -13,11 +14,12 @@ import {
 } from "@/components/ProviderInterior";
 import { siteConfig } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Provider Onboarding",
   description:
     "Learn how joining LoveJoy works — create your account, complete your profile, get reviewed, and start providing care.",
-};
+  path: "/for-providers/onboarding",
+});
 
 const steps: {
   n: string;

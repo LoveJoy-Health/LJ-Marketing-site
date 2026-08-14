@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo";
 import {
   Activity,
   ClipboardList,
@@ -12,11 +13,12 @@ import {
   OrganizationRelatedNav,
 } from "@/components/OrganizationInterior";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Insights & Reporting",
   description:
     "Understand how people connect to care — and where they need help — with reporting across access, engagement, needs, and progress.",
-};
+  path: "/for-organizations/insights",
+});
 
 const metrics: {
   title: string;

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo";
 import {
   Activity,
   BadgeCheck,
@@ -15,11 +16,12 @@ import {
   ProviderRelatedNav,
 } from "@/components/ProviderInterior";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Provider Requirements",
   description:
     "Who can join LoveJoy, what credentials we look for, and how to prepare for provider review.",
-};
+  path: "/for-providers/requirements",
+});
 
 const audiences: {
   title: string;

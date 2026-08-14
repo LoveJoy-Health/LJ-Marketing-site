@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import type { SVGProps } from "react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Team",
   description:
     "Meet the people behind LoveJoy Health — leadership and advisors building a more connected behavioral care experience.",
-};
+  path: "/about/team",
+});
 
 type ProfileLinkKind = "linkedin" | "website";
 

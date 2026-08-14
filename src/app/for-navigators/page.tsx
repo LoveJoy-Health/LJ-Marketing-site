@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -18,11 +19,12 @@ import {
 } from "lucide-react";
 import { isExternalHref, siteConfig } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Care Navigators",
   description:
     "A connected workspace for care navigators — track assigned people, follow-ups, care gaps, and keep care moving forward.",
-};
+  path: "/for-navigators",
+});
 
 const heroStats: {
   value: string;

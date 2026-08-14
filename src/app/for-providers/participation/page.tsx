@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo";
 import {
   Building2,
   CreditCard,
@@ -14,11 +15,12 @@ import {
   ProviderRelatedNav,
 } from "@/components/ProviderInterior";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Provider Participation",
   description:
     "How participating on LoveJoy works — insurance, self-pay, and organization-based care models, plus what we expect from network providers.",
-};
+  path: "/for-providers/participation",
+});
 
 const paymentModes: {
   title: string;

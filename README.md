@@ -49,6 +49,29 @@ npm run build
 npm start
 ```
 
+## SEO
+
+- `src/app/sitemap.ts` and `src/app/robots.ts` publish at `/sitemap.xml` and `/robots.txt` using `siteConfig.url` (`https://lovejoy.health`).
+- Page metadata (canonical, Open Graph, Twitter) via `buildPageMetadata` in `src/lib/seo.ts`.
+- Organization / WebSite JSON-LD in the root layout; BreadcrumbList where breadcrumbs render; Article JSON-LD on blog posts.
+- Default share image is `/images/logo-icon-circle.png` until a dedicated 1200×630 OG asset exists.
+
+## Analytics (optional)
+
+Set either or both env vars — scripts load only when present (no hardcoded IDs). Align with the [Cookie Policy](/cookie-policy) before enabling in production.
+
+| Variable | Purpose |
+|----------|---------|
+| `NEXT_PUBLIC_GA_MEASUREMENT_ID` | Google Analytics 4 measurement ID (e.g. `G-XXXXXXXX`) |
+| `NEXT_PUBLIC_PLAUSIBLE_DOMAIN` | Plausible site domain (e.g. `lovejoy.health`) |
+
+Example `.env.local`:
+
+```bash
+NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXX
+NEXT_PUBLIC_PLAUSIBLE_DOMAIN=lovejoy.health
+```
+
 ## Deploy notes
 
 - **Hosting TBD** — Vercel is the natural fit for Next.js App Router; Laravel Forge / Node also fine if you prefer company infra.
@@ -60,9 +83,8 @@ npm start
 - Hosting choice + domain cutover plan
 - CMS vs static copy ownership
 - Production contact form backend (Formspree, HubSpot, Filament, etc.)
-- Analytics (GA4 / Segment / Plausible)
-- App Store / Play download deep links if you want badges restored
-- Privacy / Terms pages
+- Analytics IDs (set env vars above) + Search Console verification
+- Dedicated 1200×630 Open Graph image
 - Higher-res logo variants (light + dark) and additional photography
 
 ## Related repos (do not confuse)

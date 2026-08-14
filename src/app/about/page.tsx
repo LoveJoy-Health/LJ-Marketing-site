@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -10,11 +11,12 @@ import {
   type LucideIcon,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "About",
   description:
     "LoveJoy Health makes behavioral healthcare easier to find, easier to navigate, and easier to stay connected to.",
-};
+  path: "/about",
+});
 
 const audiences: {
   title: string;

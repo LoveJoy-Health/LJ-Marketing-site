@@ -5,6 +5,7 @@ export const siteConfig = {
   shortName: "LoveJoy",
   description:
     "LoveJoy Health is a digital front door for mental health—connecting people to providers, supportive communities, and tools for continuous care and better outcomes.",
+  /** Canonical public site URL — used for metadataBase, sitemap, and JSON-LD. */
   url: "https://lovejoy.health",
   address: "24 Greenway Plz, Houston, TX 77046",
   contactEmail: "business@lovejoy.health",
@@ -40,6 +41,8 @@ export const siteConfig = {
   /** Navigators are typically invited — join routes to contact for access */
   navigatorJoinUrl: "/about/contact",
 } as const;
+
+export const siteUrl = siteConfig.url;
 
 export type NavLink = {
   href: string;

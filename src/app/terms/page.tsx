@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo";
 import {
   LegalDocument,
   LegalSection,
 } from "@/components/LegalDocument";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Terms & Conditions",
   description:
     "Terms and conditions for using the LoveJoy Health website and related services.",
-};
+  path: "/terms",
+});
 
 export default function TermsPage() {
   return (

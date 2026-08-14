@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo";
 import {
   ClipboardList,
   HeartHandshake,
@@ -13,11 +14,12 @@ import {
   OrganizationRelatedNav,
 } from "@/components/OrganizationInterior";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Care Navigation",
   description:
     "Give navigators a workspace to follow needs, coordinate next steps, and keep people moving forward between visits.",
-};
+  path: "/for-organizations/navigation",
+});
 
 const workspaceFeatures: {
   title: string;

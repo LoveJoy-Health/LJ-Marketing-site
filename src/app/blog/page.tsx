@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
 import BlogIndex from "./BlogIndex";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Blog",
   description:
     "Stories, updates, and ideas from LoveJoy Health on connected behavioral healthcare.",
-};
+  path: "/blog",
+});
 
 function BlogIndexFallback() {
   return (

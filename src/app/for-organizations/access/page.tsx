@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo";
 import {
   BarChart3,
   HeartPulse,
@@ -12,11 +13,12 @@ import {
   OrganizationRelatedNav,
 } from "@/components/OrganizationInterior";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "CMS ACCESS",
   description:
     "How LoveJoy supports organizations preparing for — and participating in — the CMS ACCESS Model for outcome-aligned behavioral health care.",
-};
+  path: "/for-organizations/access",
+});
 
 const CMS_ACCESS_URL =
   "https://www.cms.gov/priorities/innovation/innovation-models/access";

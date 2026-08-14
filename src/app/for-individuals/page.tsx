@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import {
@@ -17,11 +18,12 @@ import {
 import { StoreBadges } from "@/components/StoreBadges";
 import { siteConfig } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "For Individuals",
   description:
     "Find the mental health support that feels right for you — therapy, medication support, community, and tools to stay connected with care.",
-};
+  path: "/for-individuals",
+});
 
 const valueProps: { label: string; Icon: LucideIcon }[] = [
   { label: "Your privacy is our priority", Icon: Shield },

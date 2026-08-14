@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BlogContent } from "@/components/BlogContent";
+import { JsonLd } from "@/components/JsonLd";
 import {
   BLOG_POSTS,
   getAllPostSlugs,
   getCategoryLabel,
   getPostBySlug,
 } from "@/lib/blog";
+import { articleJsonLd, buildPageMetadata } from "@/lib/seo";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -26,18 +28,14 @@ export async function generateMetadata({
     return { title: "Post not found" };
   }
 
-  return {
+  return buildPageMetadata({
     title: post.seoTitle,
     description: post.metaDescription,
-    openGraph: {
-      title: post.seoTitle,
-      description: post.metaDescription,
-      type: "article",
-      publishedTime: post.date,
-      authors: [post.author],
-      url: `/blog/${post.slug}`,
-    },
-  };
+    path: `/blog/${post.slug}`,
+    type: "article",
+    publishedTime: post.date,
+    authors: [post.author],
+  });
 }
 
 export default async function BlogPostPage({ params }: PageProps) {
@@ -51,6 +49,7 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   return (
     <article className="bg-white px-3 pb-16 pt-6 md:px-4 md:pb-24 md:pt-8">
+      <JsonLd data={articleJsonLd(post)} />
       <div className="mx-auto max-w-3xl">
         <div className="flex flex-wrap items-center gap-2">
           <Link

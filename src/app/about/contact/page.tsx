@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import {
   Building2,
@@ -12,11 +13,12 @@ import {
 import { PageHero } from "@/components/PageHero";
 import { isExternalHref, siteConfig } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Contact",
   description:
     "Get in touch with LoveJoy Health — business, care, providers, organizations, media, and security.",
-};
+  path: "/about/contact",
+});
 
 type ContactLink = {
   href: string;

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import {
@@ -17,11 +18,12 @@ import {
 } from "lucide-react";
 import { isExternalHref, siteConfig } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Crisis Resources",
   description:
     "If you or someone you know is in crisis, free confidential help is available 24/7. Call or text 988, or find other trusted crisis support resources.",
-};
+  path: "/resources/crisis",
+});
 
 type SupportAction = {
   href: string;

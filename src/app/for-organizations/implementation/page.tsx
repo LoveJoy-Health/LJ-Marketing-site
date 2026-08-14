@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo";
 import {
   CheckCircle2,
   LineChart,
@@ -12,11 +13,12 @@ import {
   OrganizationRelatedNav,
 } from "@/components/OrganizationInterior";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Implementation",
   description:
     "From conversation to connected care — how LoveJoy helps organizations launch behavioral health programs with clarity and impact.",
-};
+  path: "/for-organizations/implementation",
+});
 
 const steps: {
   n: string;

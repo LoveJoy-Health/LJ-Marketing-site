@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
@@ -21,11 +22,12 @@ import {
 import { StoreBadges } from "@/components/StoreBadges";
 import { siteConfig } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "For Providers",
   description:
     "Deliver care, manage workflows, and stay connected with patients between visits — built for behavioral health providers.",
-};
+  path: "/for-providers",
+});
 
 const valueProps: { label: string; Icon: LucideIcon }[] = [
   { label: "HIPAA-compliant and secure", Icon: Shield },

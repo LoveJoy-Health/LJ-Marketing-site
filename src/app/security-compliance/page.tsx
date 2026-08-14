@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo";
 import {
   LegalDocument,
   LegalList,
@@ -6,11 +7,12 @@ import {
 } from "@/components/LegalDocument";
 import { siteConfig } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Security & Compliance",
   description:
     "How LoveJoy Health protects sensitive health information with HIPAA-aligned security practices.",
-};
+  path: "/security-compliance",
+});
 
 export default function SecurityCompliancePage() {
   return (

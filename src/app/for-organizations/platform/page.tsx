@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import {
   BarChart3,
@@ -17,11 +18,12 @@ import {
 } from "@/components/OrganizationInterior";
 import { siteConfig } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Organization Platform",
   description:
     "Explore the LoveJoy organization platform — one connected experience across access, coordination, engagement, and insight for behavioral health programs.",
-};
+  path: "/for-organizations/platform",
+});
 
 const journey: {
   title: string;

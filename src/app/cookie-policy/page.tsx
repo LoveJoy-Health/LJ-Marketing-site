@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo";
 import {
   LegalDocument,
   LegalList,
   LegalSection,
 } from "@/components/LegalDocument";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Cookie Policy",
   description:
     "How LoveJoy Health uses cookies and similar technologies on our website.",
-};
+  path: "/cookie-policy",
+});
 
 /**
  * No dedicated Cookie Policy page exists on the live WordPress site
@@ -69,6 +71,21 @@ export default function CookiePolicyPage() {
           additional third-party tracking, and monitor your interaction with that
           embedded content, including tracking your interaction with the embedded
           content if you have an account and are logged in to that website.
+        </p>
+      </LegalSection>
+
+      <LegalSection title="Optional analytics">
+        <p>
+          If analytics is enabled on this site, we may use Google Analytics 4
+          and/or Plausible to understand aggregate traffic. Those tools may set
+          cookies or similar identifiers. They are not loaded unless the site
+          operator configures them, and they are not required to browse the
+          marketing pages.
+        </p>
+        <p>
+          You can limit analytics cookies through your browser settings or
+          industry opt-out tools. See also our Privacy Policy for how we handle
+          personal data.
         </p>
       </LegalSection>
 

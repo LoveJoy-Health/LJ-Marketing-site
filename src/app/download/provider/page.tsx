@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import {
   Calendar,
@@ -11,11 +12,12 @@ import {
 import { StoreBadges } from "@/components/StoreBadges";
 import { siteConfig } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Download the LoveJoy Provider App",
   description:
     "Get the LoveJoy Provider app — today's schedule, secure visits, messaging, and patient context on the go.",
-};
+  path: "/download/provider",
+});
 
 const valueProps: { title: string; body: string; Icon: LucideIcon }[] = [
   {
