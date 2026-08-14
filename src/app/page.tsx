@@ -23,7 +23,7 @@ import { buildPageMetadata } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: `${siteConfig.name} — Care that stays with you`,
+  title: `${siteConfig.name} — Mental Health Care that stays with you`,
   description: siteConfig.description,
   path: "/",
   absoluteTitle: true,
@@ -479,7 +479,9 @@ export default function HomePage() {
                   Connected Behavioral Healthcare
                 </p>
                 <h1 className="animate-fade-up delay-100 mt-3 font-display text-4xl leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem]">
-                  Care that stays with{" "}
+                  Mental Health Care{" "}
+                  <br className="hidden sm:block" />
+                  that stays with{" "}
                   <em className="font-display italic text-gold">you.</em>
                 </h1>
                 <p className="animate-fade-up delay-200 mt-4 max-w-md text-base leading-relaxed text-white/75 md:text-lg">

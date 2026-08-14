@@ -24,7 +24,7 @@ const body = Figtree({
   variable: "--font-body",
 });
 
-const defaultTitle = `${siteConfig.name} — Care that stays with you`;
+const defaultTitle = `${siteConfig.name} — Mental Health Care that stays with you`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
