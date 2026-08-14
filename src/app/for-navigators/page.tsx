@@ -576,44 +576,49 @@ export default function ForNavigatorsPage() {
     <>
       <link rel="preload" as="image" href="/images/navigators-hero.png" />
 
-      {/* Hero */}
-      <section className="relative bg-white px-1 pb-10 pt-2 text-navy-deep md:px-1.5 md:pb-14 md:pt-3">
-        <div className="hero-shell bg-navigators-hero-atmosphere relative overflow-hidden">
+      {/* Hero — navy atmosphere + photo blend (same family as homepage) */}
+      <section className="relative bg-white px-1 pb-10 pt-2 text-white md:px-1.5 md:pb-14 md:pt-3">
+        <div className="hero-shell bg-navy-atmosphere relative overflow-hidden">
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_80%_40%,rgba(217,235,255,0.55),transparent_55%)]"
+            className="bg-starfield pointer-events-none absolute inset-0 opacity-55"
           />
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-0 z-[2] bg-[linear-gradient(105deg,#ffffff_0%,rgba(255,255,255,0.92)_20%,rgba(247,249,252,0.55)_38%,rgba(238,245,255,0.18)_52%,transparent_66%)]"
+            className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_120%,rgba(2,24,72,0.4),transparent_55%)]"
+          />
+          {/* Soft left wash — keeps copy legible without burying the portrait */}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 z-[2] bg-[linear-gradient(105deg,#042268_0%,rgba(4,34,104,0.45)_22%,rgba(4,34,104,0.12)_42%,transparent_58%)]"
           />
           <div
             aria-hidden
-            className="navigators-hero-photo-blend pointer-events-none absolute inset-x-0 bottom-0 top-[28%] z-[1] md:inset-y-0 md:left-auto md:right-0 md:top-0 md:w-[56%] lg:w-[60%]"
+            className="navigators-hero-photo-blend pointer-events-none absolute inset-x-0 bottom-0 top-[22%] z-[1] md:inset-y-0 md:left-auto md:right-0 md:top-0 md:w-[58%] lg:w-[62%]"
           />
 
           <div className="relative z-10">
             <div className="relative mx-auto grid max-w-7xl items-center gap-8 px-3 pb-12 pt-8 md:grid-cols-[1.05fr_0.95fr] md:gap-6 md:px-4 md:pb-14 md:pt-10 lg:pb-16">
               <div className="max-w-xl">
-                <p className="animate-fade-up text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
+                <p className="animate-fade-up text-[11px] font-semibold uppercase tracking-[0.2em] text-gold md:text-xs">
                   Care Navigators
                 </p>
-                <h1 className="animate-fade-up delay-100 mt-3 font-display text-4xl leading-[1.08] tracking-tight text-navy-deep md:text-5xl lg:text-[3.25rem]">
+                <h1 className="animate-fade-up delay-100 mt-3 font-display text-4xl leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.25rem]">
                   Help people keep moving{" "}
-                  <em className="font-display italic text-[#B8960A]">forward.</em>
+                  <em className="font-display italic text-gold">forward.</em>
                 </h1>
-                <p className="animate-fade-up delay-200 mt-5 max-w-lg text-base leading-relaxed text-muted md:text-lg">
+                <p className="animate-fade-up delay-200 mt-5 max-w-lg text-base leading-relaxed text-white/75 md:text-lg">
                   LoveJoy gives care navigators a connected workspace to track
                   people, close gaps, and coordinate the next right step — so
                   support doesn&apos;t stop between visits.
                 </p>
                 <div className="animate-fade-up delay-300 mt-8">
-                  <NavigatorCtas />
+                  <NavigatorCtas variant="dark" />
                 </div>
               </div>
 
               <div
-                className="animate-soft-rise relative mx-auto flex min-h-[16rem] w-full max-w-md items-center justify-end md:min-h-[22rem] md:max-w-none lg:min-h-[24rem]"
+                className="animate-soft-rise delay-200 relative mx-auto flex min-h-[16rem] w-full max-w-md items-center justify-end md:min-h-[22rem] md:max-w-none lg:min-h-[24rem]"
                 role="img"
                 aria-label="Care navigator meeting with a client, with caseload status summary"
               >
