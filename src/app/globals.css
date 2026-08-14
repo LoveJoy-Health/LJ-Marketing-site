@@ -200,304 +200,22 @@
     }
   }
 
-  /* Providers hero: light wash shell (reuses .hero-shell radius) */
-  .bg-providers-hero-atmosphere {
-    background:
-      radial-gradient(900px 520px at 12% 0%, rgba(217, 235, 255, 0.75), transparent 58%),
-      radial-gradient(700px 420px at 88% 18%, rgba(255, 255, 255, 0.9), transparent 52%),
-      linear-gradient(105deg, #ffffff 0%, #f7f9fc 38%, #eef5ff 72%, #e8f1fc 100%);
-  }
-
   /*
-   * Providers portrait: soft left/bottom feather into the light shell.
+   * Page hero portraits (providers / individuals / orgs / navigators / about / team):
+   * soft left/bottom feather into #042268 — same family as .hero-photo-blend.
+   * Page classes set background-image + position only.
    * Keep position:absolute (do NOT set relative — same pitfall as homepage).
+   * Human subjects → grayscale.
    */
-  .providers-hero-photo-blend {
-    background-color: #eef5ff;
-    background-image: url("/images/providers-hero.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 72% 28%;
-    opacity: 1;
-    filter: grayscale(100%);
-    -webkit-mask-image:
-      linear-gradient(
-        to right,
-        transparent 0%,
-        rgba(0, 0, 0, 0.12) 10%,
-        rgba(0, 0, 0, 0.4) 26%,
-        rgba(0, 0, 0, 0.78) 48%,
-        #000 66%
-      ),
-      linear-gradient(
-        to top,
-        transparent 0%,
-        rgba(0, 0, 0, 0.25) 12%,
-        rgba(0, 0, 0, 0.6) 30%,
-        rgba(0, 0, 0, 0.9) 52%,
-        #000 72%
-      );
-    -webkit-mask-composite: source-in;
-    mask-image:
-      linear-gradient(
-        to right,
-        transparent 0%,
-        rgba(0, 0, 0, 0.12) 10%,
-        rgba(0, 0, 0, 0.4) 26%,
-        rgba(0, 0, 0, 0.78) 48%,
-        #000 66%
-      ),
-      linear-gradient(
-        to top,
-        transparent 0%,
-        rgba(0, 0, 0, 0.25) 12%,
-        rgba(0, 0, 0, 0.6) 30%,
-        rgba(0, 0, 0, 0.9) 52%,
-        #000 72%
-      );
-    mask-composite: intersect;
-  }
-
-  .providers-hero-photo-blend::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background:
-      linear-gradient(
-        105deg,
-        #ffffff 0%,
-        rgba(247, 249, 252, 0.88) 14%,
-        rgba(238, 245, 255, 0.55) 32%,
-        rgba(238, 245, 255, 0.18) 50%,
-        transparent 68%
-      ),
-      linear-gradient(
-        to top,
-        #f7f9fc 0%,
-        rgba(247, 249, 252, 0.55) 14%,
-        rgba(247, 249, 252, 0.16) 36%,
-        transparent 58%
-      );
-    pointer-events: none;
-  }
-
-  @media (min-width: 768px) {
-    .providers-hero-photo-blend {
-      background-size: cover;
-      background-position: 68% 22%;
-    }
-  }
-
-  @media (max-width: 767px) {
-    .providers-hero-photo-blend {
-      background-position: 70% 30%;
-      background-size: cover;
-      opacity: 0.9;
-    }
-  }
-
-  /* Individuals hero: light warm wash shell (reuses .hero-shell radius) */
-  .bg-individuals-hero-atmosphere {
-    background:
-      radial-gradient(900px 520px at 12% 0%, rgba(255, 244, 214, 0.7), transparent 58%),
-      radial-gradient(700px 420px at 88% 18%, rgba(255, 255, 255, 0.92), transparent 52%),
-      linear-gradient(105deg, #ffffff 0%, #faf8f3 38%, #fff8e8 72%, #f7f0dc 100%);
-  }
-
-  /*
-   * Individuals portrait: soft left/bottom feather into the light shell.
-   * Keep position:absolute (do NOT set relative — same pitfall as homepage).
-   */
-  .individuals-hero-photo-blend {
-    background-color: #fff8e8;
-    background-image: url("/images/individuals-hero.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 68% 18%;
-    opacity: 1;
-    filter: grayscale(100%);
-    -webkit-mask-image:
-      linear-gradient(
-        to right,
-        transparent 0%,
-        rgba(0, 0, 0, 0.12) 10%,
-        rgba(0, 0, 0, 0.4) 26%,
-        rgba(0, 0, 0, 0.78) 48%,
-        #000 66%
-      ),
-      linear-gradient(
-        to top,
-        transparent 0%,
-        rgba(0, 0, 0, 0.25) 12%,
-        rgba(0, 0, 0, 0.6) 30%,
-        rgba(0, 0, 0, 0.9) 52%,
-        #000 72%
-      );
-    -webkit-mask-composite: source-in;
-    mask-image:
-      linear-gradient(
-        to right,
-        transparent 0%,
-        rgba(0, 0, 0, 0.12) 10%,
-        rgba(0, 0, 0, 0.4) 26%,
-        rgba(0, 0, 0, 0.78) 48%,
-        #000 66%
-      ),
-      linear-gradient(
-        to top,
-        transparent 0%,
-        rgba(0, 0, 0, 0.25) 12%,
-        rgba(0, 0, 0, 0.6) 30%,
-        rgba(0, 0, 0, 0.9) 52%,
-        #000 72%
-      );
-    mask-composite: intersect;
-  }
-
-  .individuals-hero-photo-blend::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background:
-      linear-gradient(
-        105deg,
-        #ffffff 0%,
-        rgba(250, 248, 243, 0.9) 14%,
-        rgba(255, 248, 232, 0.55) 32%,
-        rgba(255, 248, 232, 0.18) 50%,
-        transparent 68%
-      ),
-      linear-gradient(
-        to top,
-        #faf8f3 0%,
-        rgba(250, 248, 243, 0.55) 14%,
-        rgba(250, 248, 243, 0.16) 36%,
-        transparent 58%
-      );
-    pointer-events: none;
-  }
-
-  @media (min-width: 768px) {
-    .individuals-hero-photo-blend {
-      background-size: cover;
-      background-position: 62% 12%;
-    }
-  }
-
-  @media (max-width: 767px) {
-    .individuals-hero-photo-blend {
-      background-position: 65% 22%;
-      background-size: cover;
-      opacity: 0.9;
-    }
-  }
-
-  /* Organizations hero: light cool wash shell (reuses .hero-shell radius) */
-  .bg-organizations-hero-atmosphere {
-    background:
-      radial-gradient(900px 520px at 12% 0%, rgba(214, 228, 248, 0.72), transparent 58%),
-      radial-gradient(700px 420px at 88% 18%, rgba(255, 255, 255, 0.92), transparent 52%),
-      linear-gradient(105deg, #ffffff 0%, #f6f8fc 38%, #eef3fa 72%, #e6eef8 100%);
-  }
-
-  /*
-   * Organizations portrait: soft left/bottom feather into the light shell.
-   * Keep position:absolute (do NOT set relative — same pitfall as homepage).
-   */
-  .organizations-hero-photo-blend {
-    background-color: #eef3fa;
-    background-image: url("/images/organizations-hero.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 70% 35%;
-    opacity: 1;
-    filter: grayscale(100%);
-    -webkit-mask-image:
-      linear-gradient(
-        to right,
-        transparent 0%,
-        rgba(0, 0, 0, 0.12) 10%,
-        rgba(0, 0, 0, 0.4) 26%,
-        rgba(0, 0, 0, 0.78) 48%,
-        #000 66%
-      ),
-      linear-gradient(
-        to top,
-        transparent 0%,
-        rgba(0, 0, 0, 0.25) 12%,
-        rgba(0, 0, 0, 0.6) 30%,
-        rgba(0, 0, 0, 0.9) 52%,
-        #000 72%
-      );
-    -webkit-mask-composite: source-in;
-    mask-image:
-      linear-gradient(
-        to right,
-        transparent 0%,
-        rgba(0, 0, 0, 0.12) 10%,
-        rgba(0, 0, 0, 0.4) 26%,
-        rgba(0, 0, 0, 0.78) 48%,
-        #000 66%
-      ),
-      linear-gradient(
-        to top,
-        transparent 0%,
-        rgba(0, 0, 0, 0.25) 12%,
-        rgba(0, 0, 0, 0.6) 30%,
-        rgba(0, 0, 0, 0.9) 52%,
-        #000 72%
-      );
-    mask-composite: intersect;
-  }
-
-  .organizations-hero-photo-blend::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background:
-      linear-gradient(
-        105deg,
-        #ffffff 0%,
-        rgba(246, 248, 252, 0.9) 14%,
-        rgba(238, 243, 250, 0.55) 32%,
-        rgba(238, 243, 250, 0.18) 50%,
-        transparent 68%
-      ),
-      linear-gradient(
-        to top,
-        #f6f8fc 0%,
-        rgba(246, 248, 252, 0.55) 14%,
-        rgba(246, 248, 252, 0.16) 36%,
-        transparent 58%
-      );
-    pointer-events: none;
-  }
-
-  @media (min-width: 768px) {
-    .organizations-hero-photo-blend {
-      background-size: cover;
-      background-position: 68% 28%;
-    }
-  }
-
-  @media (max-width: 767px) {
-    .organizations-hero-photo-blend {
-      background-position: 72% 32%;
-      background-size: cover;
-      opacity: 0.9;
-    }
-  }
-
-  /*
-   * Navigators portrait: soft left/bottom feather into #042268 (homepage family).
-   * Keep position:absolute (do NOT set relative — same pitfall as homepage).
-   */
-  .navigators-hero-photo-blend {
+  .providers-hero-photo-blend,
+  .individuals-hero-photo-blend,
+  .organizations-hero-photo-blend,
+  .navigators-hero-photo-blend,
+  .about-hero-photo-blend,
+  .team-hero-photo-blend {
     background-color: #042268;
-    background-image: url("/images/navigators-hero.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 62% 22%;
     opacity: 1;
     filter: grayscale(100%);
     -webkit-mask-image:
@@ -538,8 +256,12 @@
     mask-composite: intersect;
   }
 
-  /* Soft edge dissolve into navy — same treatment as .hero-photo-blend */
-  .navigators-hero-photo-blend::after {
+  .providers-hero-photo-blend::after,
+  .individuals-hero-photo-blend::after,
+  .organizations-hero-photo-blend::after,
+  .navigators-hero-photo-blend::after,
+  .about-hero-photo-blend::after,
+  .team-hero-photo-blend::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -562,211 +284,91 @@
     pointer-events: none;
   }
 
-  @media (min-width: 768px) {
-    .navigators-hero-photo-blend {
-      background-size: cover;
-      background-position: 58% 18%;
-    }
+  .providers-hero-photo-blend {
+    background-image: url("/images/providers-hero.png");
+    background-position: 72% 28%;
   }
 
-  @media (max-width: 767px) {
-    .navigators-hero-photo-blend {
-      background-position: 65% 28%;
-      background-size: cover;
-      opacity: 0.85;
-    }
+  .individuals-hero-photo-blend {
+    background-image: url("/images/individuals-hero.png");
+    background-position: 68% 18%;
   }
 
-  /* About hero: light warm wash shell (reuses .hero-shell radius) */
-  .bg-about-hero-atmosphere {
-    background:
-      radial-gradient(900px 520px at 12% 0%, rgba(247, 243, 236, 0.78), transparent 58%),
-      radial-gradient(700px 420px at 88% 18%, rgba(255, 255, 255, 0.92), transparent 52%),
-      linear-gradient(105deg, #ffffff 0%, #faf8f5 38%, #f7f3ec 72%, #f0ebe3 100%);
+  .organizations-hero-photo-blend {
+    background-image: url("/images/organizations-hero.png");
+    background-position: 70% 35%;
   }
 
-  /*
-   * About portrait: soft left/bottom feather into the light shell.
-   * Keep position:absolute (do NOT set relative — same pitfall as homepage).
-   */
+  .navigators-hero-photo-blend {
+    background-image: url("/images/navigators-hero.png");
+    background-position: 62% 22%;
+  }
+
   .about-hero-photo-blend {
-    background-color: #f7f3ec;
     background-image: url("/images/about-hero.png");
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: 70% 28%;
-    opacity: 1;
-    filter: grayscale(100%);
-    -webkit-mask-image:
-      linear-gradient(
-        to right,
-        transparent 0%,
-        rgba(0, 0, 0, 0.12) 10%,
-        rgba(0, 0, 0, 0.4) 26%,
-        rgba(0, 0, 0, 0.78) 48%,
-        #000 66%
-      ),
-      linear-gradient(
-        to top,
-        transparent 0%,
-        rgba(0, 0, 0, 0.25) 12%,
-        rgba(0, 0, 0, 0.6) 30%,
-        rgba(0, 0, 0, 0.9) 52%,
-        #000 72%
-      );
-    -webkit-mask-composite: source-in;
-    mask-image:
-      linear-gradient(
-        to right,
-        transparent 0%,
-        rgba(0, 0, 0, 0.12) 10%,
-        rgba(0, 0, 0, 0.4) 26%,
-        rgba(0, 0, 0, 0.78) 48%,
-        #000 66%
-      ),
-      linear-gradient(
-        to top,
-        transparent 0%,
-        rgba(0, 0, 0, 0.25) 12%,
-        rgba(0, 0, 0, 0.6) 30%,
-        rgba(0, 0, 0, 0.9) 52%,
-        #000 72%
-      );
-    mask-composite: intersect;
   }
 
-  .about-hero-photo-blend::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background:
-      linear-gradient(
-        105deg,
-        #ffffff 0%,
-        rgba(250, 248, 245, 0.9) 14%,
-        rgba(247, 243, 236, 0.55) 32%,
-        rgba(247, 243, 236, 0.18) 50%,
-        transparent 68%
-      ),
-      linear-gradient(
-        to top,
-        #faf8f5 0%,
-        rgba(250, 248, 245, 0.55) 14%,
-        rgba(250, 248, 245, 0.16) 36%,
-        transparent 58%
-      );
-    pointer-events: none;
+  .team-hero-photo-blend {
+    background-image: url("/images/team/team-hero.png");
+    background-position: 72% 30%;
   }
 
   @media (min-width: 768px) {
-    .about-hero-photo-blend {
-      background-size: cover;
+    .providers-hero-photo-blend {
       background-position: 68% 22%;
     }
-  }
 
-  @media (max-width: 767px) {
-    .about-hero-photo-blend {
-      background-position: 70% 30%;
-      background-size: cover;
-      opacity: 0.9;
+    .individuals-hero-photo-blend {
+      background-position: 62% 12%;
     }
-  }
 
-  /* Team hero: light cool wash shell (reuses .hero-shell radius) */
-  .bg-team-hero-atmosphere {
-    background:
-      radial-gradient(900px 520px at 12% 0%, rgba(234, 242, 255, 0.9), transparent 58%),
-      radial-gradient(700px 420px at 88% 18%, rgba(255, 255, 255, 0.95), transparent 52%),
-      linear-gradient(105deg, #ffffff 0%, #f5f8fc 38%, #eaf2ff 72%, #e2ebf8 100%);
-  }
+    .organizations-hero-photo-blend {
+      background-position: 68% 28%;
+    }
 
-  /*
-   * Team hero photo: soft left/bottom feather into the light shell.
-   * Keep position:absolute (do NOT set relative — same pitfall as homepage).
-   * Human subjects → grayscale.
-   */
-  .team-hero-photo-blend {
-    background-color: #eaf2ff;
-    background-image: url("/images/team/team-hero.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 72% 30%;
-    opacity: 1;
-    filter: grayscale(100%);
-    -webkit-mask-image:
-      linear-gradient(
-        to right,
-        transparent 0%,
-        rgba(0, 0, 0, 0.12) 10%,
-        rgba(0, 0, 0, 0.4) 26%,
-        rgba(0, 0, 0, 0.78) 48%,
-        #000 66%
-      ),
-      linear-gradient(
-        to top,
-        transparent 0%,
-        rgba(0, 0, 0, 0.25) 12%,
-        rgba(0, 0, 0, 0.6) 30%,
-        rgba(0, 0, 0, 0.9) 52%,
-        #000 72%
-      );
-    -webkit-mask-composite: source-in;
-    mask-image:
-      linear-gradient(
-        to right,
-        transparent 0%,
-        rgba(0, 0, 0, 0.12) 10%,
-        rgba(0, 0, 0, 0.4) 26%,
-        rgba(0, 0, 0, 0.78) 48%,
-        #000 66%
-      ),
-      linear-gradient(
-        to top,
-        transparent 0%,
-        rgba(0, 0, 0, 0.25) 12%,
-        rgba(0, 0, 0, 0.6) 30%,
-        rgba(0, 0, 0, 0.9) 52%,
-        #000 72%
-      );
-    mask-composite: intersect;
-  }
+    .navigators-hero-photo-blend {
+      background-position: 58% 18%;
+    }
 
-  .team-hero-photo-blend::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background:
-      linear-gradient(
-        105deg,
-        #ffffff 0%,
-        rgba(245, 248, 252, 0.9) 14%,
-        rgba(234, 242, 255, 0.55) 32%,
-        rgba(234, 242, 255, 0.18) 50%,
-        transparent 68%
-      ),
-      linear-gradient(
-        to top,
-        #f5f8fc 0%,
-        rgba(245, 248, 252, 0.55) 14%,
-        rgba(245, 248, 252, 0.16) 36%,
-        transparent 58%
-      );
-    pointer-events: none;
-  }
+    .about-hero-photo-blend {
+      background-position: 68% 22%;
+    }
 
-  @media (min-width: 768px) {
     .team-hero-photo-blend {
-      background-size: cover;
       background-position: 70% 24%;
     }
   }
 
   @media (max-width: 767px) {
+    .providers-hero-photo-blend {
+      background-position: 70% 30%;
+      opacity: 0.85;
+    }
+
+    .individuals-hero-photo-blend {
+      background-position: 65% 22%;
+      opacity: 0.85;
+    }
+
+    .organizations-hero-photo-blend {
+      background-position: 72% 32%;
+      opacity: 0.85;
+    }
+
+    .navigators-hero-photo-blend {
+      background-position: 65% 28%;
+      opacity: 0.85;
+    }
+
+    .about-hero-photo-blend {
+      background-position: 70% 30%;
+      opacity: 0.85;
+    }
+
     .team-hero-photo-blend {
       background-position: 72% 32%;
-      background-size: cover;
-      opacity: 0.9;
+      opacity: 0.85;
     }
   }
 

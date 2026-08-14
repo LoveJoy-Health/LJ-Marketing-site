@@ -425,51 +425,53 @@ export default function ForProvidersPage() {
       {/* Preload blended hero portrait (CSS background, not next/image) */}
       <link rel="preload" as="image" href="/images/providers-hero.png" />
 
-      {/* Hero — inset rounded light card; portrait blended into soft wash */}
-      <section className="relative bg-white px-1 pb-10 pt-2 text-navy-deep md:px-1.5 md:pb-14 md:pt-3">
-        <div className="hero-shell bg-providers-hero-atmosphere relative overflow-hidden">
+      {/* Hero — navy atmosphere + photo blend (same family as homepage) */}
+      <section className="relative bg-white px-1 pb-10 pt-2 text-white md:px-1.5 md:pb-14 md:pt-3">
+        <div className="hero-shell bg-navy-atmosphere relative overflow-hidden">
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_80%_40%,rgba(217,235,255,0.55),transparent_55%)]"
+            className="bg-starfield pointer-events-none absolute inset-0 opacity-55"
           />
-          {/* Soft left wash — keeps navy copy legible without a hard photo edge */}
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-0 z-[2] bg-[linear-gradient(105deg,#ffffff_0%,rgba(255,255,255,0.92)_20%,rgba(247,249,252,0.55)_38%,rgba(238,245,255,0.18)_52%,transparent_66%)]"
+            className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_120%,rgba(2,24,72,0.4),transparent_55%)]"
           />
-
-          {/* Portrait as feathered background layer (right), dissolves into light shell */}
+          {/* Soft left wash — keeps copy legible without burying the portrait */}
           <div
             aria-hidden
-            className="providers-hero-photo-blend pointer-events-none absolute inset-x-0 bottom-0 top-[28%] z-[1] md:inset-y-0 md:left-auto md:right-0 md:top-0 md:w-[56%] lg:w-[60%]"
+            className="pointer-events-none absolute inset-0 z-[2] bg-[linear-gradient(105deg,#042268_0%,rgba(4,34,104,0.45)_22%,rgba(4,34,104,0.12)_42%,transparent_58%)]"
+          />
+          <div
+            aria-hidden
+            className="providers-hero-photo-blend pointer-events-none absolute inset-x-0 bottom-0 top-[22%] z-[1] md:inset-y-0 md:left-auto md:right-0 md:top-0 md:w-[58%] lg:w-[62%]"
           />
 
           <div className="relative z-10">
             <div className="relative mx-auto grid max-w-7xl items-center gap-8 px-3 pb-12 pt-8 md:grid-cols-[1.05fr_0.95fr] md:gap-6 md:px-4 md:pb-14 md:pt-10 lg:pb-16">
               <div className="max-w-xl">
-                <p className="animate-fade-up text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
+                <p className="animate-fade-up text-[11px] font-semibold uppercase tracking-[0.2em] text-gold md:text-xs">
                   For providers
                 </p>
-                <h1 className="animate-fade-up delay-100 mt-3 font-display text-4xl leading-[1.08] tracking-tight text-navy-deep md:text-5xl lg:text-[3.25rem]">
+                <h1 className="animate-fade-up delay-100 mt-3 font-display text-4xl leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.25rem]">
                   Care doesn&apos;t end with the session.{" "}
-                  <em className="font-display italic text-[#5B9FE8]">Neither</em>{" "}
+                  <em className="font-display italic text-gold">Neither</em>{" "}
                   should your connection.
                 </h1>
-                <p className="animate-fade-up delay-200 mt-5 max-w-lg text-base leading-relaxed text-muted md:text-lg">
+                <p className="animate-fade-up delay-200 mt-5 max-w-lg text-base leading-relaxed text-white/75 md:text-lg">
                   LoveJoy gives behavioral health providers the tools to deliver
                   care, stay connected between visits, and manage the workflows that
                   keep your practice running.
                 </p>
                 <div className="animate-fade-up delay-300 mt-8">
-                  <ProviderCtas />
+                  <ProviderCtas variant="dark" />
                 </div>
                 <ul className="animate-fade-up delay-400 mt-10 grid gap-4 sm:grid-cols-3">
                   {valueProps.map(({ label, Icon }) => (
                     <li key={label} className="flex items-start gap-2.5">
-                      <span className="mt-0.5 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-navy-soft text-navy">
+                      <span className="mt-0.5 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10 text-gold">
                         <Icon className="h-4 w-4" aria-hidden strokeWidth={1.75} />
                       </span>
-                      <span className="text-sm font-medium leading-snug text-navy-deep">
+                      <span className="text-sm font-medium leading-snug text-white/90">
                         {label}
                       </span>
                     </li>

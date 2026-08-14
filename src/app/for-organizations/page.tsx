@@ -218,23 +218,21 @@ function PopulationOverviewCard() {
     { label: "Assessments", value: "642", delta: "↑ 15%" },
   ];
   return (
-    <div className="animate-float w-[13.5rem] rounded-2xl bg-white/95 p-3.5 shadow-[0_16px_40px_rgba(2,24,72,0.18)] ring-1 ring-black/[0.06] backdrop-blur-sm sm:w-[15rem]">
-      <p className="text-[11px] font-semibold text-navy-deep">
-        Population Overview
-      </p>
+    <div className="animate-float w-[13.5rem] rounded-2xl border border-white/15 bg-navy-deep/75 p-3.5 shadow-lg backdrop-blur-md sm:w-[15rem]">
+      <p className="text-[11px] font-semibold text-white">Population Overview</p>
       <div className="mt-2.5 space-y-2">
         {stats.map((stat) => (
           <div
             key={stat.label}
-            className="flex items-end justify-between gap-2 rounded-xl bg-[#F4F7FC] px-2.5 py-2"
+            className="flex items-end justify-between gap-2 rounded-xl bg-white/10 px-2.5 py-2"
           >
             <div>
-              <p className="text-[9px] text-muted">{stat.label}</p>
-              <p className="font-display text-lg leading-none text-navy-deep">
+              <p className="text-[9px] text-white/65">{stat.label}</p>
+              <p className="font-display text-lg leading-none text-white">
                 {stat.value}
               </p>
             </div>
-            <span className="text-[10px] font-semibold text-emerald-600">
+            <span className="text-[10px] font-semibold text-emerald-400">
               {stat.delta}
             </span>
           </div>
@@ -246,8 +244,8 @@ function PopulationOverviewCard() {
 
 function EngagementTrendCard() {
   return (
-    <div className="animate-float-delayed w-[12.5rem] rounded-2xl bg-white/95 p-3.5 shadow-[0_16px_40px_rgba(2,24,72,0.18)] ring-1 ring-black/[0.06] backdrop-blur-sm sm:w-[14rem]">
-      <p className="text-[11px] font-semibold text-navy-deep">Engagement Trend</p>
+    <div className="animate-float-delayed w-[12.5rem] rounded-2xl border border-white/15 bg-navy-deep/75 p-3.5 shadow-lg backdrop-blur-md sm:w-[14rem]">
+      <p className="text-[11px] font-semibold text-white">Engagement Trend</p>
       <svg
         aria-hidden
         viewBox="0 0 160 64"
@@ -256,9 +254,10 @@ function EngagementTrendCard() {
       >
         <path
           d="M4 48 C24 44, 36 28, 52 32 S78 52, 96 30 S128 14, 156 22"
-          stroke="#04214A"
+          stroke="#FFFFFF"
           strokeWidth="2.25"
           strokeLinecap="round"
+          opacity="0.9"
         />
         <path
           d="M4 40 C28 38, 40 22, 58 26 S84 46, 102 28 S130 18, 156 26"
@@ -269,21 +268,21 @@ function EngagementTrendCard() {
         />
         <path
           d="M4 52 C30 50, 44 42, 62 44 S88 54, 108 40 S134 34, 156 38"
-          stroke="#B8960A"
+          stroke="#FFE612"
           strokeWidth="1.75"
           strokeLinecap="round"
-          opacity="0.8"
+          opacity="0.9"
         />
       </svg>
-      <div className="mt-1 flex flex-wrap gap-2 text-[8px] text-muted">
+      <div className="mt-1 flex flex-wrap gap-2 text-[8px] text-white/65">
         <span className="inline-flex items-center gap-1">
-          <span className="h-1.5 w-1.5 rounded-full bg-navy-deep" /> Assessments
+          <span className="h-1.5 w-1.5 rounded-full bg-white" /> Assessments
         </span>
         <span className="inline-flex items-center gap-1">
           <span className="h-1.5 w-1.5 rounded-full bg-[#5B9FE8]" /> Check-ins
         </span>
         <span className="inline-flex items-center gap-1">
-          <span className="h-1.5 w-1.5 rounded-full bg-[#B8960A]" /> Appointments
+          <span className="h-1.5 w-1.5 rounded-full bg-gold" /> Appointments
         </span>
       </div>
     </div>
@@ -477,8 +476,10 @@ function RoleNode({
 
 function OrgCtas({
   variant = "light",
+  secondary = "explore",
 }: {
   variant?: "light" | "dark";
+  secondary?: "explore" | "talk";
 }) {
   const outlined =
     variant === "dark"
@@ -494,7 +495,7 @@ function OrgCtas({
         Request a Demo
         <span aria-hidden>→</span>
       </Link>
-      {variant === "light" ? (
+      {secondary === "explore" ? (
         <Link href="/for-organizations/platform" className={outlined}>
           Explore the Platform
         </Link>
@@ -512,46 +513,50 @@ export default function ForOrganizationsPage() {
     <>
       <link rel="preload" as="image" href="/images/organizations-hero.png" />
 
-      {/* 1. Hero — inset rounded light card; photo blended into cool wash */}
-      <section className="relative bg-white px-1 pb-10 pt-2 text-navy-deep md:px-1.5 md:pb-14 md:pt-3">
-        <div className="hero-shell bg-organizations-hero-atmosphere relative overflow-hidden">
+      {/* 1. Hero — navy atmosphere + photo blend (same family as homepage) */}
+      <section className="relative bg-white px-1 pb-10 pt-2 text-white md:px-1.5 md:pb-14 md:pt-3">
+        <div className="hero-shell bg-navy-atmosphere relative overflow-hidden">
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_80%_40%,rgba(214,228,248,0.55),transparent_55%)]"
+            className="bg-starfield pointer-events-none absolute inset-0 opacity-55"
           />
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-0 z-[2] bg-[linear-gradient(105deg,#ffffff_0%,rgba(255,255,255,0.92)_20%,rgba(246,248,252,0.55)_38%,rgba(238,243,250,0.18)_52%,transparent_66%)]"
+            className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_120%,rgba(2,24,72,0.4),transparent_55%)]"
           />
           <div
             aria-hidden
-            className="organizations-hero-photo-blend pointer-events-none absolute inset-x-0 bottom-0 top-[28%] z-[1] md:inset-y-0 md:left-auto md:right-0 md:top-0 md:w-[56%] lg:w-[60%]"
+            className="pointer-events-none absolute inset-0 z-[2] bg-[linear-gradient(105deg,#042268_0%,rgba(4,34,104,0.45)_22%,rgba(4,34,104,0.12)_42%,transparent_58%)]"
+          />
+          <div
+            aria-hidden
+            className="organizations-hero-photo-blend pointer-events-none absolute inset-x-0 bottom-0 top-[22%] z-[1] md:inset-y-0 md:left-auto md:right-0 md:top-0 md:w-[58%] lg:w-[62%]"
           />
 
           <div className="relative z-10">
             <div className="relative mx-auto grid max-w-7xl items-center gap-8 px-3 pb-12 pt-8 md:grid-cols-[1.05fr_0.95fr] md:gap-6 md:px-4 md:pb-14 md:pt-10 lg:pb-16">
               <div className="max-w-xl">
-                <p className="animate-fade-up text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
+                <p className="animate-fade-up text-[11px] font-semibold uppercase tracking-[0.2em] text-gold md:text-xs">
                   For organizations
                 </p>
-                <h1 className="animate-fade-up delay-100 mt-3 font-display text-4xl leading-[1.08] tracking-tight text-navy-deep md:text-5xl lg:text-[3.25rem]">
+                <h1 className="animate-fade-up delay-100 mt-3 font-display text-4xl leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.25rem]">
                   Build a more connected behavioral health experience.
                 </h1>
-                <p className="animate-fade-up delay-200 mt-5 max-w-lg text-base leading-relaxed text-muted md:text-lg">
+                <p className="animate-fade-up delay-200 mt-5 max-w-lg text-base leading-relaxed text-white/75 md:text-lg">
                   LoveJoy helps organizations connect people to care, coordinate
                   support across teams, and understand the journey — so access
                   turns into engagement, and engagement into better outcomes.
                 </p>
                 <div className="animate-fade-up delay-300 mt-8">
-                  <OrgCtas />
+                  <OrgCtas variant="dark" />
                 </div>
                 <ul className="animate-fade-up delay-400 mt-10 grid gap-4 sm:grid-cols-3">
                   {valueProps.map(({ label, Icon }) => (
                     <li key={label} className="flex items-start gap-2.5">
-                      <span className="mt-0.5 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-navy-soft text-navy">
+                      <span className="mt-0.5 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10 text-gold">
                         <Icon className="h-4 w-4" aria-hidden strokeWidth={1.75} />
                       </span>
-                      <span className="text-sm font-medium leading-snug text-navy-deep">
+                      <span className="text-sm font-medium leading-snug text-white/90">
                         {label}
                       </span>
                     </li>
@@ -887,7 +892,7 @@ export default function ForOrganizationsPage() {
               improve outcomes for the people you serve.
             </p>
             <div className="mt-8 flex justify-center">
-              <OrgCtas variant="dark" />
+              <OrgCtas variant="dark" secondary="talk" />
             </div>
           </div>
         </div>
