@@ -231,6 +231,45 @@ function normalizePathname(pathname: string): string {
   return pathname.replace(/\/+$/, "") || "/";
 }
 
+/**
+ * Routes whose navy hero flushes under the sticky header (transparent nav at top).
+ * Includes photo-blend audience heroes and PageHero pages.
+ */
+const NAVY_HERO_EXACT = new Set([
+  "/",
+  "/for-individuals",
+  "/for-providers",
+  "/for-navigators",
+  "/for-organizations",
+  "/about",
+  "/about/team",
+  "/about/contact",
+  "/blog",
+  "/download",
+  "/terms",
+  "/privacy-policy",
+  "/cookie-policy",
+  "/security-compliance",
+  "/privacy",
+  "/security",
+]);
+
+/** True when the page hero should flush under the overlay nav (homepage-style). */
+export function isNavyHeroPage(pathname: string): boolean {
+  const path = normalizePathname(pathname);
+  if (NAVY_HERO_EXACT.has(path)) return true;
+  // Blog posts use PageHero
+  if (path.startsWith("/blog/")) return true;
+  return false;
+}
+
+/** True when breadcrumbs are rendered inside the hero (layout should not duplicate). */
+export function hasInHeroBreadcrumbs(pathname: string): boolean {
+  const path = normalizePathname(pathname);
+  if (path === "/") return false;
+  return isNavyHeroPage(path);
+}
+
 function humanizeSegment(segment: string): string {
   return segment
     .split("-")

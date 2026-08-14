@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Fraunces, Figtree } from "next/font/google";
 import { Analytics } from "@/components/Analytics";
 import { BackToTop } from "@/components/BackToTop";
-import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { LayoutBreadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -77,7 +77,7 @@ export default function RootLayout({
         <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
         <SiteHeader />
         <main>
-          <Breadcrumbs />
+          <LayoutBreadcrumbs />
           {children}
         </main>
         <SiteFooter />

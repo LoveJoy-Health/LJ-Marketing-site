@@ -103,7 +103,7 @@
     }
   }
 
-  /* Homepage: square top so hero meets overlay header flush; keep bottom radius */
+  /* Navy heroes: square top so hero meets overlay header flush; keep bottom radius */
   .hero-shell-flush-top {
     border-top-left-radius: 0;
     border-top-right-radius: 0;

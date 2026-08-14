@@ -17,6 +17,7 @@ import {
   Users,
   type LucideIcon,
 } from "lucide-react";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { isExternalHref, siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = buildPageMetadata({
@@ -576,9 +577,9 @@ export default function ForNavigatorsPage() {
     <>
       <link rel="preload" as="image" href="/images/navigators-hero.png" />
 
-      {/* Hero — navy atmosphere + photo blend (same family as homepage) */}
-      <section className="relative bg-white px-1 pb-10 pt-2 text-white md:px-1.5 md:pb-14 md:pt-3">
-        <div className="hero-shell bg-navy-atmosphere relative overflow-hidden">
+      {/* Hero — navy extends under sticky header; breadcrumbs live in the hero */}
+      <section className="relative -mt-[4.5rem] bg-white pb-10 text-white md:-mt-[4.75rem] md:pb-14">
+        <div className="hero-shell hero-shell-flush-top bg-navy-atmosphere relative overflow-hidden">
           <div
             aria-hidden
             className="bg-starfield pointer-events-none absolute inset-0 opacity-55"
@@ -598,7 +599,13 @@ export default function ForNavigatorsPage() {
           />
 
           <div className="relative z-10">
-            <div className="relative mx-auto grid max-w-7xl items-center gap-8 px-3 pb-12 pt-8 md:grid-cols-[1.05fr_0.95fr] md:gap-6 md:px-4 md:pb-14 md:pt-10 lg:pb-16">
+            <div className="relative mx-auto max-w-7xl px-3 pt-[5.75rem] md:px-4 md:pt-28">
+              <Breadcrumbs
+                variant="onNavy"
+                embedded
+                className="mb-6 md:mb-8"
+              />
+              <div className="grid items-center gap-8 pb-12 md:grid-cols-[1.05fr_0.95fr] md:gap-6 md:pb-14 lg:pb-16">
               <div className="max-w-xl">
                 <p className="animate-fade-up text-[11px] font-semibold uppercase tracking-[0.2em] text-gold md:text-xs">
                   Care Navigators
@@ -625,6 +632,7 @@ export default function ForNavigatorsPage() {
                 <div className="pointer-events-none absolute inset-y-2 right-0 z-20 flex w-[11.5rem] flex-col justify-center gap-2 sm:w-56 md:inset-y-4 md:right-2 lg:right-6">
                   <StatusStack />
                 </div>
+              </div>
               </div>
             </div>
           </div>

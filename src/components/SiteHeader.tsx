@@ -10,7 +10,13 @@ import {
   type ReactNode,
 } from "react";
 import { LoveJoyLogo } from "@/components/LoveJoyLogo";
-import { isExternalHref, isNavLink, primaryNav, siteConfig } from "@/lib/site";
+import {
+  isExternalHref,
+  isNavLink,
+  isNavyHeroPage,
+  primaryNav,
+  siteConfig,
+} from "@/lib/site";
 
 type SiteHeaderProps = {
   /** `standalone` (default) is the sticky full-width bar sitewide; `embedded` is for in-hero use if needed. */
@@ -285,8 +291,8 @@ export function SiteHeader({ variant = "standalone" }: SiteHeaderProps) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const isStandalone = variant === "standalone";
-  /** Homepage: overlay nav on hero (full-width navy flush with hero). */
-  const isHome = pathname === "/";
+  /** Navy photo / PageHero pages: overlay transparent nav on flush hero. */
+  const overlaysHero = isNavyHeroPage(pathname);
   const isIndividuals =
     pathname === "/for-individuals" ||
     pathname.startsWith("/for-individuals/");
@@ -304,7 +310,7 @@ export function SiteHeader({ variant = "standalone" }: SiteHeaderProps) {
   }, [isStandalone]);
 
   const shellClass = isStandalone
-    ? isHome
+    ? overlaysHero
       ? `sticky top-0 z-50 w-full transition-[background-color,backdrop-filter] ${
           scrolled
             ? "bg-navy/95 backdrop-blur-md"

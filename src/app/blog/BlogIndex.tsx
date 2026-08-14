@@ -44,7 +44,7 @@ export default function BlogIndex() {
   return (
     <>
       <div
-        className="mt-8 flex flex-wrap gap-2"
+        className="flex flex-wrap gap-2"
         role="group"
         aria-label="Filter posts by topic"
       >
