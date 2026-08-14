@@ -56,20 +56,23 @@ npm start
 - Organization / WebSite JSON-LD in the root layout; BreadcrumbList where breadcrumbs render; Article JSON-LD on blog posts.
 - Default share image is `/images/logo-icon-circle.png` until a dedicated 1200×630 OG asset exists.
 
-## Analytics (optional)
+## Analytics
 
-Set either or both env vars — scripts load only when present (no hardcoded IDs). Align with the [Cookie Policy](/cookie-policy) before enabling in production.
+Google Analytics 4 is enabled via `NEXT_PUBLIC_GA_MEASUREMENT_ID`. When set, `src/components/Analytics.tsx` loads gtag (`afterInteractive`) and calls `gtag('config', …)`. Scripts do not load if the var is unset.
+
+Production builds read `.env.production` (committed with `G-FTNVVFSVH7`). For local `next dev`, copy `.env.example` to `.env.local` (gitignored) or use the committed example values.
+
+Align with the [Cookie Policy](/cookie-policy) before relying on analytics in production.
 
 | Variable | Purpose |
 |----------|---------|
-| `NEXT_PUBLIC_GA_MEASUREMENT_ID` | Google Analytics 4 measurement ID (e.g. `G-XXXXXXXX`) |
-| `NEXT_PUBLIC_PLAUSIBLE_DOMAIN` | Plausible site domain (e.g. `lovejoy.health`) |
-
-Example `.env.local`:
+| `NEXT_PUBLIC_GA_MEASUREMENT_ID` | Google Analytics 4 measurement ID (`G-FTNVVFSVH7`) |
+| `NEXT_PUBLIC_PLAUSIBLE_DOMAIN` | Optional Plausible site domain (e.g. `lovejoy.health`) |
 
 ```bash
-NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXX
-NEXT_PUBLIC_PLAUSIBLE_DOMAIN=lovejoy.health
+# .env.local (gitignored) or see .env.example / .env.production
+NEXT_PUBLIC_GA_MEASUREMENT_ID=G-FTNVVFSVH7
+# NEXT_PUBLIC_PLAUSIBLE_DOMAIN=lovejoy.health
 ```
 
 ## Deploy notes
@@ -83,7 +86,7 @@ NEXT_PUBLIC_PLAUSIBLE_DOMAIN=lovejoy.health
 - Hosting choice + domain cutover plan
 - CMS vs static copy ownership
 - Production contact form backend (Formspree, HubSpot, Filament, etc.)
-- Analytics IDs (set env vars above) + Search Console verification
+- Search Console verification (GA4 ID is set via env; see Analytics section)
 - Dedicated 1200×630 Open Graph image
 - Higher-res logo variants (light + dark) and additional photography
 
