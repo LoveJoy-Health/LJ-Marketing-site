@@ -485,9 +485,8 @@ export default function HomePage() {
                   <em className="font-display italic text-gold">you.</em>
                 </h1>
                 <p className="animate-fade-up delay-200 mt-4 max-w-md text-base leading-relaxed text-white/75 md:text-lg">
-                  LoveJoy connects people, providers, and organizations on one
-                  platform — so support is easier to find, easier to deliver, and
-                  stays continuous over time.
+                  LoveJoy makes it easier to find, deliver, and coordinate mental
+                  health care — all in one connected place.
                 </p>
                 <div className="animate-fade-up delay-300 mt-6 flex flex-wrap gap-3">
                   <Link
