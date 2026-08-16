@@ -64,7 +64,7 @@ const paths = [
   {
     href: "/for-individuals",
     title: "I'm looking for support",
-    body: "Find care, track progress, and stay connected.",
+    body: "Find care, book appointments, talk with your care team, and get help between visits.",
     cta: "Get Started →",
     accent: "bg-gold text-navy-deep",
     photo: "/images/lady-daughter.png",
@@ -75,7 +75,7 @@ const paths = [
   {
     href: "/for-providers",
     title: "I'm a provider",
-    body: "Deliver connected care and see the whole picture.",
+    body: "See your patients, manage appointments, document care, and stay connected between visits.",
     cta: "Learn More →",
     accent: "bg-[#7EB6E8] text-navy-deep",
     photo: "/images/providers-hero.png",
@@ -86,7 +86,7 @@ const paths = [
   {
     href: "/for-navigators",
     title: "I coordinate care",
-    body: "Coordinate resources and remove barriers to care.",
+    body: "See who needs help, coordinate services, follow up, and make sure nothing falls through the cracks.",
     cta: "Learn More →",
     accent: "bg-[#9B8CF0] text-navy-deep",
     photo: "/images/navigators-hero.png",
@@ -97,7 +97,7 @@ const paths = [
   {
     href: "/for-organizations",
     title: "I represent an organization",
-    body: "Improve outcomes and create stronger communities.",
+    body: "Bring your care teams together and see where patients need more support.",
     cta: "Learn More →",
     accent: "bg-[#4DB6A0] text-navy-deep",
     photo: "/images/organizations-hero.png",
@@ -700,15 +700,11 @@ export default function HomePage() {
               Our platform
             </p>
             <h2 className="mt-4 font-display text-3xl leading-[1.12] tracking-tight text-navy-deep md:text-4xl xl:text-[2.75rem]">
-              One connected experience. Many people working{" "}
-              <em className="font-display italic text-[#B8960A] underline decoration-[#C4A000]/30 decoration-2 underline-offset-[0.18em]">
-                together.
-              </em>
+              Your care team, in one place.
             </h2>
             <p className="mt-5 text-base leading-relaxed text-navy md:text-[1.05rem]">
-              LoveJoy brings patients, providers, navigators, and organizations
-              together in one platform so care stays coordinated and people stay
-              engaged—from the first step to ongoing support.
+              Your therapist, doctor, care navigator, and support team can work
+              together instead of leaving you to coordinate everything yourself.
             </p>
             <Link
               href="/for-providers"
