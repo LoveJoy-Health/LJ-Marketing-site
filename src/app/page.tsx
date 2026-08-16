@@ -591,9 +591,9 @@ export default function HomePage() {
               className="mt-5 h-1 w-14 rounded-full bg-gold md:w-16"
             />
             <p className="mt-6 text-base leading-relaxed text-navy md:text-lg">
-              Life happens in between. Missed appointments, new challenges, and
-              everyday stress can get in the way. LoveJoy keeps people connected
-              to support that adapts to real life.
+              Finding a therapist is only the beginning. LoveJoy helps you get to
+              your appointments, stay connected with your care team, find help
+              with everyday needs, and keep making progress between visits.
             </p>
             <Link
               href="/about"
