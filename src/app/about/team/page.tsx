@@ -77,14 +77,6 @@ const advisors: TeamMember[] = [
     profileHref: "https://www.linkedin.com/in/chadpendleton/",
   },
   {
-    name: "Dr. Ibukun Odutola",
-    title: "Behavioral Health Advisor",
-    bio: "CEO of Victory Health Solutions. Brings deep behavioral health clinical and operational insight to LoveJoy’s care model and provider experience.",
-    imageSrc: "/images/team/ibukun.png",
-    imageAlt: "Portrait of Dr. Ibukun Odutola",
-    profileHref: "https://www.linkedin.com/in/ibukunodutola/",
-  },
-  {
     name: "Dr. Eboni January",
     title: "Medical & Maternal Health Advisor",
     bio: "Board-certified OB-GYN advising on medical and maternal health intersections with behavioral care — so support reaches people when they need it most.",
@@ -384,7 +376,7 @@ export default function TeamPage() {
             Clinical &amp; Strategic Advisors
           </p>
 
-          <ul className="mt-10 grid gap-10 sm:grid-cols-2 lg:grid-cols-5 lg:gap-6">
+          <ul className="mt-10 grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
             {advisors.map((person) => (
               <li key={person.name} className="flex flex-col items-start">
                 <div className="relative h-36 w-36 overflow-hidden rounded-full bg-navy-soft md:h-40 md:w-40">
