@@ -33,6 +33,16 @@ const nextConfig: NextConfig = {
         destination: "/about/contact",
         permanent: true,
       },
+      {
+        source: "/for-organizations/story",
+        destination: "/investors/pitch-deck",
+        permanent: false,
+      },
+      {
+        source: "/for-organizations/story/",
+        destination: "/investors/pitch-deck",
+        permanent: false,
+      },
     ];
   },
 };

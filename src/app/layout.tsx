@@ -75,13 +75,19 @@ export default function RootLayout({
     <html lang="en" className={`${display.variable} ${body.variable}`}>
       <body className="min-h-screen antialiased">
         <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
-        <SiteHeader />
+        <div className="print-hide">
+          <SiteHeader />
+        </div>
         <main>
-          <LayoutBreadcrumbs />
+          <div className="print-hide">
+            <LayoutBreadcrumbs />
+          </div>
           {children}
         </main>
-        <SiteFooter />
-        <BackToTop />
+        <div className="print-hide">
+          <SiteFooter />
+          <BackToTop />
+        </div>
         <Analytics />
       </body>
     </html>

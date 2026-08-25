@@ -195,10 +195,13 @@ export default function OrganizationPlatformPage() {
       <OrganizationRelatedNav
         links={[
           {
+            href: "/investors/pitch-deck",
+            label: "How LoveJoy works",
+          },
+          {
             href: "/for-organizations/navigation",
             label: "Next: Care Navigation",
           },
-          { href: "/for-organizations/insights", label: "Insights & Reporting" },
         ]}
       />
 

@@ -89,6 +89,7 @@ export const primaryNav: readonly NavItem[] = [
     href: "/for-organizations",
     children: [
       { href: "/for-organizations", label: "For Organizations" },
+      { href: "/investors/pitch-deck", label: "How LoveJoy works" },
       { href: "/for-organizations/platform", label: "Platform" },
       { href: "/for-organizations/navigation", label: "Care Navigation" },
       { href: "/for-organizations/insights", label: "Insights & Reporting" },
@@ -148,6 +149,7 @@ export const providerNav: readonly NavLink[] = [
 /** Interior organization marketing pages — footer “For organizations” group. */
 export const organizationNav: readonly NavLink[] = [
   { href: "/for-organizations", label: "For Organizations" },
+  { href: "/investors/pitch-deck", label: "How LoveJoy works" },
   { href: "/for-organizations/platform", label: "Platform" },
   { href: "/for-organizations/navigation", label: "Care Navigation" },
   { href: "/for-organizations/insights", label: "Insights & Reporting" },
@@ -161,6 +163,11 @@ export const legalNav: readonly NavLink[] = [
   { href: "/privacy-policy", label: "Privacy Policy" },
   { href: "/cookie-policy", label: "Cookie Policy" },
   { href: "/security-compliance", label: "Security & Compliance" },
+] as const;
+
+/** Footer — Investors, listed under Legal. */
+export const investorNav: readonly NavLink[] = [
+  { href: "/investors/pitch-deck", label: "Pitch Deck" },
 ] as const;
 
 export const supportTypes = [
@@ -202,6 +209,9 @@ export const breadcrumbLabels: Record<string, string> = {
   "/about": "About",
   "/about/team": "Team",
   "/about/contact": "Contact",
+  "/investors": "Investors",
+  "/investors/pitch-deck": "Pitch Deck",
+  "/investors/unlock": "Access",
   "/blog": "Blog",
   "/resources": "Resources",
   "/resources/crisis": "Crisis Resources",
@@ -244,6 +254,8 @@ const NAVY_HERO_EXACT = new Set([
   "/about",
   "/about/team",
   "/about/contact",
+  "/investors",
+  "/investors/pitch-deck",
   "/blog",
   "/download",
   "/terms",

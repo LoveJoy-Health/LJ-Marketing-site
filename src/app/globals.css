@@ -477,3 +477,127 @@
     animation: none !important;
   }
 }
+
+.story-deck-root:fullscreen,
+.story-deck-root:-webkit-full-screen,
+.story-deck-root.is-css-fullscreen {
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 0.65rem 0.4rem 0.5rem;
+  background: #021848;
+  border-radius: 0;
+}
+
+.story-deck-root.is-css-fullscreen {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  width: 100vw;
+  height: 100dvh;
+}
+
+.story-deck-root:fullscreen .story-deck-screen,
+.story-deck-root:-webkit-full-screen .story-deck-screen,
+.story-deck-root.is-css-fullscreen .story-deck-screen {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+  height: 100%;
+}
+
+.story-deck-root:fullscreen .story-deck-toolbar,
+.story-deck-root:-webkit-full-screen .story-deck-toolbar,
+.story-deck-root.is-css-fullscreen .story-deck-toolbar {
+  margin-bottom: 0.45rem;
+  flex-shrink: 0;
+}
+
+.story-deck-root:fullscreen .story-deck-stage,
+.story-deck-root:-webkit-full-screen .story-deck-stage,
+.story-deck-root.is-css-fullscreen .story-deck-stage {
+  display: flex;
+  align-items: stretch;
+  flex: 1 1 auto;
+  min-height: 0;
+  height: 0;
+}
+
+.story-deck-root:fullscreen .story-deck-frame,
+.story-deck-root:-webkit-full-screen .story-deck-frame,
+.story-deck-root.is-css-fullscreen .story-deck-frame {
+  align-self: stretch;
+  height: auto;
+  min-height: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.story-deck-root:fullscreen .story-deck-frame > .relative,
+.story-deck-root:-webkit-full-screen .story-deck-frame > .relative,
+.story-deck-root.is-css-fullscreen .story-deck-frame > .relative {
+  height: 100%;
+}
+
+.story-deck-root:fullscreen .slide-chrome,
+.story-deck-root:-webkit-full-screen .slide-chrome,
+.story-deck-root.is-css-fullscreen .slide-chrome {
+  min-height: 0 !important;
+  max-height: none !important;
+  height: 100%;
+}
+
+.story-deck-root:fullscreen .story-deck-status,
+.story-deck-root:-webkit-full-screen .story-deck-status,
+.story-deck-root.is-css-fullscreen .story-deck-status {
+  margin-top: 0.45rem;
+  flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+@media print {
+  header,
+  footer,
+  .print-hide,
+  .story-deck-controls {
+    display: none !important;
+  }
+
+  main {
+    display: block !important;
+  }
+
+  .story-deck-screen {
+    display: none !important;
+  }
+
+  .story-deck-print {
+    display: block !important;
+  }
+
+  .story-deck-print-page {
+    break-after: page;
+    page-break-after: always;
+    box-shadow: none;
+    border: 1px solid #d9e3f4;
+    border-radius: 0;
+    overflow: visible;
+    background: #fff;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .story-deck-print-page:last-child {
+    break-after: auto;
+    page-break-after: auto;
+  }
+
+  @page {
+    size: landscape;
+    margin: 0.4in;
+  }
+}

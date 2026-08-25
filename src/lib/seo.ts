@@ -32,6 +32,8 @@ type PageMetadataInput = {
   images?: { url: string; alt?: string }[];
   publishedTime?: string;
   authors?: string[];
+  /** Defaults to indexed. Use false for gated or utility pages. */
+  index?: boolean;
 };
 
 export function buildPageMetadata({
@@ -43,6 +45,7 @@ export function buildPageMetadata({
   images,
   publishedTime,
   authors,
+  index = true,
 }: PageMetadataInput): Metadata {
   const url = absoluteUrl(path);
   const ogImages = (images ?? [defaultOgImage]).map((image) => ({
@@ -53,6 +56,12 @@ export function buildPageMetadata({
   return {
     title: absoluteTitle ? { absolute: title } : title,
     description,
+    robots: index
+      ? undefined
+      : {
+          index: false,
+          follow: false,
+        },
     alternates: {
       canonical: url,
     },

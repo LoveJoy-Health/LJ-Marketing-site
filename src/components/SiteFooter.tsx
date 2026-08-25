@@ -3,6 +3,7 @@ import type { ReactNode, SVGProps } from "react";
 import { LoveJoyLogo } from "@/components/LoveJoyLogo";
 import {
   footerNav,
+  investorNav,
   legalNav,
   organizationNav,
   providerNav,
@@ -193,6 +194,23 @@ export function SiteFooter() {
           </p>
           <ul className="mt-4 space-y-2.5">
             {legalNav.map((item) => (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  className="text-sm text-white/80 transition hover:text-white"
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-8 text-xs font-semibold uppercase tracking-[0.16em] text-gold">
+            <Link href="/investors" className="transition hover:text-white">
+              Investors
+            </Link>
+          </p>
+          <ul className="mt-4 space-y-2.5">
+            {investorNav.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}

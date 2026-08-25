@@ -556,6 +556,12 @@ export default function ForOrganizationsPage() {
                 </p>
                 <div className="animate-fade-up delay-300 mt-8">
                   <OrgCtas variant="dark" />
+                  <Link
+                    href="/investors/pitch-deck"
+                    className="mt-4 inline-flex text-sm font-semibold text-gold transition hover:text-white"
+                  >
+                    View the pitch deck →
+                  </Link>
                 </div>
                 <ul className="animate-fade-up delay-400 mt-10 grid gap-4 sm:grid-cols-3">
                   {valueProps.map(({ label, Icon }) => (
