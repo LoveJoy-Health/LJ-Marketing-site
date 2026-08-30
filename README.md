@@ -33,6 +33,9 @@ Assets copied locally from the live WP site: logo + home hero image under `publi
 | `/for-organizations` | Org / health system audience |
 | `/about` | Mission, vision, leadership |
 | `/about/contact` | Contact details + inquiry form (mailto stub) |
+| `/faqs` | FAQ topic cards |
+| `/faqs/providers` | Provider questions |
+| `/faqs/providers/onboarding` | Provider application walkthrough |
 
 ## Run locally
 

@@ -1,12 +1,14 @@
+import type { ReactNode } from "react";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 type PageHeroProps = {
   title: string;
   description: string;
   eyebrow?: string;
+  actions?: ReactNode;
 };
 
-export function PageHero({ title, description, eyebrow }: PageHeroProps) {
+export function PageHero({ title, description, eyebrow, actions }: PageHeroProps) {
   return (
     <section className="relative -mt-[4.5rem] bg-white pb-2 text-white md:-mt-[4.75rem]">
       <div className="hero-shell hero-shell-flush-top bg-navy-atmosphere relative overflow-hidden py-14 pt-[5.75rem] md:py-16 md:pt-28">
@@ -31,6 +33,9 @@ export function PageHero({ title, description, eyebrow }: PageHeroProps) {
           <p className="animate-fade-up delay-200 mt-5 max-w-2xl text-base leading-relaxed text-white/75 md:text-lg">
             {description}
           </p>
+          {actions ? (
+            <div className="animate-fade-up delay-300 mt-7">{actions}</div>
+          ) : null}
         </div>
       </div>
     </section>

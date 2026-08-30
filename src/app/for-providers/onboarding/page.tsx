@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import {
   CheckCircle2,
@@ -138,7 +139,7 @@ export default function ProviderOnboardingPage() {
             ))}
           </ol>
 
-          <div className="mt-10">
+          <div className="mt-10 flex flex-wrap gap-3">
             <a
               href={siteConfig.providerJoinUrl}
               target="_blank"
@@ -148,6 +149,12 @@ export default function ProviderOnboardingPage() {
               Start your application
               <span aria-hidden>→</span>
             </a>
+            <Link
+              href="/faqs/providers/onboarding"
+              className="inline-flex items-center gap-2 rounded-full border border-navy/25 bg-white px-6 py-3 text-sm font-semibold text-navy transition hover:border-navy/40"
+            >
+              Step-by-step application guide
+            </Link>
           </div>
         </div>
       </section>
@@ -178,6 +185,7 @@ export default function ProviderOnboardingPage() {
 
       <ProviderRelatedNav
         links={[
+          { href: "/faqs/providers/onboarding", label: "Application guide" },
           { href: "/for-providers/requirements", label: "Requirements" },
           { href: "/for-providers/participation", label: "Participation" },
         ]}

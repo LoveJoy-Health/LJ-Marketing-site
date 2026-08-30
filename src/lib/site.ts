@@ -111,6 +111,7 @@ export const primaryNav: readonly NavItem[] = [
     // No dedicated landing page — chevron-only parent; children remain the entry points.
     children: [
       { href: "/resources/crisis", label: "Crisis Resources" },
+      { href: "/faqs", label: "FAQs" },
       { href: "/blog", label: "Blog" },
       { href: "/download", label: "Download the apps" },
       { href: "/about/contact", label: "Contact" },
@@ -130,6 +131,7 @@ export const footerNav: readonly NavLink[] = [
 
 export const resourcesNav: readonly NavLink[] = [
   { href: "/resources/crisis", label: "Crisis Resources" },
+  { href: "/faqs", label: "FAQs" },
   { href: "/blog", label: "Blog" },
   { href: "/download", label: "Download the apps" },
   { href: "/the-porch", label: "The Porch" },
@@ -213,6 +215,14 @@ export const breadcrumbLabels: Record<string, string> = {
   "/investors/pitch-deck": "Pitch Deck",
   "/investors/unlock": "Access",
   "/blog": "Blog",
+  "/faqs": "FAQs",
+  "/faqs/individuals": "Individuals",
+  "/faqs/providers": "Providers",
+  "/faqs/providers/onboarding": "Provider Onboarding",
+  "/faqs/care-navigators": "Care Navigators",
+  "/faqs/organizations": "Organizations",
+  "/faqs/account-access": "Account & Access",
+  "/faqs/privacy-security": "Privacy & Security",
   "/resources": "Resources",
   "/resources/crisis": "Crisis Resources",
   "/download": "Download",
@@ -257,6 +267,7 @@ const NAVY_HERO_EXACT = new Set([
   "/investors",
   "/investors/pitch-deck",
   "/blog",
+  "/faqs",
   "/download",
   "/terms",
   "/privacy-policy",
@@ -270,8 +281,8 @@ const NAVY_HERO_EXACT = new Set([
 export function isNavyHeroPage(pathname: string): boolean {
   const path = normalizePathname(pathname);
   if (NAVY_HERO_EXACT.has(path)) return true;
-  // Blog posts use PageHero
   if (path.startsWith("/blog/")) return true;
+  if (path.startsWith("/faqs")) return true;
   return false;
 }
 
