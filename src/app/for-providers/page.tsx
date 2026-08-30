@@ -471,6 +471,15 @@ export default function ForProvidersPage() {
                 </p>
                 <div className="animate-fade-up delay-300 mt-8">
                   <ProviderCtas variant="dark" />
+                  <p className="mt-4 text-sm text-white/75">
+                    Need help applying?{" "}
+                    <Link
+                      href="/faqs/providers/onboarding"
+                      className="font-semibold text-gold underline decoration-gold/40 underline-offset-4 transition hover:decoration-gold"
+                    >
+                      See the onboarding walkthrough
+                    </Link>
+                  </p>
                 </div>
                 <ul className="animate-fade-up delay-400 mt-10 grid gap-4 sm:grid-cols-3">
                   {valueProps.map(({ label, Icon }) => (
@@ -704,10 +713,10 @@ export default function ForProvidersPage() {
               ))}
             </ol>
             <Link
-              href="/for-providers/onboarding"
+              href="/faqs/providers/onboarding"
               className="mt-8 inline-flex text-sm font-semibold text-navy transition hover:text-navy-deep"
             >
-              Learn more about the onboarding process →
+              See the application walkthrough →
             </Link>
           </div>
 
@@ -772,12 +781,20 @@ export default function ForProvidersPage() {
             <div className="mt-8 flex justify-center">
               <ProviderCtas variant="dark" />
             </div>
-            <Link
-              href="/about/contact"
-              className="mt-6 inline-flex text-sm font-medium text-white/85 underline decoration-white/40 underline-offset-4 transition hover:text-gold hover:decoration-gold"
-            >
-              Questions about joining? Contact our provider team
-            </Link>
+            <div className="mt-6 flex flex-col items-center gap-3">
+              <Link
+                href="/faqs/providers/onboarding"
+                className="inline-flex text-sm font-medium text-white/85 underline decoration-white/40 underline-offset-4 transition hover:text-gold hover:decoration-gold"
+              >
+                See the onboarding walkthrough
+              </Link>
+              <Link
+                href="/about/contact"
+                className="inline-flex text-sm font-medium text-white/85 underline decoration-white/40 underline-offset-4 transition hover:text-gold hover:decoration-gold"
+              >
+                Questions about joining? Contact our provider team
+              </Link>
+            </div>
           </div>
         </div>
       </section>
