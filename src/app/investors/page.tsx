@@ -9,7 +9,6 @@ export const metadata: Metadata = buildPageMetadata({
   description:
     "LoveJoy Health investor materials — seed pitch deck and how to reach the team.",
   path: "/investors",
-  index: false,
 });
 
 export default function InvestorsPage() {
@@ -18,7 +17,7 @@ export default function InvestorsPage() {
       <PageHero
         eyebrow="Investors"
         title="LoveJoy Health for investors."
-        description="Software-first behavioral health infrastructure. We license the platform to community care organizations and operate a Medicare panel so the workflow is proven in production."
+        description="Behavioral health technology and care delivery infrastructure. Organizations use LoveJoy with their own patients and providers, and LoveJoy-affiliated clinicians can add capacity."
       />
 
       <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
@@ -34,8 +33,8 @@ export default function InvestorsPage() {
               13-slide overview
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-muted">
-              The problem, the platform, who we start with, and how an
-              organization implements in 90 days.
+              The problem, the platform, customers, market, team, and the
+              Pre-Seed raise.
             </p>
             <span className="mt-6 inline-flex text-sm font-semibold text-navy transition group-hover:text-navy-deep">
               Open the pitch deck →

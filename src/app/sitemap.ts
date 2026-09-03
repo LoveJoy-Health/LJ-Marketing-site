@@ -39,6 +39,8 @@ const PUBLIC_PATHS = [
   "/privacy-policy",
   "/cookie-policy",
   "/security-compliance",
+  "/investors",
+  "/investors/pitch-deck",
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {

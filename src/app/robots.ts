@@ -7,7 +7,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
       // Blog category filters are query-only; index the canonical /blog page.
-      disallow: ["/blog?*", "/investors", "/investors/"],
+      disallow: ["/blog?*"],
     },
     sitemap: `${siteConfig.url}/sitemap.xml`,
     host: siteConfig.url,

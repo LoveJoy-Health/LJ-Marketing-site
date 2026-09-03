@@ -43,6 +43,16 @@ const nextConfig: NextConfig = {
         destination: "/investors/pitch-deck",
         permanent: false,
       },
+      {
+        source: "/investors/unlock",
+        destination: "/investors/pitch-deck",
+        permanent: true,
+      },
+      {
+        source: "/investors/unlock/",
+        destination: "/investors/pitch-deck",
+        permanent: true,
+      },
     ];
   },
 };

@@ -213,7 +213,6 @@ export const breadcrumbLabels: Record<string, string> = {
   "/about/contact": "Contact",
   "/investors": "Investors",
   "/investors/pitch-deck": "Pitch Deck",
-  "/investors/unlock": "Access",
   "/blog": "Blog",
   "/faqs": "FAQs",
   "/faqs/individuals": "Individuals",
