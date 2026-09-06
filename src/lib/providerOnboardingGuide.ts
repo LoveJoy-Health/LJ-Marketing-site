@@ -346,9 +346,9 @@ export const ONBOARDING_GUIDE_STEPS: OnboardingGuideStep[] = [
       },
     ],
     fields: [
-      { label: "Appointment Length" },
-      { label: "New Patient Length" },
-      { label: "Follow-up Length" },
+      { label: "Appointment length and self-pay price" },
+      { label: "New patient length and self-pay price" },
+      { label: "Follow-up length and self-pay price" },
     ],
     needHeading: "What to complete",
     instructions: [
@@ -356,7 +356,7 @@ export const ONBOARDING_GUIDE_STEPS: OnboardingGuideStep[] = [
       "Set your Start time.",
       "Set your End time.",
       "Add a Break Start and Break End time if needed.",
-      "Then complete Appointment Length, New Patient Length, and Follow-up Length.",
+      "Then set each visit type with a length and the self-pay price patients will see, such as a 30 min session for $45.",
     ],
     notes: [
       "Your availability helps determine which appointment times can be presented to patients.",
@@ -391,7 +391,7 @@ export const ONBOARDING_GUIDE_STEPS: OnboardingGuideStep[] = [
       },
       {
         title: "Self-pay",
-        body: "When Self Pay is selected, enter the consultation fee that patients paying out of pocket should see during booking.",
+        body: "When Self Pay is selected, confirm the session rates you set with appointment lengths. Patients paying out of pocket see each visit type as a length and price, such as a 30 min session for $45.",
         notes: [
           "Connecting Stripe for self-pay is optional during signup and can be completed later from the provider profile.",
         ],
