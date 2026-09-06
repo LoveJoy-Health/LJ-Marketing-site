@@ -48,7 +48,7 @@ function HomePreview() {
       <div className="absolute left-1/2 top-0 z-10 h-4 w-20 -translate-x-1/2 rounded-b-xl bg-navy-deep" />
       <div className="min-h-[24rem] bg-[#F4F7FC] px-3.5 pb-4 pt-7">
         <p className="text-[10px] text-muted">Good morning,</p>
-        <p className="font-display text-xl text-navy-deep">Maya</p>
+        <p className="type-card text-navy-deep">Maya</p>
         <p className="mt-3 text-[11px] font-semibold text-navy">
           How are you feeling?
         </p>
@@ -92,13 +92,13 @@ export default function DownloadPatientPage() {
       <section className="bg-white px-3 pb-14 pt-6 md:px-4 md:pb-20 md:pt-10">
         <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
           <div>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
+            <p className="type-eyebrow text-navy">
               LoveJoy patient app
             </p>
-            <h1 className="mt-3 max-w-xl font-display text-4xl leading-[1.08] tracking-tight text-navy-deep md:text-5xl lg:text-[3.25rem]">
+            <h1 className="mt-3 max-w-xl type-hero text-navy-deep">
               Your care, in your pocket.
             </h1>
-            <p className="mt-5 max-w-lg text-base leading-relaxed text-muted md:text-lg">
+            <p className="mt-5 max-w-lg type-body text-muted">
               Download the LoveJoy app to find support, stay connected with your
               care team, and keep moving forward between visits — all in one
               place.
@@ -134,10 +134,10 @@ export default function DownloadPatientPage() {
 
       <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-2xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+          <h2 className="max-w-2xl type-section text-navy-deep">
             Everything you need between visits.
           </h2>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted md:text-lg">
+          <p className="mt-4 max-w-2xl type-body text-muted">
             LoveJoy brings appointments, messages, check-ins, and supportive
             tools together — so care feels continuous, not fragmented.
           </p>
@@ -151,7 +151,7 @@ export default function DownloadPatientPage() {
                   <h3 className="text-base font-semibold text-navy-deep">
                     {title}
                   </h3>
-                  <p className="mt-1.5 text-sm leading-relaxed text-muted">
+                  <p className="mt-1.5 type-body-sm text-muted">
                     {body}
                   </p>
                 </div>
@@ -168,7 +168,7 @@ export default function DownloadPatientPage() {
             className="bg-starfield pointer-events-none absolute inset-0 opacity-35"
           />
           <div className="relative mx-auto max-w-3xl text-left md:text-center">
-            <h2 className="font-display text-3xl tracking-tight md:text-5xl">
+            <h2 className="type-section">
               Ready to get started?
             </h2>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-white/75 md:mx-auto md:text-lg">
@@ -186,7 +186,7 @@ export default function DownloadPatientPage() {
                 href={siteConfig.findProviderUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition hover:brightness-105"
+                className="inline-flex items-center gap-2 type-button rounded-full bg-gold px-6 py-3 text-navy-deep transition hover:brightness-105"
               >
                 Find a Provider
                 <span aria-hidden>→</span>

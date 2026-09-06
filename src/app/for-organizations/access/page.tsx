@@ -76,7 +76,7 @@ export default function OrganizationAccessPage() {
 
       <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+          <h2 className="max-w-3xl type-section text-navy-deep">
             How LoveJoy supports ACCESS
           </h2>
           <ul className="mt-10 grid gap-6 md:grid-cols-2">
@@ -88,10 +88,10 @@ export default function OrganizationAccessPage() {
                 <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-navy-soft text-navy">
                   <item.Icon className="h-5 w-5" aria-hidden strokeWidth={1.75} />
                 </span>
-                <h3 className="mt-4 text-lg font-semibold text-navy-deep">
+                <h3 className="type-card mt-4 text-navy-deep">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">
+                <p className="mt-2 type-body-sm text-muted">
                   {item.body}
                 </p>
               </li>
@@ -102,16 +102,16 @@ export default function OrganizationAccessPage() {
 
       <section className="bg-white px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+          <h2 className="max-w-3xl type-section text-navy-deep">
             Who this is for
           </h2>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {whoItHelps.map((item) => (
               <div key={item.title} className="border-t border-navy/15 pt-5">
-                <h3 className="font-display text-xl text-navy-deep">
+                <h3 className="type-card text-navy-deep">
                   {item.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted">
+                <p className="mt-3 type-body-sm text-muted">
                   {item.body}
                 </p>
               </div>
@@ -119,10 +119,10 @@ export default function OrganizationAccessPage() {
           </div>
 
           <div className="mt-12 rounded-[1.75rem] bg-atmosphere p-6 md:p-8">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy">
+            <p className="type-eyebrow text-navy">
               Official CMS information
             </p>
-            <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted md:text-base">
+            <p className="mt-3 max-w-2xl type-body-sm text-muted">
               For model rules, eligibility, and CMS Innovation Center details,
               visit the official ACCESS Model page on CMS.gov.
             </p>

@@ -13,13 +13,13 @@ export function BlogContent({ markdown }: BlogContentProps) {
   const blocks = splitBlocks(markdown.trim());
 
   return (
-    <div className="space-y-6 text-base leading-relaxed text-muted md:text-lg md:leading-relaxed">
+    <div className="type-body space-y-6 text-muted">
       {blocks.map((block, index) => {
         if (block.type === "h2") {
           return (
             <h2
               key={index}
-              className="pt-4 font-display text-2xl tracking-tight text-navy-deep md:text-3xl"
+              className="type-heading pt-4 text-navy-deep"
             >
               {block.text}
             </h2>

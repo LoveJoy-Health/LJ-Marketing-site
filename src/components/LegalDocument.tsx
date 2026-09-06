@@ -33,10 +33,10 @@ export function LegalSection({
 }) {
   return (
     <section className="mt-10 first:mt-0">
-      <h2 className="font-display text-2xl tracking-tight text-navy-deep md:text-3xl">
+      <h2 className="type-heading text-navy-deep">
         {title}
       </h2>
-      <div className="mt-4 space-y-4 text-base leading-relaxed text-muted">
+      <div className="type-body mt-4 space-y-4 text-muted">
         {children}
       </div>
     </section>

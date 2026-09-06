@@ -22,7 +22,7 @@ export default function SecurityCompliancePage() {
       description="Your privacy. Protected. Your care. Trusted."
     >
       {/* Adapted from https://lovejoy.health/security-compliance/ (live WordPress). */}
-      <p className="text-base leading-relaxed text-muted">
+      <p className="type-body text-muted">
         At LoveJoy Health, we are committed to protecting sensitive health
         information and building a secure, trusted platform for individuals,
         providers, and partners.

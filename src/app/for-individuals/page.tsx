@@ -182,7 +182,7 @@ function HomePhoneMock() {
     <PhoneFrame className="z-30">
       <div className="px-3 pb-3">
         <p className="text-[10px] text-muted">Good morning,</p>
-        <p className="font-display text-lg text-navy-deep">Maya</p>
+        <p className="type-card text-navy-deep">Maya</p>
         <p className="mt-3 text-[10px] font-semibold text-navy">
           How are you feeling?
         </p>
@@ -286,11 +286,11 @@ function ProgressPhoneMock() {
         <div className="mt-2 grid grid-cols-2 gap-2">
           <div className="rounded-xl bg-white p-2.5 shadow-sm ring-1 ring-black/[0.03]">
             <p className="text-[9px] text-muted">Check-ins</p>
-            <p className="font-display text-xl text-navy-deep">12</p>
+            <p className="type-card text-navy-deep">12</p>
           </div>
           <div className="rounded-xl bg-white p-2.5 shadow-sm ring-1 ring-black/[0.03]">
             <p className="text-[9px] text-muted">Streak</p>
-            <p className="font-display text-xl text-navy-deep">5d</p>
+            <p className="type-card text-navy-deep">5d</p>
           </div>
         </div>
       </div>
@@ -449,14 +449,14 @@ export default function ForIndividualsPage() {
               />
               <div className="grid items-center gap-8 pb-12 md:grid-cols-[1.05fr_0.95fr] md:gap-6 md:pb-14 lg:pb-16">
               <div className="max-w-xl">
-                <p className="animate-fade-up text-[11px] font-semibold uppercase tracking-[0.2em] text-gold md:text-xs">
+                <p className="animate-fade-up type-eyebrow text-gold">
                   For individuals
                 </p>
-                <h1 className="animate-fade-up delay-100 mt-3 font-display text-4xl leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.35rem]">
+                <h1 className="animate-fade-up delay-100 mt-3 type-hero text-white">
                   Find the support that feels right for{" "}
-                  <em className="font-display italic text-gold">you.</em>
+                  <em className="type-emphasis text-gold">you.</em>
                 </h1>
-                <p className="animate-fade-up delay-200 mt-5 max-w-lg text-base leading-relaxed text-white/75 md:text-lg">
+                <p className="animate-fade-up delay-200 mt-5 max-w-lg type-body text-white/75">
                   LoveJoy makes it easier to find care that fits — and stay
                   connected with support between visits. Therapy, coaching,
                   community, or simply someone to talk to.
@@ -466,7 +466,7 @@ export default function ForIndividualsPage() {
                     href={siteConfig.findProviderUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition hover:brightness-105"
+                    className="inline-flex items-center gap-2 type-button rounded-full bg-gold px-6 py-3 text-navy-deep transition hover:brightness-105"
                   >
                     Find a Provider
                     <span aria-hidden>→</span>
@@ -506,10 +506,10 @@ export default function ForIndividualsPage() {
       {/* 2. Goals */}
       <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-2xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
+          <h2 className="max-w-2xl type-section text-navy-deep">
             Not sure where to start? That&apos;s okay.
           </h2>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted md:text-lg">
+          <p className="mt-4 max-w-2xl type-body text-muted">
             Tell us what you&apos;re looking for — we&apos;ll help you explore
             options that fit.
           </p>
@@ -550,7 +550,7 @@ export default function ForIndividualsPage() {
       {/* 3. Care made easier */}
       <section className="bg-white px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-2xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
+          <h2 className="max-w-2xl type-section text-navy-deep">
             Care made easier from the first step forward.
           </h2>
           <div className="mt-12 grid items-center gap-12 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:gap-8">
@@ -575,11 +575,11 @@ export default function ForIndividualsPage() {
                         aria-hidden
                         strokeWidth={1.75}
                       />
-                      <h3 className="font-display text-xl text-navy-deep">
+                      <h3 className="type-card text-navy-deep">
                         {step.title}
                       </h3>
                     </div>
-                    <p className="mt-2 max-w-md text-sm leading-relaxed text-muted md:text-base">
+                    <p className="mt-2 max-w-md type-body-sm text-muted">
                       {step.body}
                     </p>
                   </div>
@@ -610,10 +610,10 @@ export default function ForIndividualsPage() {
       {/* 4. Your care, in one place */}
       <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-2xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
+          <h2 className="max-w-2xl type-section text-navy-deep">
             Your care, in one place.
           </h2>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted md:text-lg">
+          <p className="mt-4 max-w-2xl type-body text-muted">
             Everything you need to stay connected with support — without
             juggling apps or portals.
           </p>
@@ -633,7 +633,7 @@ export default function ForIndividualsPage() {
                   <h3 className="text-base font-semibold text-navy-deep">
                     {feature.title}
                   </h3>
-                  <p className="mt-1.5 text-sm leading-relaxed text-muted">
+                  <p className="mt-1.5 type-body-sm text-muted">
                     {feature.body}
                   </p>
                 </div>
@@ -649,10 +649,10 @@ export default function ForIndividualsPage() {
           <div className="overflow-hidden rounded-[1.75rem] bg-[#EDE6F8] p-6 md:p-8">
             <div className="grid h-full items-center gap-6 sm:grid-cols-[1fr_auto]">
               <div>
-                <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-navy">
+                <p className="type-eyebrow text-navy">
                   Osiris
                 </p>
-                <h3 className="mt-2 font-display text-2xl tracking-tight text-navy-deep md:text-3xl">
+                <h3 className="mt-2 type-heading text-navy-deep">
                   Support when you need a little guidance.
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-navy/80 md:text-base">
@@ -673,10 +673,10 @@ export default function ForIndividualsPage() {
           <div className="overflow-hidden rounded-[1.75rem] bg-[#F3EBE0] p-6 md:p-8">
             <div className="grid h-full items-center gap-6 sm:grid-cols-[1fr_auto]">
               <div>
-                <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-navy">
+                <p className="type-eyebrow text-navy">
                   The Porch
                 </p>
-                <h3 className="mt-2 font-display text-2xl tracking-tight text-navy-deep md:text-3xl">
+                <h3 className="mt-2 type-heading text-navy-deep">
                   Care can include community, too.
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-navy/80 md:text-base">
@@ -704,10 +704,10 @@ export default function ForIndividualsPage() {
             className="bg-starfield pointer-events-none absolute inset-0 opacity-35"
           />
           <div className="relative mx-auto max-w-3xl text-center">
-            <h2 className="font-display text-3xl tracking-tight md:text-5xl">
+            <h2 className="type-section">
               Ready when you are.
             </h2>
-            <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/75 md:text-lg">
+            <p className="mx-auto mt-4 max-w-xl type-body text-white/75">
               Find a provider, download the app, or pick up where you left off.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
@@ -715,7 +715,7 @@ export default function ForIndividualsPage() {
                 href={siteConfig.findProviderUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition hover:brightness-105"
+                className="inline-flex items-center gap-2 type-button rounded-full bg-gold px-6 py-3 text-navy-deep transition hover:brightness-105"
               >
                 Find a Provider
                 <span aria-hidden>→</span>

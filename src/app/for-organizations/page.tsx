@@ -491,7 +491,7 @@ function OrgCtas({
     <div className="flex flex-wrap gap-3">
       <Link
         href="/about/contact"
-        className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition hover:brightness-105"
+        className="inline-flex items-center gap-2 type-button rounded-full bg-gold px-6 py-3 text-navy-deep transition hover:brightness-105"
       >
         Request a Demo
         <span aria-hidden>→</span>
@@ -543,13 +543,13 @@ export default function ForOrganizationsPage() {
               />
               <div className="grid items-center gap-8 pb-12 md:grid-cols-[1.05fr_0.95fr] md:gap-6 md:pb-14 lg:pb-16">
               <div className="max-w-xl">
-                <p className="animate-fade-up text-[11px] font-semibold uppercase tracking-[0.2em] text-gold md:text-xs">
+                <p className="animate-fade-up type-eyebrow text-gold">
                   For organizations
                 </p>
-                <h1 className="animate-fade-up delay-100 mt-3 font-display text-4xl leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.25rem]">
+                <h1 className="animate-fade-up delay-100 mt-3 type-hero text-white">
                   Build a more connected behavioral health experience.
                 </h1>
-                <p className="animate-fade-up delay-200 mt-5 max-w-lg text-base leading-relaxed text-white/75 md:text-lg">
+                <p className="animate-fade-up delay-200 mt-5 max-w-lg type-body text-white/75">
                   LoveJoy helps organizations connect people to care, coordinate
                   support across teams, and understand the journey — so access
                   turns into engagement, and engagement into better outcomes.
@@ -598,10 +598,10 @@ export default function ForOrganizationsPage() {
       {/* 2. Journey steps */}
       <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
+          <h2 className="max-w-3xl type-section text-navy-deep">
             Getting people into care is only the beginning.
           </h2>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted md:text-lg">
+          <p className="mt-4 max-w-2xl type-body text-muted">
             LoveJoy supports the full journey — from the first point of access
             through ongoing coordination, engagement, and insight.
           </p>
@@ -617,10 +617,10 @@ export default function ForOrganizationsPage() {
                 <span className="relative z-10 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white text-navy shadow-[0_8px_24px_rgba(2,24,72,0.1)] ring-1 ring-black/[0.04]">
                   <step.Icon className="h-5 w-5" aria-hidden strokeWidth={1.75} />
                 </span>
-                <h3 className="mt-4 font-display text-xl text-navy-deep">
+                <h3 className="mt-4 type-card text-navy-deep">
                   {step.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">
+                <p className="mt-2 type-body-sm text-muted">
                   {step.body}
                 </p>
               </div>
@@ -632,7 +632,7 @@ export default function ForOrganizationsPage() {
       {/* 3. Audiences */}
       <section className="bg-white px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
+          <h2 className="max-w-3xl type-section text-navy-deep">
             Built for organizations responsible for behavioral health.
           </h2>
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -649,7 +649,7 @@ export default function ForOrganizationsPage() {
                 <h3 className="mt-4 text-base font-semibold text-navy-deep">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">
+                <p className="mt-2 type-body-sm text-muted">
                   {item.body}
                 </p>
               </div>
@@ -664,7 +664,7 @@ export default function ForOrganizationsPage() {
         className="scroll-mt-28 bg-atmosphere px-3 py-16 md:px-4 md:py-20"
       >
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
+          <h2 className="max-w-3xl type-section text-navy-deep">
             One platform across the care journey.
           </h2>
           <div className="mt-10 flex flex-wrap items-start justify-start gap-y-6">
@@ -679,10 +679,10 @@ export default function ForOrganizationsPage() {
 
           <div className="mt-14 grid gap-10 lg:grid-cols-2 lg:gap-14">
             <div>
-              <h3 className="font-display text-2xl text-navy-deep">
+              <h3 className="type-heading text-navy-deep">
                 Organization Portal
               </h3>
-              <p className="mt-3 max-w-md text-sm leading-relaxed text-muted md:text-base">
+              <p className="mt-3 max-w-md type-body-sm text-muted">
                 See population health activity, program performance, and where
                 people need support — in one connected view.
               </p>
@@ -699,10 +699,10 @@ export default function ForOrganizationsPage() {
             </div>
 
             <div>
-              <h3 className="font-display text-2xl text-navy-deep">
+              <h3 className="type-heading text-navy-deep">
                 Care Navigation
               </h3>
-              <p className="mt-3 max-w-md text-sm leading-relaxed text-muted md:text-base">
+              <p className="mt-3 max-w-md type-body-sm text-muted">
                 Give navigators a workspace to follow needs, coordinate next
                 steps, and keep people moving forward between visits.
               </p>
@@ -725,10 +725,10 @@ export default function ForOrganizationsPage() {
       <section className="bg-white px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
-            <h2 className="font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+            <h2 className="type-section text-navy-deep">
               Understand how people connect to care — and where they need help.
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-muted">
+            <p className="mt-4 type-body text-muted">
               Turn activity into insight across access, engagement, needs, and
               progress so your teams can act with confidence.
             </p>
@@ -766,10 +766,10 @@ export default function ForOrganizationsPage() {
           </div>
 
           <div>
-            <h2 className="font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+            <h2 className="type-section text-navy-deep">
               Deliver care with the model that fits your organization.
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-muted">
+            <p className="mt-4 type-body text-muted">
               Use your teams, LoveJoy network capacity, navigation support, and
               programs — in the combination that works for you.
             </p>
@@ -804,14 +804,14 @@ export default function ForOrganizationsPage() {
           />
           <div className="relative mx-auto grid max-w-7xl gap-8 lg:grid-cols-[auto_1.2fr_1fr] lg:items-center lg:gap-10">
             <div>
-              <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-gold">
+              <p className="type-eyebrow text-gold">
                 CMS ACCESS
               </p>
-              <p className="mt-2 font-display text-2xl text-white md:text-3xl">
+              <p className="type-heading mt-2 text-white">
                 Built for outcome-aligned care.
               </p>
             </div>
-            <p className="max-w-xl text-sm leading-relaxed text-white/75 md:text-base">
+            <p className="type-body max-w-xl text-white/75">
               LoveJoy supports organizations preparing for — and participating
               in — the CMS ACCESS Model, connecting technology-supported
               behavioral health delivery with the visibility needed to improve
@@ -847,10 +847,10 @@ export default function ForOrganizationsPage() {
       {/* 7. Implementation */}
       <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
+          <h2 className="max-w-3xl type-section text-navy-deep">
             From conversation to connected care.
           </h2>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted md:text-lg">
+          <p className="mt-4 max-w-2xl type-body text-muted">
             A proven approach to getting started and creating impact.
           </p>
           <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -868,7 +868,7 @@ export default function ForOrganizationsPage() {
                 <h3 className="mt-4 text-base font-semibold text-navy-deep">
                   {step.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">
+                <p className="mt-2 type-body-sm text-muted">
                   {step.body}
                 </p>
               </li>
@@ -898,10 +898,10 @@ export default function ForOrganizationsPage() {
             <div className="absolute inset-0 bg-gradient-to-r from-[#042268] via-[#042268]/80 to-transparent" />
           </div>
           <div className="relative mx-auto max-w-3xl text-center">
-            <h2 className="font-display text-3xl tracking-tight md:text-5xl">
+            <h2 className="type-section">
               Let&apos;s build a more connected behavioral health experience.
             </h2>
-            <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/75 md:text-lg">
+            <p className="mx-auto mt-4 max-w-xl type-body text-white/75">
               Partner with LoveJoy to expand access, coordinate support, and
               improve outcomes for the people you serve.
             </p>

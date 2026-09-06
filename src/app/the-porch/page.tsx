@@ -133,13 +133,13 @@ export default function ThePorchPage() {
       <section className="bg-white px-3 pb-14 pt-6 md:px-4 md:pb-20 md:pt-10">
         <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
           <div>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
+            <p className="type-eyebrow text-navy">
               The Porch
             </p>
-            <h1 className="mt-3 max-w-xl font-display text-4xl leading-[1.08] tracking-tight text-navy-deep md:text-5xl lg:text-[3.25rem]">
+            <h1 className="mt-3 max-w-xl type-hero text-navy-deep">
               Care can include community, too.
             </h1>
-            <p className="mt-5 max-w-lg text-base leading-relaxed text-muted md:text-lg">
+            <p className="mt-5 max-w-lg type-body text-muted">
               The Porch is a welcoming peer space inside LoveJoy — a place to
               connect with others who understand, share what’s on your mind, and
               feel a little less alone between appointments.
@@ -147,7 +147,7 @@ export default function ThePorchPage() {
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 href="/download/patient"
-                className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition hover:brightness-105"
+                className="inline-flex items-center gap-2 type-button rounded-full bg-gold px-6 py-3 text-navy-deep transition hover:brightness-105"
               >
                 Get started in the app
                 <span aria-hidden>→</span>
@@ -174,10 +174,10 @@ export default function ThePorchPage() {
 
       <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-2xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+          <h2 className="max-w-2xl type-section text-navy-deep">
             What The Porch is
           </h2>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted md:text-lg">
+          <p className="mt-4 max-w-2xl type-body text-muted">
             Think of it as a front-porch conversation — warm, human, and optional.
             It’s peer community designed to sit alongside your care, not replace
             clinical support.
@@ -200,7 +200,7 @@ export default function ThePorchPage() {
 
       <section className="bg-white px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-2xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+          <h2 className="max-w-2xl type-section text-navy-deep">
             Who it’s for
           </h2>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
@@ -212,7 +212,7 @@ export default function ThePorchPage() {
                 <h3 className="text-base font-semibold text-navy-deep">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">
+                <p className="mt-2 type-body-sm text-muted">
                   {item.body}
                 </p>
               </div>
@@ -223,7 +223,7 @@ export default function ThePorchPage() {
 
       <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-2xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+          <h2 className="max-w-2xl type-section text-navy-deep">
             How it helps
           </h2>
           <div className="mt-12 grid gap-8 sm:grid-cols-3">
@@ -235,7 +235,7 @@ export default function ThePorchPage() {
                 <h3 className="text-base font-semibold text-navy-deep">
                   {title}
                 </h3>
-                <p className="text-sm leading-relaxed text-muted">{body}</p>
+                <p className="type-body-sm text-muted">{body}</p>
               </div>
             ))}
           </div>
@@ -251,7 +251,7 @@ export default function ThePorchPage() {
       <section className="px-1 pb-2 md:px-1.5">
         <div className="overflow-hidden rounded-[2rem] bg-[#F3EBE0] px-3 py-14 md:rounded-[2.75rem] md:px-4 md:py-16">
           <div className="mx-auto max-w-3xl text-left">
-            <h2 className="font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+            <h2 className="type-section text-navy-deep">
               Ready to pull up a chair?
             </h2>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-navy/80 md:text-lg">
@@ -261,7 +261,7 @@ export default function ThePorchPage() {
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 href="/download/patient"
-                className="inline-flex items-center gap-2 rounded-full bg-navy px-6 py-3 text-sm font-semibold text-white transition hover:bg-navy-deep"
+                className="inline-flex items-center gap-2 type-button rounded-full bg-navy px-6 py-3 text-white transition hover:bg-navy-deep"
               >
                 Download the app
                 <span aria-hidden>→</span>

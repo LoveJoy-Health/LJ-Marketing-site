@@ -19,18 +19,18 @@ export function PageHero({ title, description, eyebrow, actions }: PageHeroProps
         <div className="relative mx-auto max-w-7xl px-3 md:px-4">
           <Breadcrumbs variant="onNavy" embedded className="mb-6 md:mb-8" />
           {eyebrow ? (
-            <p className="animate-fade-up text-xs font-semibold uppercase tracking-[0.18em] text-gold">
+            <p className="animate-fade-up type-eyebrow text-gold">
               {eyebrow}
             </p>
           ) : null}
           <h1
-            className={`animate-fade-up delay-100 max-w-3xl font-display text-4xl leading-[1.08] tracking-tight text-white md:text-6xl ${
+            className={`animate-fade-up delay-100 type-hero max-w-3xl text-white ${
               eyebrow ? "mt-3" : ""
             }`}
           >
             {title}
           </h1>
-          <p className="animate-fade-up delay-200 mt-5 max-w-2xl text-base leading-relaxed text-white/75 md:text-lg">
+          <p className="animate-fade-up delay-200 type-body mt-5 max-w-2xl text-white/75">
             {description}
           </p>
           {actions ? (

@@ -22,7 +22,7 @@ export default function PrivacyPolicyPage() {
       description="How we collect, use, and protect your information when you use LoveJoy Health."
     >
       {/* Adapted from https://lovejoy.health/privacy-policy/ (live WordPress). */}
-      <p className="text-sm font-semibold uppercase tracking-[0.16em] text-navy">
+      <p className="type-eyebrow text-navy">
         Effective date: 01/01/2025
       </p>
 
@@ -40,7 +40,7 @@ export default function PrivacyPolicyPage() {
 
       <LegalSection title="2. Information We Collect">
         <p>We may collect the following types of information:</p>
-        <h3 className="font-display text-xl text-navy-deep">
+        <h3 className="type-card text-navy-deep">
           Personal Information
         </h3>
         <LegalList
@@ -51,7 +51,7 @@ export default function PrivacyPolicyPage() {
             "Date of birth",
           ]}
         />
-        <h3 className="font-display text-xl text-navy-deep">
+        <h3 className="type-card text-navy-deep">
           Health Information
         </h3>
         <LegalList
@@ -62,7 +62,7 @@ export default function PrivacyPolicyPage() {
             "Appointment information",
           ]}
         />
-        <h3 className="font-display text-xl text-navy-deep">
+        <h3 className="type-card text-navy-deep">
           Technical Information
         </h3>
         <LegalList

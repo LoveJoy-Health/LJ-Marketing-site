@@ -73,13 +73,13 @@ export default function OsirisPage() {
       <section className="bg-white px-3 pb-14 pt-6 md:px-4 md:pb-20 md:pt-10">
         <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
           <div>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
+            <p className="type-eyebrow text-navy">
               Osiris
             </p>
-            <h1 className="mt-3 max-w-xl font-display text-4xl leading-[1.08] tracking-tight text-navy-deep md:text-5xl lg:text-[3.25rem]">
+            <h1 className="mt-3 max-w-xl type-hero text-navy-deep">
               Support when you need a little guidance.
             </h1>
-            <p className="mt-5 max-w-lg text-base leading-relaxed text-muted md:text-lg">
+            <p className="mt-5 max-w-lg type-body text-muted">
               Osiris is your AI companion inside LoveJoy — built for reflection,
               clarity, and next steps between visits. Not a hype chatbot. Just a
               calm place to start.
@@ -87,7 +87,7 @@ export default function OsirisPage() {
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 href="/download/patient"
-                className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition hover:brightness-105"
+                className="inline-flex items-center gap-2 type-button rounded-full bg-gold px-6 py-3 text-navy-deep transition hover:brightness-105"
               >
                 Chat with Osiris in the app
                 <span aria-hidden>→</span>
@@ -114,10 +114,10 @@ export default function OsirisPage() {
 
       <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-2xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+          <h2 className="max-w-2xl type-section text-navy-deep">
             What Osiris is
           </h2>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted md:text-lg">
+          <p className="mt-4 max-w-2xl type-body text-muted">
             Osiris helps you pause, reflect, and move one step forward. It can
             help you explore what’s going on, prepare for a visit, or simply find
             words when things feel heavy.
@@ -139,7 +139,7 @@ export default function OsirisPage() {
 
       <section className="bg-white px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-2xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+          <h2 className="max-w-2xl type-section text-navy-deep">
             When it helps
           </h2>
           <div className="mt-12 grid gap-8 sm:grid-cols-3">
@@ -151,7 +151,7 @@ export default function OsirisPage() {
                 <h3 className="text-base font-semibold text-navy-deep">
                   {title}
                 </h3>
-                <p className="text-sm leading-relaxed text-muted">{body}</p>
+                <p className="type-body-sm text-muted">{body}</p>
               </div>
             ))}
           </div>
@@ -161,10 +161,10 @@ export default function OsirisPage() {
       <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-2 md:items-start">
           <div>
-            <h2 className="font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+            <h2 className="type-section text-navy-deep">
               Privacy & human care
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-muted md:text-lg">
+            <p className="mt-4 type-body text-muted">
               Osiris is built to support your journey — with clear boundaries. It
               is not emergency care, and it doesn’t replace conversations with
               your clinician.
@@ -175,7 +175,7 @@ export default function OsirisPage() {
               <Shield className="mt-0.5 h-5 w-5 shrink-0 text-navy" aria-hidden />
               <div>
                 <p className="font-semibold text-navy-deep">Your privacy matters</p>
-                <p className="mt-1 text-sm leading-relaxed text-muted">
+                <p className="mt-1 type-body-sm text-muted">
                   LoveJoy is designed with privacy and security in mind. Learn
                   more in our{" "}
                   <Link
@@ -197,7 +197,7 @@ export default function OsirisPage() {
                 <p className="font-semibold text-navy-deep">
                   Humans stay in the loop
                 </p>
-                <p className="mt-1 text-sm leading-relaxed text-muted">
+                <p className="mt-1 type-body-sm text-muted">
                   Osiris helps you get oriented. Your care team remains the place
                   for clinical decisions, diagnosis, and treatment.
                 </p>
@@ -210,7 +210,7 @@ export default function OsirisPage() {
       <section className="px-1 pb-2 md:px-1.5">
         <div className="overflow-hidden rounded-[2rem] bg-[#EDE6F8] px-3 py-14 md:rounded-[2.75rem] md:px-4 md:py-16">
           <div className="mx-auto max-w-3xl text-left">
-            <h2 className="font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+            <h2 className="type-section text-navy-deep">
               Ready when you need a starting point.
             </h2>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-navy/80 md:text-lg">
@@ -221,7 +221,7 @@ export default function OsirisPage() {
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 href="/download/patient"
-                className="inline-flex items-center gap-2 rounded-full bg-navy px-6 py-3 text-sm font-semibold text-white transition hover:bg-navy-deep"
+                className="inline-flex items-center gap-2 type-button rounded-full bg-navy px-6 py-3 text-white transition hover:bg-navy-deep"
               >
                 Get the LoveJoy App
                 <span aria-hidden>→</span>

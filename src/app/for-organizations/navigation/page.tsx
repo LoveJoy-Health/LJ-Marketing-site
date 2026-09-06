@@ -78,10 +78,10 @@ export default function OrganizationNavigationPage() {
 
       <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+          <h2 className="max-w-3xl type-section text-navy-deep">
             What navigators can do
           </h2>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted">
+          <p className="mt-4 max-w-2xl type-body text-muted">
             Navigation is where connected care becomes real for people. LoveJoy
             gives your team a focused workspace — not another disconnected
             spreadsheet.
@@ -95,10 +95,10 @@ export default function OrganizationNavigationPage() {
                 <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-navy-soft text-navy">
                   <item.Icon className="h-5 w-5" aria-hidden strokeWidth={1.75} />
                 </span>
-                <h3 className="mt-4 text-lg font-semibold text-navy-deep">
+                <h3 className="type-card mt-4 text-navy-deep">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">
+                <p className="mt-2 type-body-sm text-muted">
                   {item.body}
                 </p>
               </li>
@@ -109,7 +109,7 @@ export default function OrganizationNavigationPage() {
 
       <section className="bg-white px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+          <h2 className="max-w-3xl type-section text-navy-deep">
             How navigation fits the day
           </h2>
           <ol className="mt-10 grid gap-6 md:grid-cols-3">
@@ -118,10 +118,10 @@ export default function OrganizationNavigationPage() {
                 <p className="text-xs font-semibold uppercase tracking-[0.16em] text-navy">
                   Step {index + 1}
                 </p>
-                <h3 className="mt-2 font-display text-xl text-navy-deep">
+                <h3 className="mt-2 type-card text-navy-deep">
                   {step.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted">
+                <p className="mt-3 type-body-sm text-muted">
                   {step.body}
                 </p>
               </li>

@@ -19,13 +19,13 @@ export function ProviderInteriorHero({
   return (
     <section className="bg-white px-3 pb-10 pt-6 md:px-4 md:pb-14 md:pt-10">
       <div className="mx-auto max-w-7xl">
-        <p className="animate-fade-up text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
+        <p className="animate-fade-up type-eyebrow text-navy">
           {eyebrow}
         </p>
-        <h1 className="animate-fade-up delay-100 mt-3 max-w-3xl font-display text-4xl leading-[1.08] tracking-tight text-navy-deep md:text-5xl lg:text-[3.25rem]">
+        <h1 className="animate-fade-up delay-100 mt-3 max-w-3xl type-hero text-navy-deep">
           {title}
         </h1>
-        <p className="animate-fade-up delay-200 mt-5 max-w-2xl text-base leading-relaxed text-muted md:text-lg">
+        <p className="animate-fade-up delay-200 mt-5 max-w-2xl type-body text-muted">
           {description}
         </p>
       </div>
@@ -40,8 +40,8 @@ export function ProviderInteriorCtas({
 }) {
   const outlined =
     variant === "dark"
-      ? "inline-flex items-center gap-2 rounded-full border border-white/40 px-5 py-3 text-sm font-semibold text-white transition hover:border-gold hover:text-gold"
-      : "inline-flex items-center gap-2 rounded-full border-2 border-navy px-5 py-3 text-sm font-semibold text-navy transition hover:bg-navy hover:text-white";
+      ? "type-button inline-flex items-center gap-2 rounded-full border border-white/40 px-5 py-3 text-white transition hover:border-gold hover:text-gold"
+      : "type-button inline-flex items-center gap-2 rounded-full border-2 border-navy px-5 py-3 text-navy transition hover:bg-navy hover:text-white";
 
   return (
     <div className="flex flex-wrap gap-3">
@@ -49,7 +49,7 @@ export function ProviderInteriorCtas({
         href={siteConfig.providerJoinUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition hover:brightness-105"
+        className="inline-flex items-center gap-2 type-button rounded-full bg-gold px-6 py-3 text-navy-deep transition hover:brightness-105"
       >
         Join LoveJoy
         <span aria-hidden>→</span>
@@ -120,10 +120,10 @@ export function ProviderInteriorCtaBand({
           className="bg-starfield pointer-events-none absolute inset-0 opacity-35"
         />
         <div className="relative mx-auto max-w-3xl">
-          <h2 className="font-display text-3xl tracking-tight md:text-5xl">
+          <h2 className="type-section">
             {title}
           </h2>
-          <p className="mt-4 max-w-xl text-base leading-relaxed text-white/75 md:text-lg">
+          <p className="mt-4 max-w-xl type-body text-white/75">
             {description}
           </p>
           <div className="mt-8">

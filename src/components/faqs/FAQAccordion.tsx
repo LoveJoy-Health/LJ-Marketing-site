@@ -49,7 +49,7 @@ export function FAQAccordion({
   return (
     <div>
       {heading ? (
-        <h3 className="font-display text-2xl tracking-tight text-navy-deep md:text-3xl">
+        <h3 className="type-heading text-navy-deep">
           {heading}
         </h3>
       ) : null}
@@ -67,7 +67,7 @@ export function FAQAccordion({
                 </span>
               </span>
             </summary>
-            <p className="mt-3 text-sm leading-relaxed text-muted md:text-base">
+            <p className="mt-3 type-body-sm text-muted">
               {item.answer}
             </p>
             <FAQLinkList item={item} />

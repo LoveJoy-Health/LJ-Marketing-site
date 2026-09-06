@@ -73,7 +73,7 @@ export default async function BlogPostPage({ params }: PageProps) {
 
           {related.length > 0 ? (
             <aside className="mt-14 border-t border-border/70 pt-10">
-              <h2 className="font-display text-xl tracking-tight text-navy-deep md:text-2xl">
+              <h2 className="type-heading text-navy-deep">
                 More in {getCategoryLabel(post.category)}
               </h2>
               <ul className="mt-4 space-y-3">
@@ -91,7 +91,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             </aside>
           ) : null}
 
-          <p className="mt-12 text-sm leading-relaxed text-muted">
+          <p className="mt-12 type-body-sm text-muted">
             <Link
               href="/blog"
               className="font-semibold text-[#2563EB] transition hover:text-navy"

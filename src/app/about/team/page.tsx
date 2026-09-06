@@ -195,14 +195,14 @@ export default function TeamPage() {
               />
               <div className="grid items-center gap-8 pb-12 md:grid-cols-[1.05fr_0.95fr] md:gap-6 md:pb-14 lg:pb-16">
               <div className="max-w-xl">
-                <p className="animate-fade-up text-[11px] font-semibold uppercase tracking-[0.2em] text-gold md:text-xs">
+                <p className="animate-fade-up type-eyebrow text-gold">
                   Our team
                 </p>
-                <h1 className="animate-fade-up delay-100 mt-3 font-display text-4xl leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem]">
+                <h1 className="animate-fade-up delay-100 mt-3 type-hero text-white">
                   The people behind{" "}
-                  <em className="font-display italic text-gold">LoveJoy.</em>
+                  <em className="type-emphasis text-gold">LoveJoy.</em>
                 </h1>
-                <p className="animate-fade-up delay-200 mt-5 max-w-lg text-base leading-relaxed text-white/75 md:text-lg">
+                <p className="animate-fade-up delay-200 mt-5 max-w-lg type-body text-white/75">
                   LoveJoy brings together experience across healthcare,
                   behavioral health, technology, operations, and community to
                   build a more connected care experience.
@@ -223,7 +223,7 @@ export default function TeamPage() {
       {/* 2. Leadership Team */}
       <section className="bg-white px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
+          <p className="type-eyebrow text-navy">
             Leadership Team
           </p>
 
@@ -253,7 +253,7 @@ export default function TeamPage() {
                 <p className="mt-1 text-sm font-medium text-[#5B9FE8]">
                   {person.title}
                 </p>
-                <p className="mt-3 text-sm leading-relaxed text-muted">
+                <p className="mt-3 type-body-sm text-muted">
                   {person.bio}
                 </p>
                 <ProfileLink
@@ -272,10 +272,10 @@ export default function TeamPage() {
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-8 md:flex-row md:items-center md:gap-12 lg:gap-16">
           <PerspectivesIcon />
           <div className="max-w-3xl text-center md:text-left">
-            <h2 className="font-display text-2xl tracking-tight text-navy-deep md:text-3xl lg:text-[2.25rem]">
+            <h2 className="type-heading text-navy-deep">
               Built from different perspectives.
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-muted md:text-lg">
+            <p className="mt-4 type-body text-muted">
               Better behavioral healthcare requires more than technology. Our
               team brings together clinical experience, healthcare operations,
               product design, engineering, growth, and lived understanding of
@@ -288,7 +288,7 @@ export default function TeamPage() {
       {/* 4. Clinical & Strategic Advisors */}
       <section className="bg-white px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
+          <p className="type-eyebrow text-navy">
             Clinical &amp; Strategic Advisors
           </p>
 
@@ -318,7 +318,7 @@ export default function TeamPage() {
                 <p className="mt-1 text-sm font-medium text-[#5B9FE8]">
                   {person.title}
                 </p>
-                <p className="mt-3 text-sm leading-relaxed text-muted">
+                <p className="mt-3 type-body-sm text-muted">
                   {person.bio}
                 </p>
                 <ProfileLink
@@ -339,7 +339,7 @@ export default function TeamPage() {
             <div className="flex max-w-2xl flex-col gap-5 sm:flex-row sm:items-start sm:gap-6">
               <HeartMark />
               <div>
-                <h2 className="font-display text-2xl tracking-tight text-white md:text-3xl">
+                <h2 className="type-heading text-white">
                   Different backgrounds. One mission.
                 </h2>
                 <p className="mt-3 text-sm leading-relaxed text-white/75 md:text-base">

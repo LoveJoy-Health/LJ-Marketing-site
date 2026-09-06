@@ -20,10 +20,10 @@ export function ProviderOnboardingSection() {
 
       <div className="space-y-6">
         <div>
-          <h2 className="font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+          <h2 className="type-section text-navy-deep">
             Provider application walkthrough
           </h2>
-          <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted md:text-base">
+          <p className="mt-3 max-w-2xl type-body-sm text-muted">
             These screens match the current LoveJoy provider signup. Open a step
             if you want the field list or a closer look at the screen.
           </p>
@@ -38,14 +38,14 @@ export function ProviderOnboardingSection() {
         className="scroll-mt-28 grid items-start gap-8 rounded-[1.75rem] bg-white p-6 shadow-[0_10px_32px_rgba(2,24,72,0.08)] ring-1 ring-black/[0.04] md:p-8 lg:grid-cols-2"
       >
         <div>
-          <h2 className="font-display text-2xl tracking-tight text-navy-deep md:text-3xl">
+          <h2 className="type-heading text-navy-deep">
             What if I don’t have all my documents yet?
           </h2>
-          <p className="mt-3 text-sm leading-relaxed text-muted md:text-base">
+          <p className="mt-3 type-body-sm text-muted">
             You can continue signup and return later to upload outstanding
             documents from your provider profile.
           </p>
-          <p className="mt-3 text-sm leading-relaxed text-muted md:text-base">
+          <p className="mt-3 type-body-sm text-muted">
             However, your account will not be approved until all required
             documentation has been submitted and reviewed.
           </p>
@@ -81,14 +81,14 @@ export function ProviderOnboardingSection() {
         className="scroll-mt-28 grid items-start gap-8 rounded-[1.75rem] bg-white p-6 shadow-[0_10px_32px_rgba(2,24,72,0.08)] ring-1 ring-black/[0.04] md:p-8 lg:grid-cols-2"
       >
         <div>
-          <h2 className="font-display text-2xl tracking-tight text-navy-deep md:text-3xl">
+          <h2 className="type-heading text-navy-deep">
             Submit Your Provider Application
           </h2>
-          <p className="mt-3 text-sm leading-relaxed text-muted md:text-base">
+          <p className="mt-3 type-body-sm text-muted">
             Once you have completed the application and accepted the required
             agreements, select Submit Application.
           </p>
-          <p className="mt-3 text-sm leading-relaxed text-muted md:text-base">
+          <p className="mt-3 type-body-sm text-muted">
             Submitting your application sends your information to LoveJoy Health
             for review.
           </p>
@@ -112,10 +112,10 @@ export function ProviderOnboardingSection() {
         className="scroll-mt-28 grid items-start gap-8 rounded-[1.75rem] bg-white p-6 shadow-[0_10px_32px_rgba(2,24,72,0.08)] ring-1 ring-black/[0.04] md:p-8 lg:grid-cols-2"
       >
         <div>
-          <h2 className="font-display text-2xl tracking-tight text-navy-deep md:text-3xl">
+          <h2 className="type-heading text-navy-deep">
             What Happens After You Submit?
           </h2>
-          <p className="mt-3 text-sm leading-relaxed text-muted md:text-base">
+          <p className="mt-3 type-body-sm text-muted">
             After submission, you will be taken to your onboarding status page.
           </p>
           <ul className="mt-5 space-y-2">
@@ -131,7 +131,7 @@ export function ProviderOnboardingSection() {
               </li>
             ))}
           </ul>
-          <ul className="mt-5 space-y-2 text-sm leading-relaxed text-muted">
+          <ul className="mt-5 space-y-2 type-body-sm text-muted">
             <li>
               While your application is being reviewed, clinical modules in the
               provider portal remain locked.
@@ -164,10 +164,10 @@ export function ProviderOnboardingSection() {
         id="after-approval"
         className="scroll-mt-28 rounded-[1.75rem] bg-white p-6 shadow-[0_10px_32px_rgba(2,24,72,0.08)] ring-1 ring-black/[0.04] md:p-8"
       >
-        <h2 className="font-display text-2xl tracking-tight text-navy-deep md:text-3xl">
+        <h2 className="type-heading text-navy-deep">
           What becomes available after approval?
         </h2>
-        <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted md:text-base">
+        <p className="mt-3 max-w-3xl type-body-sm text-muted">
           Once your provider account is approved and activated, the appropriate
           clinical and account areas of the LoveJoy Provider Portal become
           available based on your role and permissions. Access can depend on

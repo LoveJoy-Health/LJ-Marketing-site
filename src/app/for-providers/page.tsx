@@ -238,7 +238,7 @@ function ProviderSchedulePhone() {
     <PhoneFrame>
       <div className="px-3 pb-3">
         <p className="text-[10px] text-muted">Wednesday</p>
-        <p className="font-display text-lg text-navy-deep">Today</p>
+        <p className="type-card text-navy-deep">Today</p>
         <div className="mt-3 space-y-2">
           {[
             { name: "Jordan D.", time: "9:00", type: "Therapy" },
@@ -372,7 +372,7 @@ function ProviderCtas({
         href={siteConfig.providerJoinUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition hover:brightness-105"
+        className="inline-flex items-center gap-2 type-button rounded-full bg-gold px-6 py-3 text-navy-deep transition hover:brightness-105"
       >
         Join LoveJoy
         <span aria-hidden>→</span>
@@ -456,15 +456,15 @@ export default function ForProvidersPage() {
               />
               <div className="grid items-center gap-8 pb-12 md:grid-cols-[1.05fr_0.95fr] md:gap-6 md:pb-14 lg:pb-16">
               <div className="max-w-xl">
-                <p className="animate-fade-up text-[11px] font-semibold uppercase tracking-[0.2em] text-gold md:text-xs">
+                <p className="animate-fade-up type-eyebrow text-gold">
                   For providers
                 </p>
-                <h1 className="animate-fade-up delay-100 mt-3 font-display text-4xl leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.25rem]">
+                <h1 className="animate-fade-up delay-100 mt-3 type-hero text-white">
                   Care doesn&apos;t end with the session.{" "}
-                  <em className="font-display italic text-gold">Neither</em>{" "}
+                  <em className="type-emphasis text-gold">Neither</em>{" "}
                   should your connection.
                 </h1>
-                <p className="animate-fade-up delay-200 mt-5 max-w-lg text-base leading-relaxed text-white/75 md:text-lg">
+                <p className="animate-fade-up delay-200 mt-5 max-w-lg type-body text-white/75">
                   LoveJoy gives behavioral health providers the tools to deliver
                   care, stay connected between visits, and manage the workflows that
                   keep your practice running.
@@ -509,7 +509,7 @@ export default function ForProvidersPage() {
       {/* 2. Audiences */}
       <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
+          <h2 className="max-w-3xl type-section text-navy-deep">
             Built for the people delivering behavioral healthcare
           </h2>
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -526,7 +526,7 @@ export default function ForProvidersPage() {
                 <h3 className="mt-4 text-base font-semibold text-navy-deep">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">{item.body}</p>
+                <p className="mt-2 type-body-sm text-muted">{item.body}</p>
               </div>
             ))}
           </div>
@@ -544,7 +544,7 @@ export default function ForProvidersPage() {
       {/* 3. Connected care workflow */}
       <section className="bg-white px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
+          <h2 className="max-w-3xl type-section text-navy-deep">
             Everything you need to deliver connected care.
           </h2>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
@@ -554,9 +554,9 @@ export default function ForProvidersPage() {
                   <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-navy font-display text-sm font-semibold text-white">
                     {step.number}
                   </span>
-                  <h3 className="font-display text-xl text-navy-deep">{step.title}</h3>
+                  <h3 className="type-card text-navy-deep">{step.title}</h3>
                 </div>
-                <p className="mt-3 text-sm leading-relaxed text-muted">{step.body}</p>
+                <p className="mt-3 type-body-sm text-muted">{step.body}</p>
                 <div className="mt-4 flex-1">{step.mock}</div>
               </div>
             ))}
@@ -578,13 +578,13 @@ export default function ForProvidersPage() {
         className="scroll-mt-28 bg-atmosphere px-3 py-16 md:px-4 md:py-20"
       >
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
+          <h2 className="max-w-3xl type-section text-navy-deep">
             Your practice. Wherever you need it.
           </h2>
           <div className="mt-12 grid items-start gap-10 lg:grid-cols-2 lg:gap-14">
             <div>
-              <h3 className="font-display text-2xl text-navy-deep">Provider Portal</h3>
-              <p className="mt-3 max-w-md text-sm leading-relaxed text-muted md:text-base">
+              <h3 className="type-heading text-navy-deep">Provider Portal</h3>
+              <p className="mt-3 max-w-md type-body-sm text-muted">
                 Run your day from the web — schedule, documentation, messaging,
                 and patient context in one place.
               </p>
@@ -602,10 +602,10 @@ export default function ForProvidersPage() {
             </div>
 
             <div id="provider-app" className="scroll-mt-28">
-              <h3 className="font-display text-2xl text-navy-deep">
+              <h3 className="type-heading text-navy-deep">
                 LoveJoy Provider App
               </h3>
-              <p className="mt-3 max-w-md text-sm leading-relaxed text-muted md:text-base">
+              <p className="mt-3 max-w-md type-body-sm text-muted">
                 Stay productive on the go with today&apos;s schedule, secure
                 visits, and quick access to what matters between sessions.
               </p>
@@ -633,10 +633,10 @@ export default function ForProvidersPage() {
       <section className="bg-white px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:gap-14">
           <div>
-            <h2 className="font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+            <h2 className="type-section text-navy-deep">
               Know more than what happens in the appointment.
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-muted">
+            <p className="mt-4 type-body text-muted">
               See assessments, mood trends, and care activity so you can
               prepare — and follow through — with fuller context.
             </p>
@@ -654,10 +654,10 @@ export default function ForProvidersPage() {
           </div>
 
           <div>
-            <h2 className="font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+            <h2 className="type-section text-navy-deep">
               Spend more time on care. Less time managing it.
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-muted">
+            <p className="mt-4 type-body text-muted">
               Tools that support the full visit cycle — before, during, and
               after — so less of your day is spent chasing logistics.
             </p>
@@ -697,7 +697,7 @@ export default function ForProvidersPage() {
       <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:gap-14">
           <div className="rounded-[1.75rem] bg-white p-6 shadow-[0_10px_32px_rgba(2,24,72,0.08)] ring-1 ring-black/[0.04] md:p-8">
-            <h2 className="font-display text-2xl tracking-tight text-navy-deep md:text-3xl">
+            <h2 className="type-heading text-navy-deep">
               Joining LoveJoy is straightforward.
             </h2>
             <ol className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -721,7 +721,7 @@ export default function ForProvidersPage() {
           </div>
 
           <div className="rounded-[1.75rem] bg-white p-6 shadow-[0_10px_32px_rgba(2,24,72,0.08)] ring-1 ring-black/[0.04] md:p-8">
-            <h2 className="font-display text-2xl tracking-tight text-navy-deep md:text-3xl">
+            <h2 className="type-heading text-navy-deep">
               Flexible ways to provide care.
             </h2>
             <ul className="mt-8 space-y-5">
@@ -734,7 +734,7 @@ export default function ForProvidersPage() {
                     <h3 className="text-base font-semibold text-navy-deep">
                       {mode.title}
                     </h3>
-                    <p className="mt-1 text-sm leading-relaxed text-muted">
+                    <p className="mt-1 type-body-sm text-muted">
                       {mode.body}
                     </p>
                   </div>
@@ -772,10 +772,10 @@ export default function ForProvidersPage() {
             <div className="absolute inset-0 bg-gradient-to-r from-[#042268] via-[#042268]/80 to-transparent" />
           </div>
           <div className="relative mx-auto max-w-3xl text-center">
-            <h2 className="font-display text-3xl tracking-tight md:text-5xl">
+            <h2 className="type-section">
               Ready to provide care with LoveJoy?
             </h2>
-            <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/75 md:text-lg">
+            <p className="mx-auto mt-4 max-w-xl type-body text-white/75">
               Join a network built to support you and the patients you serve.
             </p>
             <div className="mt-8 flex justify-center">

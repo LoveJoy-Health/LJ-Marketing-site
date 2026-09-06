@@ -11,13 +11,13 @@ export function OnboardingStep({ step }: { step: OnboardingGuideStep }) {
     >
       <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
         <div>
-          <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-navy">
+          <p className="type-eyebrow text-navy">
             Step {step.numberLabel}
           </p>
-          <h3 className="mt-2 font-display text-2xl tracking-tight text-navy-deep md:text-3xl">
+          <h3 className="mt-2 type-heading text-navy-deep">
             {step.title}
           </h3>
-          <p className="mt-3 text-sm leading-relaxed text-muted md:text-base">
+          <p className="mt-3 type-body-sm text-muted">
             {step.description}
           </p>
 
@@ -51,7 +51,7 @@ export function OnboardingStep({ step }: { step: OnboardingGuideStep }) {
                 {step.instructions.map((instruction) => (
                   <li
                     key={instruction}
-                    className="flex items-start gap-2 text-sm leading-relaxed text-muted"
+                    className="flex items-start gap-2 type-body-sm text-muted"
                   >
                     <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold" />
                     {instruction}
@@ -72,7 +72,7 @@ export function OnboardingStep({ step }: { step: OnboardingGuideStep }) {
                     <dt className="text-sm font-semibold text-navy-deep">
                       {item.label}
                     </dt>
-                    <dd className="mt-1 text-sm leading-relaxed text-muted">
+                    <dd className="mt-1 type-body-sm text-muted">
                       {item.body}
                     </dd>
                   </div>
@@ -87,7 +87,7 @@ export function OnboardingStep({ step }: { step: OnboardingGuideStep }) {
                 {subsection.title}
               </h4>
               {subsection.body ? (
-                <p className="mt-2 text-sm leading-relaxed text-muted">
+                <p className="mt-2 type-body-sm text-muted">
                   {subsection.body}
                 </p>
               ) : null}
@@ -108,7 +108,7 @@ export function OnboardingStep({ step }: { step: OnboardingGuideStep }) {
                   {subsection.instructions.map((instruction) => (
                     <li
                       key={instruction}
-                      className="text-sm leading-relaxed text-muted"
+                      className="type-body-sm text-muted"
                     >
                       {instruction}
                     </li>
@@ -118,7 +118,7 @@ export function OnboardingStep({ step }: { step: OnboardingGuideStep }) {
               {subsection.notes?.map((note) => (
                 <p
                   key={note}
-                  className="mt-3 text-sm leading-relaxed text-muted"
+                  className="mt-3 type-body-sm text-muted"
                 >
                   {note}
                 </p>
@@ -129,7 +129,7 @@ export function OnboardingStep({ step }: { step: OnboardingGuideStep }) {
           {step.notes?.map((note) => (
             <p
               key={note}
-              className="mt-4 text-sm leading-relaxed text-muted"
+              className="mt-4 type-body-sm text-muted"
             >
               {note}
             </p>

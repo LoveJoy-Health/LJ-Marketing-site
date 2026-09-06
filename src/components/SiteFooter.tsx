@@ -81,12 +81,12 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-7xl gap-10 px-3 py-14 md:grid-cols-2 lg:grid-cols-[1.35fr_1fr_1fr_1fr_1fr_1fr_1fr] md:px-4">
         <div>
           <LoveJoyLogo className="h-12 w-auto" />
-          <p className="mt-4 max-w-md text-sm leading-relaxed text-white/70">
+          <p className="type-body-sm mt-4 max-w-md text-white/70">
             Connected behavioral healthcare — linking people, providers, and
             organizations on one platform for better outcomes.
           </p>
           <div className="mt-6">
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-gold">
+            <p className="type-eyebrow text-gold">
               Download the apps
             </p>
             <div className="mt-3 flex flex-wrap gap-3">
@@ -113,7 +113,7 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-gold">
+          <p className="type-eyebrow text-gold">
             Explore
           </p>
           <ul className="mt-4 space-y-2.5">
@@ -131,7 +131,7 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-gold">
+          <p className="type-eyebrow text-gold">
             Resources
           </p>
           <ul className="mt-4 space-y-2.5">
@@ -153,7 +153,7 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-gold">
+          <p className="type-eyebrow text-gold">
             For providers
           </p>
           <ul className="mt-4 space-y-2.5">
@@ -171,7 +171,7 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-gold">
+          <p className="type-eyebrow text-gold">
             For organizations
           </p>
           <ul className="mt-4 space-y-2.5">
@@ -189,7 +189,7 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-gold">
+          <p className="type-eyebrow text-gold">
             Legal
           </p>
           <ul className="mt-4 space-y-2.5">
@@ -204,7 +204,7 @@ export function SiteFooter() {
               </li>
             ))}
           </ul>
-          <p className="mt-8 text-xs font-semibold uppercase tracking-[0.16em] text-gold">
+          <p className="mt-8 type-eyebrow text-gold">
             <Link href="/investors" className="transition hover:text-white">
               Investors
             </Link>
@@ -224,7 +224,7 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-gold">
+          <p className="type-eyebrow text-gold">
             Visit
           </p>
           <p className="mt-4 text-sm leading-relaxed text-white/80">

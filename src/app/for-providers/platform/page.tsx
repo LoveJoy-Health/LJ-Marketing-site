@@ -118,7 +118,7 @@ export default function ProviderPlatformPage() {
 
       <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+          <h2 className="max-w-3xl type-section text-navy-deep">
             Your practice. Wherever you need it.
           </h2>
           <div className="mt-10 grid gap-6 md:grid-cols-2">
@@ -130,10 +130,10 @@ export default function ProviderPlatformPage() {
                 <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-navy-soft text-navy">
                   <item.Icon className="h-5 w-5" aria-hidden strokeWidth={1.75} />
                 </span>
-                <h3 className="mt-4 font-display text-2xl text-navy-deep">
+                <h3 className="mt-4 type-heading text-navy-deep">
                   {item.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted md:text-base">
+                <p className="mt-3 type-body-sm text-muted">
                   {item.body}
                 </p>
                 {item.cta.external ? (
@@ -167,7 +167,7 @@ export default function ProviderPlatformPage() {
 
       <section className="bg-white px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+          <h2 className="max-w-3xl type-section text-navy-deep">
             A connected care workflow
           </h2>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
@@ -177,11 +177,11 @@ export default function ProviderPlatformPage() {
                   <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-navy font-display text-sm font-semibold text-white">
                     {step.number}
                   </span>
-                  <h3 className="font-display text-xl text-navy-deep">
+                  <h3 className="type-card text-navy-deep">
                     {step.title}
                   </h3>
                 </div>
-                <p className="mt-3 text-sm leading-relaxed text-muted">
+                <p className="mt-3 type-body-sm text-muted">
                   {step.body}
                 </p>
                 <span className="mt-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-navy-soft text-navy">
@@ -196,10 +196,10 @@ export default function ProviderPlatformPage() {
       <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:gap-14">
           <div>
-            <h2 className="font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+            <h2 className="type-section text-navy-deep">
               Know more than what happens in the appointment.
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-muted">
+            <p className="mt-4 type-body text-muted">
               See assessments, mood trends, and care activity so you can prepare
               — and follow through — with fuller context.
             </p>
@@ -218,10 +218,10 @@ export default function ProviderPlatformPage() {
           </div>
 
           <div>
-            <h2 className="font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+            <h2 className="type-section text-navy-deep">
               Spend more time on care. Less time managing it.
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-muted">
+            <p className="mt-4 type-body text-muted">
               Tools that support the full visit cycle — before, during, and after
               — so less of your day is spent chasing logistics.
             </p>

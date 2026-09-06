@@ -106,7 +106,7 @@ export default function OrganizationImplementationPage() {
                   </span>
                   <div className="min-w-0 flex-1">
                     <div className="flex items-center gap-3">
-                      <h2 className="font-display text-2xl text-navy-deep">
+                      <h2 className="type-heading text-navy-deep">
                         {step.title}
                       </h2>
                       <span className="hidden h-9 w-9 items-center justify-center rounded-xl bg-navy-soft text-navy sm:inline-flex">
@@ -117,7 +117,7 @@ export default function OrganizationImplementationPage() {
                         />
                       </span>
                     </div>
-                    <p className="mt-3 text-sm leading-relaxed text-muted md:text-base">
+                    <p className="mt-3 type-body-sm text-muted">
                       {step.body}
                     </p>
                     <ul className="mt-4 space-y-2">
@@ -141,20 +141,20 @@ export default function OrganizationImplementationPage() {
 
       <section className="bg-white px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+          <h2 className="max-w-3xl type-section text-navy-deep">
             After you launch
           </h2>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted">
+          <p className="mt-4 max-w-2xl type-body text-muted">
             Implementation is the start of a partnership — not a one-time
             install.
           </p>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {afterLaunch.map((item) => (
               <div key={item.title} className="border-t border-navy/15 pt-5">
-                <h3 className="font-display text-xl text-navy-deep">
+                <h3 className="type-card text-navy-deep">
                   {item.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted">
+                <p className="mt-3 type-body-sm text-muted">
                   {item.body}
                 </p>
               </div>

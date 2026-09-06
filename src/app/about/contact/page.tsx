@@ -145,10 +145,10 @@ export default function ContactPage() {
       <section className="bg-white px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-2xl">
-            <h2 className="font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+            <h2 className="type-section text-navy-deep">
               How can we help?
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-muted md:text-lg">
+            <p className="mt-4 type-body text-muted">
               Choose the path that fits — each card points you to the right
               email, page, or portal. No form required.
             </p>
@@ -167,10 +167,10 @@ export default function ContactPage() {
                 <div className="flex h-11 w-11 items-center justify-center rounded-full bg-navy-soft text-navy">
                   <Icon className="h-5 w-5" strokeWidth={1.75} aria-hidden />
                 </div>
-                <h3 className="mt-5 font-display text-2xl tracking-tight text-navy-deep">
+                <h3 className="mt-5 type-heading text-navy-deep">
                   {title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted md:text-base">
+                <p className="mt-3 type-body-sm text-muted">
                   {body}
                 </p>
                 <p className="mt-4 flex flex-wrap items-baseline gap-x-3 gap-y-1 text-sm md:text-base">
@@ -193,10 +193,10 @@ export default function ContactPage() {
           </ul>
 
           <div className="mt-16 border-t border-border pt-10 md:mt-20 md:pt-12">
-            <p className="text-sm uppercase tracking-[0.16em] text-muted">
+            <p className="type-eyebrow text-muted">
               Headquarters
             </p>
-            <p className="mt-3 font-display text-2xl tracking-tight text-navy-deep md:text-3xl">
+            <p className="mt-3 type-heading text-navy-deep">
               {siteConfig.address}
             </p>
             <a
@@ -214,7 +214,7 @@ export default function ContactPage() {
         className="border-t border-border bg-[#F7F9FC] px-3 py-10 md:px-4 md:py-12"
       >
         <div className="mx-auto max-w-7xl">
-          <p className="max-w-3xl text-sm leading-relaxed text-muted md:text-base">
+          <p className="max-w-3xl type-body-sm text-muted">
             If you or someone you know is in crisis or needs immediate help,
             please call{" "}
             <a

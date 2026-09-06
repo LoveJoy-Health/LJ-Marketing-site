@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Figtree } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import { Analytics } from "@/components/Analytics";
 import { BackToTop } from "@/components/BackToTop";
 import { LayoutBreadcrumbs } from "@/components/Breadcrumbs";
@@ -14,14 +14,19 @@ import {
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
 
-const display = Fraunces({
+const display = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-display",
+  display: "swap",
+  weight: ["500", "600"],
+  style: ["normal", "italic"],
 });
 
-const body = Figtree({
+const body = Inter({
   subsets: ["latin"],
   variable: "--font-body",
+  display: "swap",
+  weight: ["400", "500", "600"],
 });
 
 const defaultTitle = `${siteConfig.name} — Mental Health Care that stays with you`;

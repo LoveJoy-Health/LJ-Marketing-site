@@ -243,7 +243,7 @@ function NavigatorCtas({
             href={siteConfig.navigatorJoinUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition hover:brightness-105"
+            className="inline-flex items-center gap-2 type-button rounded-full bg-gold px-6 py-3 text-navy-deep transition hover:brightness-105"
           >
             Join LoveJoy
             <span aria-hidden>→</span>
@@ -251,7 +251,7 @@ function NavigatorCtas({
         ) : (
           <Link
             href={siteConfig.navigatorJoinUrl}
-            className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition hover:brightness-105"
+            className="inline-flex items-center gap-2 type-button rounded-full bg-gold px-6 py-3 text-navy-deep transition hover:brightness-105"
           >
             Join LoveJoy
             <span aria-hidden>→</span>
@@ -607,14 +607,14 @@ export default function ForNavigatorsPage() {
               />
               <div className="grid items-center gap-8 pb-12 md:grid-cols-[1.05fr_0.95fr] md:gap-6 md:pb-14 lg:pb-16">
               <div className="max-w-xl">
-                <p className="animate-fade-up text-[11px] font-semibold uppercase tracking-[0.2em] text-gold md:text-xs">
+                <p className="animate-fade-up type-eyebrow text-gold">
                   Care Navigators
                 </p>
-                <h1 className="animate-fade-up delay-100 mt-3 font-display text-4xl leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.25rem]">
+                <h1 className="animate-fade-up delay-100 mt-3 type-hero text-white">
                   Help people keep moving{" "}
-                  <em className="font-display italic text-gold">forward.</em>
+                  <em className="type-emphasis text-gold">forward.</em>
                 </h1>
-                <p className="animate-fade-up delay-200 mt-5 max-w-lg text-base leading-relaxed text-white/75 md:text-lg">
+                <p className="animate-fade-up delay-200 mt-5 max-w-lg type-body text-white/75">
                   LoveJoy gives care navigators a connected workspace to track
                   people, close gaps, and coordinate the next right step — so
                   support doesn&apos;t stop between visits.
@@ -643,11 +643,11 @@ export default function ForNavigatorsPage() {
       <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-14">
           <div>
-            <h2 className="max-w-xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
+            <h2 className="max-w-xl type-section text-navy-deep">
               Care coordination shouldn&apos;t require piecing everything
               together.
             </h2>
-            <p className="mt-5 max-w-lg text-base leading-relaxed text-muted md:text-lg">
+            <p className="mt-5 max-w-lg type-body text-muted">
               Navigators juggle spreadsheets, inboxes, and siloed systems just
               to keep people moving. LoveJoy brings assigned people, follow-ups,
               care gaps, and messaging into one workspace — so you spend less
@@ -661,10 +661,10 @@ export default function ForNavigatorsPage() {
       {/* Built for navigators */}
       <section className="bg-white px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
+          <h2 className="max-w-3xl type-section text-navy-deep">
             Built for the way navigators actually work.
           </h2>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted md:text-lg">
+          <p className="mt-4 max-w-2xl type-body text-muted">
             Everything you need to manage a caseload, act on what matters, and
             keep care connected across the journey.
           </p>
@@ -682,7 +682,7 @@ export default function ForNavigatorsPage() {
                 <h3 className="mt-4 text-base font-semibold text-navy-deep">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">
+                <p className="mt-2 type-body-sm text-muted">
                   {item.body}
                 </p>
               </div>
@@ -694,11 +694,11 @@ export default function ForNavigatorsPage() {
       {/* Impact steps */}
       <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
+          <h2 className="max-w-3xl type-section text-navy-deep">
             Every step you take moves care{" "}
-            <em className="font-display italic text-[#B8960A]">forward.</em>
+            <em className="type-emphasis text-[#B8960A]">forward.</em>
           </h2>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted md:text-lg">
+          <p className="mt-4 max-w-2xl type-body text-muted">
             A clear flow from understanding needs to closing the loop — designed
             for navigators who keep people from falling through the cracks.
           </p>
@@ -714,10 +714,10 @@ export default function ForNavigatorsPage() {
                 <span className="relative z-10 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white text-navy shadow-[0_8px_24px_rgba(2,24,72,0.1)] ring-1 ring-black/[0.04]">
                   <step.Icon className="h-5 w-5" aria-hidden strokeWidth={1.75} />
                 </span>
-                <h3 className="mt-4 font-display text-xl text-navy-deep">
+                <h3 className="mt-4 type-card text-navy-deep">
                   {step.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">
+                <p className="mt-2 type-body-sm text-muted">
                   {step.body}
                 </p>
               </div>
@@ -733,10 +733,10 @@ export default function ForNavigatorsPage() {
             <PatientProfileMock />
           </div>
           <div>
-            <h2 className="max-w-xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
+            <h2 className="max-w-xl type-section text-navy-deep">
               See the whole person, not just the appointment.
             </h2>
-            <p className="mt-5 max-w-lg text-base leading-relaxed text-muted md:text-lg">
+            <p className="mt-5 max-w-lg type-body text-muted">
               Clinical context, social determinants, assessments, and care
               activity live together — so you can address housing, transport,
               and follow-through with the same clarity as a visit note.
@@ -763,10 +763,10 @@ export default function ForNavigatorsPage() {
       <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
           <div>
-            <h2 className="max-w-xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
+            <h2 className="max-w-xl type-section text-navy-deep">
               You shouldn&apos;t have to coordinate care alone.
             </h2>
-            <p className="mt-5 max-w-lg text-base leading-relaxed text-muted md:text-lg">
+            <p className="mt-5 max-w-lg type-body text-muted">
               LoveJoy connects navigators with patients, providers, and
               organizations on one platform — so updates travel with the person,
               not through scattered threads.
@@ -809,11 +809,11 @@ export default function ForNavigatorsPage() {
             <div className="absolute inset-0 bg-gradient-to-r from-[#042268] via-[#042268]/80 to-transparent" />
           </div>
           <div className="relative mx-auto max-w-3xl text-center">
-            <h2 className="font-display text-3xl tracking-tight md:text-5xl">
+            <h2 className="type-section">
               Keep care moving{" "}
-              <em className="font-display italic text-gold">forward.</em>
+              <em className="type-emphasis text-gold">forward.</em>
             </h2>
-            <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/75 md:text-lg">
+            <p className="mx-auto mt-4 max-w-xl type-body text-white/75">
               Access the Navigator Portal to manage your caseload — or learn how
               LoveJoy connects the whole care journey.
             </p>
@@ -822,7 +822,7 @@ export default function ForNavigatorsPage() {
                 href={siteConfig.navigatorPortalUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition hover:brightness-105"
+                className="inline-flex items-center gap-2 type-button rounded-full bg-gold px-6 py-3 text-navy-deep transition hover:brightness-105"
               >
                 Access Navigator Portal
                 <span aria-hidden>→</span>

@@ -50,13 +50,13 @@ export default function DownloadIndexPage() {
                 <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-navy-soft text-navy transition group-hover:bg-navy group-hover:text-white">
                   <Icon className="h-5 w-5" aria-hidden strokeWidth={1.75} />
                 </span>
-                <p className="mt-6 text-[11px] font-semibold uppercase tracking-[0.16em] text-navy">
+                <p className="mt-6 type-eyebrow text-navy">
                   {eyebrow}
                 </p>
-                <h2 className="mt-2 font-display text-2xl tracking-tight text-navy-deep md:text-3xl">
+                <h2 className="mt-2 type-heading text-navy-deep">
                   {title}
                 </h2>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-muted md:text-base">
+                <p className="mt-3 flex-1 type-body-sm text-muted">
                   {body}
                 </p>
                 <span className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-navy transition group-hover:text-navy-deep">

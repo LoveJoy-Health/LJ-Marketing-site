@@ -124,7 +124,7 @@ export default function CrisisResourcesPage() {
       {/* Intro */}
       <section className="bg-white px-3 pb-10 pt-6 md:px-4 md:pb-12 md:pt-8">
         <div className="mx-auto max-w-7xl">
-          <h1 className="font-display text-4xl tracking-tight text-navy-deep md:text-5xl">
+          <h1 className="type-section text-navy-deep">
             Crisis Resources
           </h1>
 
@@ -133,7 +133,7 @@ export default function CrisisResourcesPage() {
               <p className="text-lg font-semibold leading-snug text-navy-deep md:text-xl">
                 You don&apos;t have to navigate a crisis alone.
               </p>
-              <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted md:text-lg">
+              <p className="mt-4 max-w-2xl type-body text-muted">
                 If you or someone you know is in immediate danger or experiencing
                 a life-threatening emergency,{" "}
                 <a
@@ -184,7 +184,7 @@ export default function CrisisResourcesPage() {
           <div className="text-center lg:text-left">
             <h2
               id="lifeline-heading"
-              className="font-display text-2xl tracking-tight text-white md:text-3xl"
+              className="type-heading text-white"
             >
               Need immediate emotional or mental support?
             </h2>
@@ -267,7 +267,7 @@ export default function CrisisResourcesPage() {
       {/* Other ways to get support */}
       <section className="bg-white px-3 py-14 md:px-4 md:py-16">
         <div className="mx-auto max-w-7xl">
-          <h2 className="font-display text-2xl tracking-tight text-navy-deep md:text-3xl">
+          <h2 className="type-heading text-navy-deep">
             Other ways to get support
           </h2>
 
@@ -280,10 +280,10 @@ export default function CrisisResourcesPage() {
                 <span className="flex h-11 w-11 items-center justify-center rounded-full bg-navy-soft text-navy">
                   <Icon className="h-5 w-5" strokeWidth={1.75} aria-hidden />
                 </span>
-                <h3 className="mt-4 font-display text-xl tracking-tight text-navy-deep">
+                <h3 className="type-card mt-4 text-navy-deep">
                   {title}
                 </h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">
+                <p className="mt-2 flex-1 type-body-sm text-muted">
                   {description}
                 </p>
                 <ul className="mt-4 space-y-2 border-t border-border pt-4">
@@ -327,11 +327,11 @@ export default function CrisisResourcesPage() {
             <div>
               <h2
                 id="non-emergency-heading"
-                className="font-display text-xl tracking-tight text-navy-deep md:text-2xl"
+                className="type-heading text-navy-deep"
               >
                 If this isn&apos;t an emergency, but you need support
               </h2>
-              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted md:text-base">
+              <p className="mt-2 max-w-2xl type-body-sm text-muted">
                 Sometimes you may be struggling without being in immediate
                 danger. LoveJoy can help you explore ongoing behavioral health
                 support.

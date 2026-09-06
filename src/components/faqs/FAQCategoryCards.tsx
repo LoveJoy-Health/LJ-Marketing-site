@@ -23,10 +23,10 @@ export function FAQCategoryCards() {
   return (
     <section className="bg-atmosphere px-3 py-14 md:px-4 md:py-16">
       <div className="mx-auto max-w-7xl">
-        <h2 className="font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+        <h2 className="type-section text-navy-deep">
           Browse by topic
         </h2>
-        <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted md:text-base">
+        <p className="mt-3 max-w-2xl type-body-sm text-muted">
           Choose a category to see questions and answers.
         </p>
         <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -43,11 +43,11 @@ export function FAQCategoryCards() {
                   <span className="flex h-11 w-11 items-center justify-center rounded-full bg-navy-soft text-navy">
                     <Icon className="h-5 w-5" strokeWidth={1.75} aria-hidden />
                   </span>
-                  <h3 className="mt-5 font-display text-2xl tracking-tight text-navy-deep">
+                  <h3 className="mt-5 type-heading text-navy-deep">
                     {category.label}
                   </h3>
                   {category.intro ? (
-                    <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">
+                    <p className="mt-3 flex-1 type-body-sm text-muted">
                       {category.intro}
                     </p>
                   ) : null}

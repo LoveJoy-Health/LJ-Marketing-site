@@ -65,7 +65,7 @@ export default function BlogIndex() {
 
       {filteredPosts.length === 0 ? (
         <p
-          className="mt-10 rounded-[1.75rem] bg-[#F7F9FC] px-6 py-10 text-center text-sm leading-relaxed text-muted ring-1 ring-black/[0.04] md:text-base"
+          className="mt-10 rounded-[1.75rem] bg-[#F7F9FC] px-6 py-10 text-center type-body-sm text-muted ring-1 ring-black/[0.04] md:text-base"
           role="status"
         >
           No posts in this topic yet.
@@ -82,7 +82,7 @@ export default function BlogIndex() {
                   {getCategoryLabel(post.category)}
                 </span>
               </div>
-              <h2 className="mt-4 text-left font-display text-xl leading-snug tracking-tight text-navy-deep md:text-2xl">
+              <h2 className="mt-4 text-left type-heading text-navy-deep">
                 <Link
                   href={`/blog/${post.slug}`}
                   className="transition hover:text-navy"
@@ -90,7 +90,7 @@ export default function BlogIndex() {
                   {post.title}
                 </Link>
               </h2>
-              <p className="mt-3 flex-1 text-left text-sm leading-relaxed text-muted">
+              <p className="mt-3 flex-1 text-left type-body-sm text-muted">
                 {post.excerpt}
               </p>
               <div className="mt-5 flex items-center justify-between gap-3 border-t border-border/70 pt-4">

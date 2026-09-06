@@ -434,7 +434,7 @@ function StepMock({ type }: { type: (typeof steps)[number]["mock"] }) {
       <p className="text-[10px] font-semibold uppercase tracking-wide text-muted">
         Progress
       </p>
-      <p className="mt-1 font-display text-2xl text-navy-deep">8</p>
+      <p className="type-stat mt-1 text-2xl text-navy-deep">8</p>
       <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-navy-soft">
         <div className="h-full w-[55%] rounded-full bg-gold" />
       </div>
@@ -475,29 +475,29 @@ export default function HomePage() {
           <div className="relative z-10">
             <div className="site-container relative grid items-center gap-8 px-3 pb-12 pt-[5.75rem] md:grid-cols-[1.05fr_0.95fr] md:gap-6 md:px-4 md:pb-14 md:pt-28 lg:pb-16">
               <div className="max-w-xl">
-                <p className="animate-fade-up text-[11px] font-semibold uppercase tracking-[0.2em] text-gold md:text-xs">
+                <p className="animate-fade-up type-eyebrow text-gold">
                   Connected Behavioral Healthcare
                 </p>
-                <h1 className="animate-fade-up delay-100 mt-3 font-display text-4xl leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem]">
+                <h1 className="animate-fade-up delay-100 mt-3 type-hero text-white">
                   Mental Health Care{" "}
                   <br className="hidden sm:block" />
                   that stays with{" "}
-                  <em className="font-display italic text-gold">you.</em>
+                  <em className="type-emphasis text-gold">you.</em>
                 </h1>
-                <p className="animate-fade-up delay-200 mt-4 max-w-md text-base leading-relaxed text-white/75 md:text-lg">
+                <p className="animate-fade-up delay-200 mt-4 max-w-md type-body text-white/75">
                   LoveJoy makes it easier to find, deliver, and coordinate mental
                   health care — all in one connected place.
                 </p>
                 <div className="animate-fade-up delay-300 mt-6 flex flex-wrap gap-3">
                   <Link
                     href="/for-individuals"
-                    className="rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition hover:brightness-105"
+                    className="type-button rounded-full bg-gold px-6 py-3 text-navy-deep transition hover:brightness-105"
                   >
                     Find Support →
                   </Link>
                   <Link
                     href="/for-providers"
-                    className="rounded-full border border-white/35 bg-transparent px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+                    className="type-button rounded-full border border-white/35 bg-transparent px-6 py-3 text-white transition hover:bg-white/10"
                   >
                     Join Provider Network
                   </Link>
@@ -582,21 +582,21 @@ export default function HomePage() {
       >
         <div className="site-container grid items-center gap-12 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:gap-14 xl:gap-16">
           <div className="max-w-xl lg:max-w-none">
-            <h2 className="font-display text-3xl leading-[1.15] tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem] xl:text-5xl">
+            <h2 className="type-section text-navy-deep">
               Care doesn&apos;t stop when the appointment ends.
             </h2>
             <div
               aria-hidden
               className="mt-5 h-1 w-14 rounded-full bg-gold md:w-16"
             />
-            <p className="mt-6 text-base leading-relaxed text-navy md:text-lg">
+            <p className="mt-6 type-body text-navy">
               Finding a therapist is only the beginning. LoveJoy helps you get to
               your appointments, stay connected with your care team, find help
               with everyday needs, and keep making progress between visits.
             </p>
             <Link
               href="/about"
-              className="mt-7 inline-flex text-sm font-semibold text-[#2563EB] transition hover:text-navy md:text-base"
+              className="type-link mt-7 inline-flex text-[#2563EB] transition hover:text-navy"
             >
               Learn more about our approach →
             </Link>
@@ -612,7 +612,7 @@ export default function HomePage() {
                         : ""
                     }`}
                   >
-                    <dt className="font-display text-2xl font-bold tracking-tight text-[#042268] md:text-3xl">
+                    <dt className="type-stat text-2xl tracking-tight text-[#042268] md:text-3xl">
                       {value}
                     </dt>
                     <dd className="mt-1.5 text-xs leading-snug text-[#042268]/90 md:text-[13px] md:leading-relaxed">
@@ -637,10 +637,10 @@ export default function HomePage() {
         className="scroll-mt-28 bg-white px-3 py-16 md:px-4 md:py-24"
       >
         <div className="site-container">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
+          <p className="type-eyebrow text-navy">
             Who are you?
           </p>
-          <h2 className="mt-3 max-w-2xl font-display text-3xl tracking-tight text-navy-deep md:text-5xl">
+          <h2 className="type-section mt-3 max-w-2xl text-navy-deep">
             Choose your path. We&apos;ll meet you there.
           </h2>
 
@@ -668,13 +668,13 @@ export default function HomePage() {
                   </span>
                 </div>
                 <div className="rounded-b-[1.75rem] px-5 pb-5 pt-8">
-                  <h3 className="text-lg font-bold leading-snug text-navy-deep md:text-xl">
+                  <h3 className="type-card text-navy-deep">
                     {path.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-navy">
+                  <p className="type-body-sm mt-2 text-navy">
                     {path.body}
                   </p>
-                  <span className="mt-4 inline-flex text-sm font-semibold text-[#2563EB] transition group-hover:text-navy">
+                  <span className="type-link mt-4 inline-flex text-[#2563EB] transition group-hover:text-navy">
                     {path.cta}
                   </span>
                 </div>
@@ -691,23 +691,23 @@ export default function HomePage() {
       >
         <div className="site-container grid items-center gap-12 lg:grid-cols-[1.05fr_1.1fr_0.85fr] lg:gap-10 xl:gap-14">
           <div className="max-w-md lg:max-w-none">
-            <p className="inline-flex items-center gap-2.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
+            <p className="type-eyebrow inline-flex items-center gap-2.5 text-navy">
               <span
                 aria-hidden
                 className="inline-block h-1 w-6 rounded-full bg-[#C4A000]"
               />
               Our platform
             </p>
-            <h2 className="mt-4 font-display text-3xl leading-[1.12] tracking-tight text-navy-deep md:text-4xl xl:text-[2.75rem]">
+            <h2 className="type-section mt-4 text-navy-deep">
               Your care team, in one place.
             </h2>
-            <p className="mt-5 text-base leading-relaxed text-navy md:text-[1.05rem]">
+            <p className="type-body mt-5 text-navy">
               Your therapist, doctor, care navigator, and support team can work
               together instead of leaving you to coordinate everything yourself.
             </p>
             <Link
               href="/for-providers"
-              className="mt-7 inline-flex text-sm font-semibold text-[#2563EB] transition hover:text-navy md:text-base"
+              className="type-link mt-7 inline-flex text-[#2563EB] transition hover:text-navy"
             >
               See the platform in action →
             </Link>
@@ -738,7 +738,7 @@ export default function HomePage() {
         className="scroll-mt-28 bg-[linear-gradient(180deg,#ffffff_0%,#eaf2ff_12%,#eaf2ff_88%,#ffffff_100%)] px-3 py-16 md:px-4 md:py-24"
       >
         <div className="site-container">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
+          <p className="type-eyebrow text-navy">
             <span className="inline-flex items-center gap-2">
               <span
                 aria-hidden
@@ -747,7 +747,7 @@ export default function HomePage() {
               How LoveJoy works
             </span>
           </p>
-          <h2 className="mt-3 font-display text-3xl tracking-tight text-navy-deep md:text-5xl">
+          <h2 className="type-section mt-3 text-navy-deep">
             Every step feels connected.
           </h2>
 
@@ -761,13 +761,13 @@ export default function HomePage() {
                 <span className="relative z-10 mx-auto inline-flex h-14 w-14 items-center justify-center rounded-full bg-gold font-display text-lg font-semibold text-navy-deep shadow-md">
                   {index + 1}
                 </span>
-                <h3 className="mt-4 font-display text-lg text-navy-deep md:text-xl">
+                <h3 className="type-card mt-4 text-navy-deep">
                   {step.title}
                 </h3>
                 <div className="mx-auto mt-4 max-w-[11rem]">
                   <StepMock type={step.mock} />
                 </div>
-                <p className="mx-auto mt-3 max-w-[12rem] text-sm leading-relaxed text-muted">
+                <p className="type-body-sm mx-auto mt-3 max-w-[12rem] text-muted">
                   {step.body}
                 </p>
               </li>
@@ -783,7 +783,7 @@ export default function HomePage() {
       >
         <div className="site-container grid items-center gap-10 lg:grid-cols-[1fr_1.15fr] lg:gap-14">
           <div>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
+            <p className="type-eyebrow text-navy">
               <span className="inline-flex items-center gap-2">
                 <span
                   aria-hidden
@@ -792,13 +792,13 @@ export default function HomePage() {
                 Our mission
               </span>
             </p>
-            <h2 className="mt-3 font-display text-3xl leading-[1.12] tracking-tight text-navy-deep md:text-5xl">
+            <h2 className="type-section mt-3 text-navy-deep">
               Healthcare is personal. So is{" "}
-              <em className="font-display italic text-navy underline decoration-gold decoration-2 underline-offset-[0.2em]">
+              <em className="type-emphasis text-navy underline decoration-gold decoration-2 underline-offset-[0.2em]">
                 our mission.
               </em>
             </h2>
-            <p className="mt-5 max-w-md text-base leading-relaxed text-muted md:text-lg">
+            <p className="type-body mt-5 max-w-md text-muted">
               We believe everyone deserves care that feels human — especially
               communities that have been underserved for too long. LoveJoy exists
               to make compassionate, coordinated support easier to find and easier
@@ -806,7 +806,7 @@ export default function HomePage() {
             </p>
             <Link
               href="/about"
-              className="mt-6 inline-flex text-sm font-semibold text-navy transition hover:text-navy-deep"
+              className="type-link mt-6 inline-flex text-navy transition hover:text-navy-deep"
             >
               Learn about our mission →
             </Link>
@@ -833,25 +833,25 @@ export default function HomePage() {
             className="bg-starfield pointer-events-none absolute inset-0 opacity-35"
           />
           <div className="site-container relative flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-center">
-            <h2 className="max-w-xl font-display text-3xl leading-[1.12] tracking-tight md:text-5xl">
+            <h2 className="type-section max-w-xl">
               Let&apos;s build connected care—
-              <em className="font-display italic text-gold">together.</em>
+              <em className="type-emphasis text-gold">together.</em>
             </h2>
             <div className="max-w-md">
-              <p className="text-base leading-relaxed text-white/70">
+              <p className="type-body text-white/70">
                 Join forward-thinking organizations bringing guided behavioral
                 healthcare to the communities they serve.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <Link
                   href="/download"
-                  className="rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition hover:brightness-105"
+                  className="type-button rounded-full bg-gold px-6 py-3 text-navy-deep transition hover:brightness-105"
                 >
                   Download Our Apps →
                 </Link>
                 <Link
                   href="/about/contact"
-                  className="rounded-full border border-white/35 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+                  className="type-button rounded-full border border-white/35 px-6 py-3 text-white transition hover:bg-white/10"
                 >
                   Talk to Our Team
                 </Link>

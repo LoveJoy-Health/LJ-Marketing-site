@@ -40,7 +40,7 @@ export default function BlogPage() {
             <BlogIndex />
           </Suspense>
 
-          <p className="mt-12 max-w-xl text-sm leading-relaxed text-muted">
+          <p className="mt-12 max-w-xl type-body-sm text-muted">
             Want to stay in the loop?{" "}
             <Link
               href="/about/contact"

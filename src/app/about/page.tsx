@@ -98,13 +98,13 @@ export default function AboutPage() {
               />
               <div className="grid items-center gap-8 pb-12 md:grid-cols-[1.05fr_0.95fr] md:gap-6 md:pb-14 lg:pb-16">
               <div className="max-w-xl">
-                <p className="animate-fade-up text-[11px] font-semibold uppercase tracking-[0.2em] text-gold md:text-xs">
+                <p className="animate-fade-up type-eyebrow text-gold">
                   About
                 </p>
-                <h1 className="animate-fade-up delay-100 mt-3 font-display text-4xl leading-[1.08] tracking-tight text-white md:text-5xl lg:text-[3.5rem]">
+                <h1 className="animate-fade-up delay-100 mt-3 type-hero text-white">
                   About LoveJoy Health.
                 </h1>
-                <p className="animate-fade-up delay-200 mt-5 max-w-lg text-base leading-relaxed text-white/75 md:text-lg">
+                <p className="animate-fade-up delay-200 mt-5 max-w-lg type-body text-white/75">
                   We&apos;re building behavioral healthcare that&apos;s easier to
                   find, easier to navigate, and easier to stay connected to.
                 </p>
@@ -125,13 +125,13 @@ export default function AboutPage() {
       <section className="bg-white px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
           <div>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
+            <p className="type-eyebrow text-navy">
               Our story
             </p>
-            <h2 className="mt-3 font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
+            <h2 className="mt-3 type-section text-navy-deep">
               Why we started LoveJoy
             </h2>
-            <div className="mt-6 space-y-4 text-base leading-relaxed text-muted md:text-lg">
+            <div className="mt-6 space-y-4 type-body text-muted">
               <p>
                 Getting the right mental health support shouldn&apos;t feel like
                 a maze. Too often, people know they need help — but don&apos;t
@@ -172,13 +172,13 @@ export default function AboutPage() {
       <section className="bg-[#F7F3EC] px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
+            <p className="type-eyebrow text-navy">
               What we believe
             </p>
-            <h2 className="mt-3 font-display text-3xl tracking-tight text-navy-deep md:text-4xl lg:text-[2.75rem]">
+            <h2 className="mt-3 type-section text-navy-deep">
               Mental health care is personal.
             </h2>
-            <p className="mt-5 text-base leading-relaxed text-muted md:text-lg">
+            <p className="mt-5 type-body text-muted">
               We believe technology should remove barriers, not create them. It
               should strengthen relationships, support real conversations, and
               help the people involved in care work together more effectively.
@@ -191,10 +191,10 @@ export default function AboutPage() {
       <section className="bg-white px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-2 md:gap-0">
           <div className="md:pr-12 lg:pr-16">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
+            <p className="type-eyebrow text-navy">
               Mission
             </p>
-            <p className="mt-4 font-display text-2xl leading-snug tracking-tight text-navy-deep md:text-3xl">
+            <p className="mt-4 type-heading text-navy-deep">
               Make behavioral health support easier to access, easier to
               navigate, and easier to continue.
             </p>
@@ -204,10 +204,10 @@ export default function AboutPage() {
             />
           </div>
           <div className="border-t border-border pt-10 md:border-l md:border-t-0 md:pl-12 md:pt-0 lg:pl-16">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
+            <p className="type-eyebrow text-navy">
               Vision
             </p>
-            <p className="mt-4 font-display text-2xl leading-snug tracking-tight text-navy-deep md:text-3xl">
+            <p className="mt-4 type-heading text-navy-deep">
               A future where mental health care is within reach for everyone who
               needs it—and support stays with them.
             </p>
@@ -223,10 +223,10 @@ export default function AboutPage() {
       <section className="bg-white px-3 pb-16 md:px-4 md:pb-20">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-14 lg:items-start">
           <div>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy md:text-xs">
+            <p className="type-eyebrow text-navy">
               Who we serve
             </p>
-            <p className="mt-4 max-w-md text-base leading-relaxed text-muted md:text-lg">
+            <p className="mt-4 max-w-md type-body text-muted">
               We work alongside individuals, providers, organizations, and
               communities to create a more connected behavioral health
               experience.
@@ -241,7 +241,7 @@ export default function AboutPage() {
                 >
                   <Icon className="h-6 w-6" aria-hidden strokeWidth={1.75} />
                 </span>
-                <h3 className="mt-4 text-lg font-semibold text-navy-deep">
+                <h3 className="type-card mt-4 text-navy-deep">
                   {title}
                 </h3>
                 <Link
@@ -261,10 +261,10 @@ export default function AboutPage() {
       <section className="bg-[#EAF2FF] px-3 py-14 md:px-4 md:py-16">
         <div className="mx-auto flex max-w-7xl flex-col gap-8 lg:flex-row lg:items-center lg:justify-between lg:gap-12">
           <div className="max-w-xl">
-            <h2 className="font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+            <h2 className="type-section text-navy-deep">
               Care that stays with you.
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-muted md:text-lg">
+            <p className="mt-4 type-body text-muted">
               We&apos;re committed to building tools that help people find the
               right support, stay engaged in their journey, and feel less alone
               along the way.
@@ -273,7 +273,7 @@ export default function AboutPage() {
           <div className="flex flex-wrap gap-3 lg:shrink-0">
             <Link
               href="/#how-it-works"
-              className="inline-flex items-center gap-2 rounded-full bg-navy px-6 py-3 text-sm font-semibold text-white transition hover:bg-navy-deep"
+              className="inline-flex items-center gap-2 type-button rounded-full bg-navy px-6 py-3 text-white transition hover:bg-navy-deep"
             >
               Learn about our approach
               <span aria-hidden>→</span>

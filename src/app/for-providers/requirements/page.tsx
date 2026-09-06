@@ -95,10 +95,10 @@ export default function ProviderRequirementsPage() {
 
       <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+          <h2 className="max-w-3xl type-section text-navy-deep">
             Who can join
           </h2>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted">
+          <p className="mt-4 max-w-2xl type-body text-muted">
             We welcome licensed clinicians and approved support professionals
             who share our focus on accessible, connected behavioral healthcare.
           </p>
@@ -116,7 +116,7 @@ export default function ProviderRequirementsPage() {
                 <h3 className="mt-4 text-base font-semibold text-navy-deep">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">
+                <p className="mt-2 type-body-sm text-muted">
                   {item.body}
                 </p>
               </div>
@@ -127,10 +127,10 @@ export default function ProviderRequirementsPage() {
 
       <section className="bg-white px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+          <h2 className="max-w-3xl type-section text-navy-deep">
             What we typically need
           </h2>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted">
+          <p className="mt-4 max-w-2xl type-body text-muted">
             Exact documentation can vary by role and state. During onboarding,
             our team will confirm what applies to you.
           </p>
@@ -146,7 +146,7 @@ export default function ProviderRequirementsPage() {
                 <h3 className="mt-4 text-base font-semibold text-navy-deep">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">
+                <p className="mt-2 type-body-sm text-muted">
                   {item.body}
                 </p>
               </li>
@@ -158,29 +158,29 @@ export default function ProviderRequirementsPage() {
       <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:gap-14">
           <div>
-            <h2 className="font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+            <h2 className="type-section text-navy-deep">
               How review works
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-muted">
+            <p className="mt-4 type-body text-muted">
               After you create an account and complete your profile, LoveJoy
               reviews your credentials before you start seeing patients on the
               platform. Review helps protect patients and keeps the network
               aligned with professional standards.
             </p>
-            <p className="mt-4 text-base leading-relaxed text-muted">
+            <p className="mt-4 type-body text-muted">
               If something is missing or unclear, our provider team will follow
               up so you know exactly what to update.
             </p>
           </div>
           <div className="rounded-[1.75rem] bg-white p-6 shadow-[0_10px_32px_rgba(2,24,72,0.08)] ring-1 ring-black/[0.04] md:p-8">
-            <h3 className="font-display text-2xl text-navy-deep">
+            <h3 className="type-heading text-navy-deep">
               Prepare before you apply
             </h3>
             <ul className="mt-6 space-y-3">
               {readiness.map((item) => (
                 <li
                   key={item}
-                  className="flex items-start gap-3 text-sm leading-relaxed text-muted"
+                  className="flex items-start gap-3 type-body-sm text-muted"
                 >
                   <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold" />
                   {item}

@@ -26,13 +26,13 @@ export default function InvestorsPage() {
             href="/investors/pitch-deck"
             className="group block max-w-xl rounded-[1.75rem] border border-border bg-white p-8 shadow-[0_16px_48px_rgba(2,24,72,0.08)] transition hover:border-navy/25"
           >
-            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy">
+            <p className="type-eyebrow text-navy">
               Pitch deck
             </p>
-            <h2 className="mt-3 font-display text-3xl tracking-tight text-navy-deep">
+            <h2 className="mt-3 type-section text-navy-deep">
               13-slide overview
             </h2>
-            <p className="mt-3 text-sm leading-relaxed text-muted">
+            <p className="mt-3 type-body-sm text-muted">
               The problem, the platform, customers, market, team, and the
               Pre-Seed raise.
             </p>

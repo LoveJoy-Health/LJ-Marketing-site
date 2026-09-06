@@ -113,7 +113,7 @@ function NavDropdown({
     };
   }, []);
 
-  const labelClass = `text-sm font-medium tracking-wide transition-colors ${
+  const labelClass = `type-nav transition-colors ${
     highlight ? "text-gold" : "text-white/85 hover:text-white"
   }`;
 
@@ -166,7 +166,7 @@ function NavDropdown({
                 key={child.href}
                 href={child.href}
                 onClick={() => setOpen(false)}
-                className="block rounded-xl px-3 py-2.5 text-sm text-white/85 transition hover:bg-white/10 hover:text-white"
+                className="type-nav block rounded-xl px-3 py-2.5 text-white/85 transition hover:bg-white/10 hover:text-white"
               >
                 {child.label}
               </NavAnchor>
@@ -248,7 +248,7 @@ function HeaderCta({
   onNavigate?: () => void;
 }) {
   const className =
-    "group inline-flex items-center gap-2.5 rounded-full bg-gold py-2 pl-5 pr-2 text-sm font-semibold text-navy-deep transition hover:brightness-105";
+    "type-button group inline-flex items-center gap-2.5 rounded-full bg-gold py-2 pl-5 pr-2 text-navy-deep transition hover:brightness-105";
   const arrow = (
     <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-navy text-white transition group-hover:translate-x-0.5">
       <svg aria-hidden viewBox="0 0 16 16" className="h-3.5 w-3.5" fill="none">
@@ -362,7 +362,7 @@ export function SiteHeader({ variant = "standalone" }: SiteHeaderProps) {
               <NavAnchor
                 key={item.href + item.label}
                 href={item.href}
-                className={`text-sm font-medium tracking-wide transition-colors ${
+                className={`type-nav transition-colors ${
                   active ? "text-gold" : "text-white/85 hover:text-white"
                 }`}
               >

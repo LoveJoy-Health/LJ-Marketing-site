@@ -6,10 +6,10 @@ export function BeforeYouStart() {
       id="before-you-start"
       className="scroll-mt-28 rounded-[1.75rem] bg-white p-6 shadow-[0_10px_32px_rgba(2,24,72,0.08)] ring-1 ring-black/[0.04] md:p-8"
     >
-      <h2 className="font-display text-2xl tracking-tight text-navy-deep md:text-3xl">
+      <h2 className="type-heading text-navy-deep">
         Before You Start
       </h2>
-      <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted md:text-base">
+      <p className="mt-3 max-w-2xl type-body-sm text-muted">
         Gather this information before you open the application. You can continue
         if some documents are not immediately available.
       </p>

@@ -24,7 +24,7 @@ export function FAQCategoryPage({
               </p>
               <Link
                 href="/faqs/providers/onboarding"
-                className="mt-4 inline-flex items-center rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition hover:brightness-105"
+                className="mt-4 inline-flex items-center type-button rounded-full bg-gold px-6 py-3 text-navy-deep transition hover:brightness-105"
               >
                 Provider signup walkthrough
               </Link>

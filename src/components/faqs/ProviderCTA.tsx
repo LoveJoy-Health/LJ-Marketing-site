@@ -20,7 +20,7 @@ export function ProviderCTA({
         className="bg-starfield pointer-events-none absolute inset-0 opacity-35"
       />
       <div className="relative">
-        <h2 className="font-display text-2xl tracking-tight md:text-3xl">
+        <h2 className="type-heading">
           {title}
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/75 md:text-base">
@@ -31,7 +31,7 @@ export function ProviderCTA({
             href={PROVIDER_SIGNUP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition hover:brightness-105"
+            className="inline-flex items-center type-button rounded-full bg-gold px-6 py-3 text-navy-deep transition hover:brightness-105"
           >
             Start Provider Application
           </a>

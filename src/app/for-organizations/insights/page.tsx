@@ -77,10 +77,10 @@ export default function OrganizationInsightsPage() {
 
       <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+          <h2 className="max-w-3xl type-section text-navy-deep">
             Connection metrics that matter
           </h2>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted">
+          <p className="mt-4 max-w-2xl type-body text-muted">
             Reporting is organized around the behavioral health journey — so
             insight maps to the work your teams already do.
           </p>
@@ -98,11 +98,11 @@ export default function OrganizationInsightsPage() {
                       strokeWidth={1.75}
                     />
                   </span>
-                  <h3 className="font-display text-2xl text-navy-deep">
+                  <h3 className="type-heading text-navy-deep">
                     {metric.title}
                   </h3>
                 </div>
-                <p className="mt-3 text-sm leading-relaxed text-muted md:text-base">
+                <p className="mt-3 type-body-sm text-muted">
                   {metric.body}
                 </p>
                 <ul className="mt-4 space-y-2">
@@ -124,16 +124,16 @@ export default function OrganizationInsightsPage() {
 
       <section className="bg-white px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+          <h2 className="max-w-3xl type-section text-navy-deep">
             From activity to better outcomes
           </h2>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {outcomes.map((item) => (
               <div key={item.title} className="border-t border-navy/15 pt-5">
-                <h3 className="font-display text-xl text-navy-deep">
+                <h3 className="type-card text-navy-deep">
                   {item.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted">
+                <p className="mt-3 type-body-sm text-muted">
                   {item.body}
                 </p>
               </div>

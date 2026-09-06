@@ -85,10 +85,10 @@ export default function OrganizationPlatformPage() {
 
       <section className="bg-atmosphere px-3 py-16 md:px-4 md:py-20">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-3xl font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+          <h2 className="max-w-3xl type-section text-navy-deep">
             Built for every role in the journey
           </h2>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted">
+          <p className="mt-4 max-w-2xl type-body text-muted">
             Getting people into care is only the beginning. LoveJoy supports the
             full path — access, coordination, engagement, and understanding.
           </p>
@@ -98,10 +98,10 @@ export default function OrganizationPlatformPage() {
                 <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-white text-navy shadow-[0_8px_24px_rgba(2,24,72,0.1)] ring-1 ring-black/[0.04]">
                   <step.Icon className="h-5 w-5" aria-hidden strokeWidth={1.75} />
                 </span>
-                <h3 className="mt-4 font-display text-xl text-navy-deep">
+                <h3 className="mt-4 type-card text-navy-deep">
                   {step.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">
+                <p className="mt-2 type-body-sm text-muted">
                   {step.body}
                 </p>
               </li>
@@ -126,10 +126,10 @@ export default function OrganizationPlatformPage() {
             <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-navy-soft text-navy">
               <Laptop className="h-5 w-5" aria-hidden strokeWidth={1.75} />
             </span>
-            <h2 className="mt-4 font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+            <h2 className="mt-4 type-section text-navy-deep">
               Organization Portal
             </h2>
-            <p className="mt-4 max-w-md text-base leading-relaxed text-muted">
+            <p className="mt-4 max-w-md type-body text-muted">
               See population health activity, program performance, and where
               people need support — in one connected view at{" "}
               <span className="font-medium text-navy-deep">
@@ -159,10 +159,10 @@ export default function OrganizationPlatformPage() {
           </div>
 
           <div>
-            <h2 className="font-display text-3xl tracking-tight text-navy-deep md:text-4xl">
+            <h2 className="type-section text-navy-deep">
               Deliver care with the model that fits
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-muted">
+            <p className="mt-4 type-body text-muted">
               Use your teams, LoveJoy network capacity, navigation support, and
               programs — in the combination that works for your organization.
             </p>

@@ -42,7 +42,7 @@ function LoveJoyLogoFallback({ className }: { className?: string }) {
         x="126"
         y="27"
         fill="#FFE612"
-        fontFamily="var(--font-display), ui-serif, Georgia, serif"
+        fontFamily="var(--font-display), ui-sans-serif, system-ui, sans-serif"
         fontSize="22"
         fontStyle="italic"
         fontWeight="500"
