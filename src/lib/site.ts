@@ -170,6 +170,7 @@ export const legalNav: readonly NavLink[] = [
 /** Footer — Investors, listed under Legal. */
 export const investorNav: readonly NavLink[] = [
   { href: "/investors/pitch-deck", label: "Pitch Deck" },
+  { href: "/investors/one-pager", label: "One-Pager" },
 ] as const;
 
 export const supportTypes = [
@@ -213,6 +214,7 @@ export const breadcrumbLabels: Record<string, string> = {
   "/about/contact": "Contact",
   "/investors": "Investors",
   "/investors/pitch-deck": "Pitch Deck",
+  "/investors/one-pager": "One-Pager",
   "/blog": "Blog",
   "/faqs": "FAQs",
   "/faqs/individuals": "Individuals",
@@ -265,6 +267,7 @@ const NAVY_HERO_EXACT = new Set([
   "/about/contact",
   "/investors",
   "/investors/pitch-deck",
+  "/investors/one-pager",
   "/blog",
   "/faqs",
   "/download",

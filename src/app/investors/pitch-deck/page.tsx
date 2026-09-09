@@ -21,13 +21,20 @@ export default function InvestorPitchDeckPage() {
           description="Use the arrows, dots, or keyboard to move through the deck. Open full screen for presenting, or download the Pre-Seed PDF."
         />
         <div className="bg-atmosphere px-3 pb-2 md:px-4">
-          <div className="mx-auto max-w-7xl">
+          <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-5 gap-y-2">
             <a
               href="/investors/LoveJoy_Health_Investor_Deck_v6.pdf"
               download="LoveJoy_Health_Investor_Deck_v6.pdf"
               className="inline-flex items-center gap-2 text-sm font-semibold text-navy hover:text-navy-deep"
             >
               Download investor deck PDF
+              <span aria-hidden>→</span>
+            </a>
+            <a
+              href="/investors/one-pager"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-navy/70 hover:text-navy-deep"
+            >
+              One-pager
               <span aria-hidden>→</span>
             </a>
           </div>
