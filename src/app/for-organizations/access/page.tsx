@@ -12,6 +12,7 @@ import {
   OrganizationInteriorHero,
   OrganizationRelatedNav,
 } from "@/components/OrganizationInterior";
+import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "CMS ACCESS",
@@ -116,6 +117,25 @@ export default function OrganizationAccessPage() {
                 </p>
               </div>
             ))}
+          </div>
+
+          <div className="mt-12 rounded-[1.75rem] bg-navy p-6 text-white md:p-8">
+            <p className="type-eyebrow text-gold">
+              Send a patient now
+            </p>
+            <p className="mt-3 max-w-2xl type-body-sm text-white/75">
+              CMS, clinics, PCPs, and other programs can refer someone to
+              LoveJoy without a login. LoveJoy watches the loop from there.
+            </p>
+            <a
+              href={siteConfig.referAPatientUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 inline-flex items-center gap-2 rounded-full bg-gold px-5 py-2.5 text-sm font-semibold text-navy-deep transition hover:brightness-105"
+            >
+              Refer a patient
+              <span aria-hidden>→</span>
+            </a>
           </div>
 
           <div className="mt-12 rounded-[1.75rem] bg-atmosphere p-6 md:p-8">

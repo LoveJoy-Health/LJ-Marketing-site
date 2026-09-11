@@ -51,9 +51,14 @@ export function OrganizationInteriorCtas({
         Request a Demo
         <span aria-hidden>→</span>
       </Link>
-      <Link href="/about/contact" className={outlined}>
-        Talk to Our Team
-      </Link>
+      <a
+        href={siteConfig.referAPatientUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={outlined}
+      >
+        Refer a patient
+      </a>
       <a
         href={siteConfig.organizationPortalUrl}
         target="_blank"

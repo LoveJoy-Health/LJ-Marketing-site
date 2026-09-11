@@ -73,10 +73,11 @@ const contactCards: ContactCard[] = [
   },
   {
     title: "Organizations",
-    body: "Health plans, employers, and community partners — learn how LoveJoy expands access, or request a demo.",
+    body: "Health plans, employers, and community partners — learn how LoveJoy expands access, send a patient, or request a demo.",
     Icon: Building2,
     links: [
       { href: "/for-organizations", label: "For organizations" },
+      { href: siteConfig.referAPatientUrl, label: "Refer a patient" },
       {
         href: `mailto:${siteConfig.contactEmail}?subject=Request%20a%20demo`,
         label: "Request a demo",

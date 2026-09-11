@@ -501,6 +501,14 @@ export default function HomePage() {
                   >
                     Join Provider Network
                   </Link>
+                  <a
+                    href={siteConfig.referAPatientUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="type-button rounded-full border border-white/35 bg-transparent px-6 py-3 text-white transition hover:bg-white/10"
+                  >
+                    Refer a patient
+                  </a>
                 </div>
               </div>
 
@@ -855,6 +863,14 @@ export default function HomePage() {
                 >
                   Talk to Our Team
                 </Link>
+                <a
+                  href={siteConfig.referAPatientUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="type-button rounded-full border border-white/35 px-6 py-3 text-white transition hover:bg-white/10"
+                >
+                  Refer a patient
+                </a>
               </div>
             </div>
           </div>

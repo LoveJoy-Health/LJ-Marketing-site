@@ -296,8 +296,19 @@ export function SiteHeader({ variant = "standalone" }: SiteHeaderProps) {
   const isIndividuals =
     pathname === "/for-individuals" ||
     pathname.startsWith("/for-individuals/");
-  const ctaLabel = isIndividuals ? "Find a Provider" : "Download Our Apps";
-  const ctaHref = isIndividuals ? siteConfig.findProviderUrl : "/download";
+  const isOrganizations =
+    pathname === "/for-organizations" ||
+    pathname.startsWith("/for-organizations/");
+  const ctaLabel = isIndividuals
+    ? "Find a Provider"
+    : isOrganizations
+      ? "Refer a patient"
+      : "Download Our Apps";
+  const ctaHref = isIndividuals
+    ? siteConfig.findProviderUrl
+    : isOrganizations
+      ? siteConfig.referAPatientUrl
+      : "/download";
 
   useEffect(() => {
     if (!isStandalone) return;

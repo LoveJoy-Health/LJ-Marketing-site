@@ -17,6 +17,10 @@ export const siteConfig = {
   /** Patient portal — find providers, sign in, explore care */
   patientPortalUrl: "https://patients.lovejoy.health/",
   findProviderUrl: "https://patients.lovejoy.health/",
+  /** Public LoveJoy referral door (not a clinic-scoped /refer/{slug} link). */
+  referAPatientUrl:
+    process.env.NEXT_PUBLIC_REFER_A_PATIENT_URL?.replace(/\/$/, "") ||
+    "https://patients.lovejoy.health/refer",
   /** Patient app store links from https://lovejoy.health/app-download/ */
   appStore: {
     ios: "https://apps.apple.com/us/app/lovejoy-patient/id6535655626",
@@ -95,6 +99,7 @@ export const primaryNav: readonly NavItem[] = [
       { href: "/for-organizations/insights", label: "Insights & Reporting" },
       { href: "/for-organizations/implementation", label: "Implementation" },
       { href: "/for-organizations/access", label: "CMS ACCESS" },
+      { href: siteConfig.referAPatientUrl, label: "Refer a patient" },
     ],
   },
   {
@@ -134,6 +139,7 @@ export const resourcesNav: readonly NavLink[] = [
   { href: "/faqs", label: "FAQs" },
   { href: "/blog", label: "Blog" },
   { href: "/download", label: "Download the apps" },
+  { href: siteConfig.referAPatientUrl, label: "Refer a patient" },
   { href: "/the-porch", label: "The Porch" },
   { href: "/osiris", label: "Osiris" },
   { href: "/about/contact", label: "Contact" },
@@ -157,6 +163,7 @@ export const organizationNav: readonly NavLink[] = [
   { href: "/for-organizations/insights", label: "Insights & Reporting" },
   { href: "/for-organizations/implementation", label: "Implementation" },
   { href: "/for-organizations/access", label: "CMS ACCESS" },
+  { href: siteConfig.referAPatientUrl, label: "Refer a patient" },
 ] as const;
 
 /** Legal pages — slugs aligned with live lovejoy.health where available. */

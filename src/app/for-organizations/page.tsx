@@ -19,6 +19,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "For Organizations",
@@ -505,6 +506,14 @@ function OrgCtas({
           Talk to Our Team
         </Link>
       )}
+      <a
+        href={siteConfig.referAPatientUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={outlined}
+      >
+        Refer a patient
+      </a>
     </div>
   );
 }

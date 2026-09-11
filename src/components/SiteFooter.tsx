@@ -4,6 +4,7 @@ import { LoveJoyLogo } from "@/components/LoveJoyLogo";
 import {
   footerNav,
   investorNav,
+  isExternalHref,
   legalNav,
   organizationNav,
   providerNav,
@@ -75,6 +76,32 @@ const socialLinks = [
   },
 ] as const;
 
+function FooterNavLink({ href, label }: { href: string; label: string }) {
+  const className =
+    href === "/resources/crisis"
+      ? "text-sm font-semibold text-gold transition hover:brightness-110"
+      : "text-sm text-white/80 transition hover:text-white";
+
+  if (isExternalHref(href)) {
+    return (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={className}
+      >
+        {label}
+      </a>
+    );
+  }
+
+  return (
+    <Link href={href} className={className}>
+      {label}
+    </Link>
+  );
+}
+
 export function SiteFooter() {
   return (
     <footer className="border-t border-border bg-navy-deep text-white">
@@ -119,12 +146,7 @@ export function SiteFooter() {
           <ul className="mt-4 space-y-2.5">
             {footerNav.map((item) => (
               <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className="text-sm text-white/80 transition hover:text-white"
-                >
-                  {item.label}
-                </Link>
+                <FooterNavLink href={item.href} label={item.label} />
               </li>
             ))}
           </ul>
@@ -137,16 +159,7 @@ export function SiteFooter() {
           <ul className="mt-4 space-y-2.5">
             {resourcesNav.map((item) => (
               <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className={
-                    item.href === "/resources/crisis"
-                      ? "text-sm font-semibold text-gold transition hover:brightness-110"
-                      : "text-sm text-white/80 transition hover:text-white"
-                  }
-                >
-                  {item.label}
-                </Link>
+                <FooterNavLink href={item.href} label={item.label} />
               </li>
             ))}
           </ul>
@@ -177,12 +190,7 @@ export function SiteFooter() {
           <ul className="mt-4 space-y-2.5">
             {organizationNav.map((item) => (
               <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className="text-sm text-white/80 transition hover:text-white"
-                >
-                  {item.label}
-                </Link>
+                <FooterNavLink href={item.href} label={item.label} />
               </li>
             ))}
           </ul>
