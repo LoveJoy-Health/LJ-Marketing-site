@@ -18,7 +18,6 @@ const PUBLIC_PATHS = [
   "/for-organizations/implementation",
   "/for-organizations/access",
   "/about",
-  "/about/team",
   "/about/contact",
   "/download",
   "/download/patient",

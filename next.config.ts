@@ -33,6 +33,17 @@ const nextConfig: NextConfig = {
         destination: "/about/contact",
         permanent: true,
       },
+      // Team page is unpublished for now — restore /about/team in nav + sitemap and drop these.
+      {
+        source: "/about/team",
+        destination: "/about",
+        permanent: false,
+      },
+      {
+        source: "/about/team/",
+        destination: "/about",
+        permanent: false,
+      },
       {
         source: "/for-organizations/story",
         destination: "/investors/pitch-deck",

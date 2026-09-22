@@ -107,7 +107,6 @@ export const primaryNav: readonly NavItem[] = [
     href: "/about",
     children: [
       { href: "/about", label: "About Us" },
-      { href: "/about/team", label: "Team" },
       { href: "/about/contact", label: "Contact" },
     ],
   },
@@ -130,7 +129,6 @@ export const footerNav: readonly NavLink[] = [
   { href: "/for-navigators", label: "Care Navigators" },
   { href: "/for-organizations", label: "Organizations" },
   { href: "/about", label: "About" },
-  { href: "/about/team", label: "Team" },
   { href: "/about/contact", label: "Contact" },
 ] as const;
 

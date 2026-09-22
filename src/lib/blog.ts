@@ -381,7 +381,7 @@ Honesty matters in healthcare marketing. Continuity, engagement, and navigation 
 
 LoveJoy’s story is still being written with every partner and every person who uses the platform. What will not change is the reason we started: behavioral healthcare should not fall apart in the gaps.
 
-Learn more [about LoveJoy](/about), meet the [team](/about/team), or [get in touch](/about/contact). If you are ready to explore connected care for your role, the audience pages above are the best next step.`,
+Learn more [about LoveJoy](/about) or [get in touch](/about/contact). If you are ready to explore connected care for your role, the audience pages above are the best next step.`,
   },
   {
     slug: "finding-mental-health-support-that-fits",
