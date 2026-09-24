@@ -168,6 +168,18 @@ export const FAQ_CATEGORIES: FAQCategory[] = [
         links: [{ href: "/privacy-policy", label: "Privacy Policy" }],
       },
       {
+        id: "notice-of-privacy-practices",
+        question: "Where can I read LoveJoy’s HIPAA Notice of Privacy Practices?",
+        answer:
+          "The Notice of Privacy Practices describes how LoveJoy Health may use and disclose protected health information and your rights regarding that information.",
+        links: [
+          {
+            href: "/notice-of-privacy-practices",
+            label: "Notice of Privacy Practices",
+          },
+        ],
+      },
+      {
         id: "privacy-security",
         question: "Where can I read about security and compliance?",
         answer:

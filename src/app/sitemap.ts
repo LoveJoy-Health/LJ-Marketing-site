@@ -36,6 +36,7 @@ const PUBLIC_PATHS = [
   "/resources/crisis",
   "/terms",
   "/privacy-policy",
+  "/notice-of-privacy-practices",
   "/cookie-policy",
   "/security-compliance",
   "/investors",

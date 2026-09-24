@@ -9,6 +9,8 @@ export const siteConfig = {
   url: "https://lovejoy.health",
   address: "24 Greenway Plz, Houston, TX 77046",
   contactEmail: "business@lovejoy.health",
+  contactPhone: "(832) 225-2424",
+  contactPhoneTel: "+18322252424",
   social: {
     facebook: "https://www.facebook.com/lovejoyhealthinc/",
     instagram: "https://www.instagram.com/lovejoy.health/",
@@ -168,6 +170,7 @@ export const organizationNav: readonly NavLink[] = [
 export const legalNav: readonly NavLink[] = [
   { href: "/terms", label: "Terms & Conditions" },
   { href: "/privacy-policy", label: "Privacy Policy" },
+  { href: "/notice-of-privacy-practices", label: "Notice of Privacy Practices" },
   { href: "/cookie-policy", label: "Cookie Policy" },
   { href: "/security-compliance", label: "Security & Compliance" },
 ] as const;
@@ -238,6 +241,7 @@ export const breadcrumbLabels: Record<string, string> = {
   "/osiris": "Osiris",
   "/terms": "Terms & Conditions",
   "/privacy-policy": "Privacy Policy",
+  "/notice-of-privacy-practices": "Notice of Privacy Practices",
   "/cookie-policy": "Cookie Policy",
   "/security-compliance": "Security & Compliance",
   // Redirect aliases (canonical destinations are preferred after Next redirects)
@@ -278,6 +282,7 @@ const NAVY_HERO_EXACT = new Set([
   "/download",
   "/terms",
   "/privacy-policy",
+  "/notice-of-privacy-practices",
   "/cookie-policy",
   "/security-compliance",
   "/privacy",
