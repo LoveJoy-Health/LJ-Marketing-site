@@ -39,6 +39,7 @@ const PUBLIC_PATHS = [
   "/notice-of-privacy-practices",
   "/cookie-policy",
   "/security-compliance",
+  "/sms-consent",
   "/investors",
   "/investors/pitch-deck",
   "/investors/one-pager",

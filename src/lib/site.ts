@@ -173,6 +173,7 @@ export const legalNav: readonly NavLink[] = [
   { href: "/notice-of-privacy-practices", label: "Notice of Privacy Practices" },
   { href: "/cookie-policy", label: "Cookie Policy" },
   { href: "/security-compliance", label: "Security & Compliance" },
+  { href: "/sms-consent", label: "SMS Messaging & Consent" },
 ] as const;
 
 /** Footer — Investors, listed under Legal. */
@@ -244,6 +245,7 @@ export const breadcrumbLabels: Record<string, string> = {
   "/notice-of-privacy-practices": "Notice of Privacy Practices",
   "/cookie-policy": "Cookie Policy",
   "/security-compliance": "Security & Compliance",
+  "/sms-consent": "SMS Messaging & Consent",
   // Redirect aliases (canonical destinations are preferred after Next redirects)
   "/privacy": "Privacy Policy",
   "/security": "Security & Compliance",
@@ -285,6 +287,7 @@ const NAVY_HERO_EXACT = new Set([
   "/notice-of-privacy-practices",
   "/cookie-policy",
   "/security-compliance",
+  "/sms-consent",
   "/privacy",
   "/security",
 ]);
