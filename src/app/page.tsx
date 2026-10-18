@@ -489,12 +489,12 @@ export default function HomePage() {
                   health care — all in one connected place.
                 </p>
                 <div className="animate-fade-up delay-300 mt-6 flex flex-wrap gap-3">
-                  <Link
-                    href="/for-individuals"
+                  <a
+                    href={siteConfig.findProviderUrl}
                     className="type-button rounded-full bg-gold px-6 py-3 text-navy-deep transition hover:brightness-105"
                   >
-                    Find Support →
-                  </Link>
+                    Find a Provider →
+                  </a>
                   <Link
                     href="/for-providers"
                     className="type-button rounded-full border border-white/35 bg-transparent px-6 py-3 text-white transition hover:bg-white/10"

@@ -18,7 +18,7 @@ export const siteConfig = {
   },
   /** Patient portal — find providers, sign in, explore care */
   patientPortalUrl: "https://patients.lovejoy.health/",
-  findProviderUrl: "https://patients.lovejoy.health/",
+  findProviderUrl: "https://patients.lovejoy.health/find",
   /** Public LoveJoy referral door (not a clinic-scoped /refer/{slug} link). */
   referAPatientUrl:
     process.env.NEXT_PUBLIC_REFER_A_PATIENT_URL?.replace(/\/$/, "") ||
